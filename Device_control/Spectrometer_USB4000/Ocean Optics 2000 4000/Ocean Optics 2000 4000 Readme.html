@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Ocean Optics 2000 4000 Instrument Driver Readme</title>
+</head>
+<body>
+<h2>Ocean Optics 2000 4000 Instrument Driver Readme</h2>
+<para>To rate this instrument driver, go to the driver download page on the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.</para>
+<h4>1. Overview</h4>
+<para>
+Instrument Driver Technology: LabVIEW Plug and Play (project-style)
+<br>
+Manufacturer: Ocean Optics
+<br>
+Supported Language(s): LabVIEW
+<br>
+Supported Model(s): USB4000, USB2000+, USB2000, HR4000, HR2000+, HR2000, Maya, MayaPro, NIRQuest512, NIRQuest256, QE65000, ADC1000, Torus, NIRQuest512, NIRQuest256, QE65000, Flame
+<br>
+Model(s) Tested: 
+<br>
+<i>-Tested by National Instruments</i> - USB4000
+<br>
+<i>-Tested by Ocean Optics</i> - USB2000+, USB2000, HR4000, HR2000+, HR2000, Maya, MayaPro, NIRQuest512, NIRQuest256, QE65000, ADC1000, Torus
+<br>
+Interface(s): USB
+<br>
+Firmware Revision(s) Tested: USB4000(v1.01.11)
+<br>
+<br>
+Certified: Yes
+<br>
+NI Supported: Yes
+<br>
+Source Code Available: Yes
+<br>
+<br>
+Driver Revision: 1.4.4
+<br>
+Original Release Date: 11/12/2009
+<br>
+Current Revision Date: 02/2016
+</para>
+<h4>2. Required Software</h4>
+<para>Some software components need to be installed before using this instrument driver. Minimum versions of these components are listed below, and can be downloaded from the Download Site.
+<br>
+<br>
+VISA 5.0 or later
+<br>
+Instrument specific INF file (This file is provided with this driver)
+<br>
+<br>
+<b>Installation Instructions</b>
+<br>
+<ul>
+<li>Go to <i>Program Files>>National Instruments>>LabVIEW>>instr.lib>>Ocean Optics 2000 4000>>VISA_USB</i></li>
+<li>Select the folder for the model of instrument you are using.</li>
+<li>For Windows Vista and Windows 7, use the INF file with _vista in the file name (eg.Ocean Optics USB4000_vista.inf). For XP, use the other INF file.</li>
+<li>To install, right click and select Install.</li>
+<li>NI MAX should be able to detect this instrument after installing the INF file.</li>
+</ul>
+For more information about USB Raw, go to <a href="http://zone.ni.com/devzone/cda/tut/p/id/4478">USB Instrument Control Tutorial</a>
+ 
+<br>
+<br>
+Refer to the <i>LabVIEW Help</i> for more information about software requirements. You access the <i>LabVIEW Help</i> by selecting <i>Help&raquo;Search the LabVIEW Help</i>.</para>
+<h4>3. Known Issues</h4>
+<para>
+
+
+To report issues or provide feedback about this instrument driver,  <a href="http://www.ni.com/en-us/support.html">please contact technical support</a>.</para></font>
+
+
+<br>
+<br>
+1) Installing the inf file provided with this driver might cause a conflict when trying to use Ocean Optics Software. The current solution is to switch between the NI-VISA USB Driver and Ocean Optics USB Driver.
+<br><br><b>Steps for switching:</b>
+<ul>
+<li>Right click My Computer and select Properties</li>
+<li>Click on the Hardware Tab, and select Device Manager</li>
+<li>Look for NI-VISA USB Devices and expand it</li>
+<li>Click on the device and select the Driver Tab</li>
+<li>Click Update Driver then "No,not this time" and Next</li>
+<li>Select "Install from a list or specific location(Advanced) then Next</li>
+<li>Select "Don't search. I will choose the driver to install" then Next</li>
+<li>Select the driver you wish to use, and click Next</li>
+<li>The USB Driver you selected will be installed</li>
+</ul>
+</font>
+2) For driver revision 1.4.2 some testing was done by AG, but since NI did not have an instrument we were not able to do any testing, but OO was notified of changes.<br>
+<para></para>
+<h4>4. Revision History</h4>
+<para>The latest version of this and other LabVIEW and LabWindows/CVI instrument drivers can be downloaded at the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.<br>
+<br>
+REV 1.0, 11/12/2009<br>
+Created by: Alvin Tang, Austin,TX.<br>
+Original release.<br>
+<br>
+REV 1.0.1, 3/22/2010<br>
+Modified by: Nathan T., Austin,TX.<br>
+Updated Ocean Optics 2000 4000 Acquire Continuous Waveform VI by moving the wavelength calculation outside of the loop to improve performance.  Also added a note to the VI documentation for Read Spectral Waveform: <br>
+<i>"Do not put this VI in a loop if performance is a concern.  Please see the <b>Ocean Optics 2000 4000 Acquire Continuous Waveform</b> example for an example of how to do continuous acquisition."</i><br>
+<br>
+REV 1.1.1, 04/26/2010<br>
+Modified by: Nathan T., Austin,TX.<br>
+Change Submitted by: HU<br>
+Updated Read Spectra VI by re-working the conversion logic so that it is much faster (approximately 3000x faster).<br>
+<br>
+REV 1.1.2, 06/09/2010<br>
+Modified by: Nathan T., Austin,TX.<br>
+Change Submitted by: James G<br>
+Updated Read Spectra VI by updating the Total Byte Check in the "Maya & Maya Pro Case" to 4608<br>
+<br>
+REV 1.2.0, 08/31/2010<br>
+Modified by: Nathan T., Austin,TX.<br>
+Change Submitted by: James G<br>
+Added Nonlinearity Correction.vi under Data >> Advanced<br>
+<br>
+REV 1.3.0, 06/10/2011 <br>
+Modified by: Ayo Olubeko, Austin,TX. <br>
+Added Support for Ocean Optics ADC1000 and Ocean Optics Torus Models <br>
+Modified the following VIs: <br>
+ &nbsp -Initialize VI: Added ADC1000 and Torus Model IDs to the Case Structure <br> 
+ &nbsp -Configure Trigger VI: Added ADC1000 and Torus Model IDs to the Case Structure <br>
+ &nbsp -Read Spectra VI: Added ADC1000 and Torus Model IDs to the Case Structure 
+ <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changed the start index from 20 to 0 for the USB4000 </dd><br>
+ &nbsp -Read Spectral Waveform VI: Added ADC1000 and Torus Model IDs to the Case Structure <br>
+ &nbsp -Configure Strobe Timing VI: Added Continuous Strobe Rate Control to Case Structure <br>
+ &nbsp -Revision Query VI: Added Serial Number Indicator <br>
+Created the following VIs for the ADC1000 Model: <br>
+ &nbsp -Configure Master Clock Frequency <br>
+ &nbsp -Configure Spectrometer Channel   <br>
+ &nbsp -Read GPIO Input Pin              <br>
+<br> 
+REV 1.3.1, 09/12/2011 <br>
+Modified by: Albert Geven<br>
+Modifications:<br>
+1) Read Spectra.vi - The merge errors function in the False case was connected in the wrong order.<br>
+2) Query Wavelength Calibration Coefficient.vi - The merge errors function added to VI, so that errors on the conversion of strings from the instrument to a value are captured.<br>
+<br> 
+REV 1.3.2, 03/15/2013 <br>
+Modified by: James Gass<br>
+Change Submitted by: Shawn Shaw, Austin,TX.<br>
+Moved ten pixels to the back of array to improve performance of VI and driver within Read Spectra.vi.
+<br>
+<br>
+REV 1.3.3, 10/15/2013 <br>
+Modified by: Albert Geven<br>
+Modifications:<br>
+1) Read Spectral Waveform -Previously assigned pixels to calculate wavelength are now using optical pixels instead of all pixels.<br> 
+2) Read Spectra -Black pixel information and optical pixels are separated to give better results for measurements. <br>
+
+<br>
+REV 1.4, 11/15/2013 <br>
+Modified by: Albert Geven, NI<br>
+Modifications:<br>
+1) Read Spectra VI (per REV 1.3.2) was obsoleted to avoid possible backwards compatibility issues.<br>
+2) Read Optical Spectrum (Read Spectra Rev 1.3.3) was renamed to avoid possible issues. <br>
+3) Read Spectral Waveform and Examples Ocean Optics 2000 4000 Process Spectrum, Ocean Optics 2000 4000 Log Spectrum, and Ocean Optics 2000 4000 Acquire Continuous Waveform were updated to use Read Optical Spectrum. <br>
+
+<br>
+REV 1.4.1, 08/05/2014 <br>
+Modified by: Xudong Yong, Shanghai, China<br>
+Modifications:<br>
+(1) Read Optical Spectrum - Modify the start and stop optical pixel values for case 4114 and 4130.<br>
+(2) Modify some non-ASCII text issues.<br>
+<br>
+REV 1.4.2, 02/2016 <br>
+Modified by: Albert Geven, NI<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;Updated to support All pixels and optical pixels<br>
+<ol><li>New VIs<br>
+Private\Spectrometer Data<br>
+Private\CS String to Num Array<br>
+Private\Store Spectrometer ID<br>
+Public\Data\Read Spectrum - now displays all or optical pixels<br><br>
+<li>Modifications:<br>
+<ul> Initialize - Pixel Mode control added to allow users to select optical or all pixels</ul>
+<ul>Read Spectral Waveform - all the Pixel related information has been moved to the Private VI Spectrometer Data.</ul>
+<ul>Calculate Wavelength - Calculation is done a bit differently. The black pixel offset is now used to compensate for the start of the optical offset in nm.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;Number of Pixels previously used as the count terminal is now calculated from values from Ocean Optics Definitions array control in the Private VI Spectrometer Data.</ul>
+<ul>Obsoleted - Read Optical Spectrum - for users who only want optical spectrum to be displayed and not dark or garbage pixels.</ul>
+<ul>Examples - Updated to use the new Read Spectrum VI.<br> 
+*	Ocean Optics 2000 4000 Process Spectrum.vi<br>
+*	Ocean Optics 2000 4000 Log Spectrum.vi<br>
+</ul>
+</ol>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;Added .inf and .cat files for the Flame model<br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;[Bug fix]<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;Nonlinearity Correction- bug fix: P(A) applied to <b>Spectrum by Pixels</b> - <b>Dark Spectrum</b>, then + to <b>Dark Spectrum</b>- Validated by customer.<br>      
+ <br>
+ REV 1.4.3, 02/2016 <br>
+ <li>Modifications:<br>
+ Calculate Wavelength - Calculation wiring was corrected stop pixel minus start pixel<br>
+ Read Spectrum&nbsp;&nbsp; - changed the write buffer string constant display wired into VISA Write back to Hex<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+ - mean function updated to median because if a bad/garbage pixel is present in the black pixels the correct result is displayed instead of generating an error.
+ <br>
+ REV 1.4.4, 02/2016 <br>
+ <li>Modifications:<br>
+ Calculate Wavelength - The wavelength given was incorrect, because the wrong offset was being added. Additional notes were added for clarification and the start and stop pixels in the unbundle were swapped for better readability.<br>
+ <!-- REV x.x.x -->
+</para>
+</body>
+</html>
