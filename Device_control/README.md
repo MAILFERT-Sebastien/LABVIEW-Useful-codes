@@ -7,8 +7,9 @@ Simple programs to control individually different devices
 
 ## Versionning
 <ul>
-<li> Spectrometer_USB4000</li>
-<li> Tholabs_Shutter_ActiveX</li>
+<li> **Spectrometer_USB4000**</li>
+
+<li> **Tholabs_Shutter_ActiveX**</li>
   
 ![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX.png)
 
@@ -16,7 +17,10 @@ Simple programs to control individually different devices
 
 [![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX_3.png)](https://youtu.be/wK0ihhYWcJ8)
   
-<li> Thorlabs_CageRotator_ActiveX</li>
+
+
+
+<li> **Thorlabs_CageRotator_ActiveX**</li>
 
 ![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_ActiveX/Thorlabs_CageRotator_ActiveX_Full_1.png)
 
@@ -25,8 +29,13 @@ Simple programs to control individually different devices
 [![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_ActiveX/Thorlabs_CageRotator_ActiveX_Full_3.png)](https://youtu.be/Oemz80T-54o)
 
 
-<li> Thorlabs_CageRotator_dotNET</li>
-<li> Webcam</li>
+
+
+
+<li> **Thorlabs_CageRotator_dotNET**</li>
+
+
+<li> **Webcam**</li>
 </ul>
 
 
