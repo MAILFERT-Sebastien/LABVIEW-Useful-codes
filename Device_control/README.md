@@ -22,7 +22,7 @@ Simple programs to control individually different devices
 
 ![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_ActiveX/Thorlabs_CageRotator_ActiveX_Full_2.png)
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_ActiveX/Thorlabs_CageRotator_ActiveX_Full_1.png)](https://youtu.be/Oemz80T-54o)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_ActiveX/Thorlabs_CageRotator_ActiveX_Full_3.png)](https://youtu.be/Oemz80T-54o)
 
 
 <li> Thorlabs_CageRotator_dotNET</li>
