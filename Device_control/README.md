@@ -14,7 +14,7 @@ Simple programs to control individually different devices
 
 ![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX_2.png)
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX.png)](https://youtu.be/wK0ihhYWcJ8)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX_3.png)](https://youtu.be/wK0ihhYWcJ8)
   
 <li> Thorlabs_CageRotator_ActiveX</li>
 
