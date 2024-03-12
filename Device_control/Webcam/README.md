@@ -6,7 +6,7 @@
 This software is designed to control a camera recognized in NI MAX as a Direct Show camera.
 In this example, I take the integrated webcam of my DELL laptop named "cam0" in NI MAX 
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW_CameraGrab/blob/main/Images/Launch_2.png)](https://youtu.be/fvN6HKx--K0)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Webcam/Images/Launch_2.png)](https://youtu.be/fvN6HKx--K0)
 
 
 
@@ -25,7 +25,7 @@ Labview code
 <li> Click on the <i>Run</i> arrow to run the vi </li>
 </ul>
 
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW_CameraGrab/blob/main/Images/Launch_1.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Webcam/Images/Launch_1.png)
 
 ## Running the tests
 
@@ -40,7 +40,7 @@ Labview code
 
 2. Click on the <i>Run</i> arrow to run the vi
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW_CameraGrab/blob/main/Images/Launch_2.png)](https://youtu.be/fvN6HKx--K0)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Webcam/Images/Launch_2.png)](https://youtu.be/fvN6HKx--K0)
 
 ## Versioning
 

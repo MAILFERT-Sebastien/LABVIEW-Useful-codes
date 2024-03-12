@@ -35,6 +35,12 @@ Simple programs to control individual devices
 
 <li> Thorlabs_CageRotator_dotNET</li>
 
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_dotNET/Thorlabs_CageRotator_dotNET_1.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_dotNET/Thorlabs_CageRotator_dotNET_2.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_dotNET/Thorlabs_CageRotator_dotNET_3.png)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_CageRotator_dotNET/Thorlabs_CageRotator_dotNET_4.png)](https://youtu.be/OmimvPBun5Q)
+
+
 
 <li> Webcam</li>
 </ul>
