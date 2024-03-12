@@ -6,8 +6,8 @@
 This software is designed to control an Ocean Optics USB4000 spectrometer.
 As you can see on the following video, the Labview GUI is simple and allows to read the infomation coming from the spectrometer, control it AND measure the transmission of fluorescence filter:
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000.png)](https://www.youtube.com/watch?v=lz8w-zJ4CPQ)
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000_2.png)](https://youtu.be/C9iH8P3rPok)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000.png)](https://www.youtube.com/watch?v=lz8w-zJ4CPQ)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000_2.png)](https://youtu.be/C9iH8P3rPok)
 
 ## Prerequisites
 This program has been tested under Labview 2023 64-bit. It is therefore necessary to have at least one version of Labview 2023 installed.
@@ -20,17 +20,17 @@ This program has been tested under Labview 2023 64-bit. It is therefore necessar
    <ul>
       <li> Open <i>Labview</i></li>
       <li> In the <i>Help</i> tab, select <i>Find instrument drivers</i></li>
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_0.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_0.png)
       <li> Select <i>Ocean Optics</i> in the list of manufacturers</li>
       <li> Click on <i>Search</i> </li>
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_1.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_1.png)
       <li> Select the <i>ocean2000 Instrument Driver</i> item</li>
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_2.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_2.png)
       <li> Click on <i>Install</i></li>
       <li> Log in or create a <i>NI profile</i></li>
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_3.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_3.png)
       <li> Once installed, close this window</li>
-![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_4.png)
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_Drivers_4.png)
       </ul>
       
 2. Labview code
@@ -72,7 +72,7 @@ This program has been tested under Labview 2023 64-bit. It is therefore necessar
 		<li> Set the transmission band (in nm) and the transmission (%)</li>
 		</ul>
 	</ul>
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/tree/main/Device_control/Spectrometer_USB4000/Images/FilterTransmission_Measurement.png)](https://youtu.be/IOkKzA5c4gc)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/FilterTransmission_Measurement.png)](https://youtu.be/IOkKzA5c4gc)
 
 ## Versioning
 
