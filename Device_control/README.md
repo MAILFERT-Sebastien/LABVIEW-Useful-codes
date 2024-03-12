@@ -3,13 +3,13 @@
 
 
 ## Aim
-Simple programs to control individually different devices
+Simple programs to control individual devices
 
 ## Versionning
 <ul>
-<li> **Spectrometer_USB4000**</li>
+<li> ** Spectrometer_USB4000 **</li>
 
-<li> **Tholabs_Shutter_ActiveX**</li>
+<li> ** Tholabs_Shutter_ActiveX **</li>
   
 ![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX.png)
 
