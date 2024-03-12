@@ -240,7 +240,9 @@
 			<Item Name="ThorlabsDefaultSettings.xml" Type="Document" URL="../ThorlabsDefaultSettings.xml"/>
 		</Item>
 		<Item Name="Thorlabs_CageRotator_dotNET.vi" Type="VI" URL="../Thorlabs_CageRotator_dotNET.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="Thorlabs.MotionControl.Controls.dll" Type="Document" URL="../dlls/Thorlabs.MotionControl.Controls.dll"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
