@@ -15,6 +15,11 @@ Simple programs to control individually different devices
 </ul>
 
 
+![image](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/Device_control/blob/main/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX.png)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/Device_control/blob/main/Thorlabs_Shutter_ActiveX/Thorlabs_Shutter_ActiveX.png)](https://youtu.be/wK0ihhYWcJ8)
+
+
+
 ## Authors
 Sébastien MAILFERT
 Institut Fresnel (Marseille, France), CNRS, AMU
