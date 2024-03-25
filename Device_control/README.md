@@ -46,6 +46,10 @@ Simple programs to control individual devices
 
 
 
+## YOKOGAWA CSU-X1 spinning disk
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Yokogawa_CSU-X1/Images/YOKOGAWA_CSUX1.png)](https://youtu.be/-BCwlMHtLH8)
+
+
 </ul>
 
 
