@@ -5,7 +5,8 @@ Labview control of a YOKOGAWA CSU-X spinning disk
 This software is designed to control a YOKOGAWA CSU-X spinning disk via Labview.
 As you can see on the following video, the Labview GUI is simple and allows to read the current status of the spinning disk and control it:
 
-[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW_YOKOGAWA_CSU-X1/blob/main/Images/YOKOGAWA_CSUX1.png)](https://youtu.be/-BCwlMHtLH8)
+[![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Yokogawa_CSU-X1/Images/YOKOGAWA_CSUX1.png)](https://youtu.be/-BCwlMHtLH8)
+
 
 
 ## Prerequisites
