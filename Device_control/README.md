@@ -32,7 +32,8 @@ Simple programs to control individual devices
 [![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000.png)](https://www.youtube.com/watch?v=lz8w-zJ4CPQ)
 [![Watch the video](https://github.com/MAILFERT-Sebastien/LABVIEW-Useful-codes/blob/main/Device_control/Spectrometer_USB4000/Images/Labview_OceanOptics_USB4000_2.png)](https://youtu.be/C9iH8P3rPok)
 
-
+## PI-C867-Joystick
+Control of a PI stage and its C867 controler with Labview and the attached Joystick with 6 buttons (used to change the velocity)
 </ul>
 
 
