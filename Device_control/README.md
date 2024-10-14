@@ -34,6 +34,10 @@ Simple programs to control individual devices
 
 ## PI-C867-Joystick
 Control of a PI stage and its C867 controler with Labview and the attached Joystick with 6 buttons (used to change the velocity)
+
+## Template QMH
+Template code for a Queue Message Handler program
+
 </ul>
 
 
