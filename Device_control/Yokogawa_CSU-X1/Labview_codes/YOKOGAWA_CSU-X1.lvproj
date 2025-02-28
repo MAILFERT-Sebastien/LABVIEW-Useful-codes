@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="24008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -22,6 +22,7 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 			</Item>
+			<Item Name="User_Message.vi" Type="VI" URL="../User_Message.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="YOKOGAWA_CSU-X1" Type="EXE">
@@ -29,6 +30,7 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{B004F3A9-31A4-4C2F-8DE8-2031185CB7D0}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{AD015DB0-8D3C-4D86-9F1B-9B6EAB07FA7F}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{628C2AC0-05B4-4A6F-8DB0-4106681C9CD5}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">YOKOGAWA_CSU-X1</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
