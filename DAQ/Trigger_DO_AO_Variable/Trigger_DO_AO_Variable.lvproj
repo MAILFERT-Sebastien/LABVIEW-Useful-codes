@@ -15,6 +15,8 @@
 		<Item Name="Trigger_DO_AO_Variable" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="DAQ_Initialization_Counter_PulseMeasurement.vi" Type="VI" URL="../../../../LABVIEW_Polar_v2.0/SubVIs/DAQ/SubVIs/DAQ_Initialization_Counter_PulseMeasurement.vi"/>
+		<Item Name="FW_Counter_Pulse detection.vi" Type="VI" URL="../../../../LABVIEW_Polar_v2.0/SubVIs/Filter_Wheel/SubVIs/FW_Counter_Pulse detection.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
