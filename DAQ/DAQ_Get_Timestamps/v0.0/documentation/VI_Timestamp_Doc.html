@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VI Timestamp — Documentation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+  :root {
+    --bg:       #0f1117;
+    --bg2:      #161b27;
+    --bg3:      #1e2535;
+    --accent:   #4a9eff;
+    --accent2:  #00d4aa;
+    --warn:     #ffb347;
+    --text:     #d4dbe8;
+    --text-dim: #7a8499;
+    --border:   #2a3347;
+    --code-bg:  #0d1520;
+    --red:      #ff6b6b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(135deg, #0d1520 0%, #0f1c35 50%, #0d1520 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 60px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(74,158,255,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 40%;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(0,212,170,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  header h1 span { color: var(--accent); }
+  .header-sub {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .badges {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid;
+  }
+  .badge-blue  { color: var(--accent);  border-color: rgba(74,158,255,0.3);  background: rgba(74,158,255,0.06); }
+  .badge-green { color: var(--accent2); border-color: rgba(0,212,170,0.3);  background: rgba(0,212,170,0.06); }
+  .badge-warn  { color: var(--warn);    border-color: rgba(255,179,71,0.3);  background: rgba(255,179,71,0.06); }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 60px; }
+
+  /* ── SECTIONS ── */
+  section { margin-bottom: 48px; }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    background: rgba(74,158,255,0.1);
+    border: 1px solid rgba(74,158,255,0.2);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent2);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 24px 0 12px;
+  }
+
+  p { margin-bottom: 12px; color: var(--text); }
+
+  /* ── FORMULA BOX ── */
+  .formula {
+    background: var(--code-bg);
+    border: 1px solid rgba(74,158,255,0.2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--accent2);
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* ── CODE ── */
+  code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    background: var(--code-bg);
+    color: #ff9d6c;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    padding: 16px 20px;
+    border-radius: 4px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: #a8d8a8;
+    overflow-x: auto;
+    margin: 12px 0;
+    line-height: 1.6;
+  }
+  pre .cm  { color: var(--text-dim); font-style: italic; }
+  pre .kw  { color: var(--accent); }
+  pre .str { color: #ffd700; }
+
+  /* ── INFO BOX ── */
+  .infobox {
+    background: rgba(0,212,170,0.05);
+    border: 1px solid rgba(0,212,170,0.2);
+    border-left: 3px solid var(--accent2);
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+  }
+  .infobox .title { color: var(--accent2); font-weight: 600; margin-bottom: 6px; }
+
+  .warnbox {
+    background: rgba(255,179,71,0.05);
+    border: 1px solid rgba(255,179,71,0.2);
+    border-left: 3px solid var(--warn);
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+  }
+  .warnbox .title { color: var(--warn); font-weight: 600; margin-bottom: 6px; }
+
+  /* ── TABLE ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+  }
+  th {
+    background: var(--bg3);
+    color: var(--accent);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid rgba(42,51,71,0.5);
+    color: var(--text);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: rgba(30,37,53,0.4); }
+  td code { font-size: 11px; }
+  .ok  { color: var(--accent2); font-weight: 600; }
+  .val { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #ffd700; }
+
+  /* ── STATE MACHINE FLOW ── */
+  .flow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 20px 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+  }
+  .state {
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .s-idle    { background: rgba(122,132,153,0.15); border: 1px solid #7a8499; color: #7a8499; }
+  .s-init    { background: rgba(74,158,255,0.12);  border: 1px solid var(--accent); color: var(--accent); }
+  .s-start   { background: rgba(74,158,255,0.12);  border: 1px solid var(--accent); color: var(--accent); }
+  .s-running { background: rgba(0,212,170,0.12);   border: 1px solid var(--accent2); color: var(--accent2); }
+  .s-write   { background: rgba(255,179,71,0.12);  border: 1px solid var(--warn); color: var(--warn); }
+  .s-stop    { background: rgba(255,107,107,0.12); border: 1px solid var(--red); color: var(--red); }
+  .arrow { color: var(--text-dim); padding: 0 6px; font-size: 14px; }
+  .arrow-bi { color: var(--text-dim); padding: 0 6px; font-size: 14px; }
+
+  /* ── SR GRID ── */
+  .sr-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+  }
+  .sr-item {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px 12px;
+  }
+  .sr-name { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 600; }
+  .sr-type { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+  .sr-desc { font-size: 11px; color: var(--text); margin-top: 4px; }
+
+  /* ── UL ── */
+  ul { padding-left: 20px; margin: 8px 0; }
+  ul li { margin-bottom: 5px; color: var(--text); font-size: 13px; }
+  ul li::marker { color: var(--accent); }
+
+  ol { padding-left: 20px; margin: 8px 0; }
+  ol li { margin-bottom: 5px; color: var(--text); font-size: 13px; }
+  ol li::marker { color: var(--accent2); font-weight: 600; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 20px 60px;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-tag">Institut Fresnel — Plateforme Microscopie</div>
+  <h1>VI <span>Timestamp</span></h1>
+  <p class="header-sub">Horodatage hardware des triggers caméra — Documentation technique</p>
+  <div class="badges">
+    <span class="badge badge-blue">USB-6353</span>
+    <span class="badge badge-blue">CTR3</span>
+    <span class="badge badge-blue">PFI7</span>
+    <span class="badge badge-green">100 MHz</span>
+    <span class="badge badge-green">Précision 10 ns</span>
+    <span class="badge badge-warn">Rollover géré</span>
+    <span class="badge badge-warn">LabVIEW 2025</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- 1. OBJECTIF -->
+  <section>
+    <h2><span class="num">01</span> Objectif</h2>
+    <p>Ce VI enregistre le <strong>timestamp absolu</strong> de chaque trigger envoyé à la caméra, avec une précision hardware de <strong>10 ns</strong>. Les timestamps sont écrits dans un fichier CSV à chaque acquisition, écrasé au démarrage suivant.</p>
+    <div class="infobox">
+      <div class="title">Pourquoi un timestamp hardware ?</div>
+      Le signal de trigger caméra est généré entièrement par le hardware (CTR1 → DO), sans intervention logicielle entre les pulses. Un timestamp logiciel aurait un jitter de plusieurs millisecondes. CTR3 capture chaque flanc montant avec une précision de 10 ns (horloge interne 100 MHz).
+    </div>
+  </section>
+
+  <!-- 2. PRINCIPE -->
+  <section>
+    <h2><span class="num">02</span> Principe</h2>
+    <p>CTR3 est configuré en <strong>CI Comptage de fronts</strong> sur l'horloge 100 MHz. Le signal P0.4 (rebouclé sur PFI7) est l'horloge d'échantillonnage : à chaque flanc montant, CTR3 capture la valeur courante du compteur en ticks.</p>
+
+    <div class="formula">T_absolu = T0 + (ticks + offset_rollover) / 100 000 000</div>
+
+    <p>T0 est l'heure système au moment du Start. L'offset_rollover compense le débordement du compteur 32 bits (rollover toutes les <strong>42.9 s</strong> à 100 MHz).</p>
+
+    <table>
+      <tr><th>Paramètre</th><th>Valeur</th><th>Détail</th></tr>
+      <tr><td>Compteur</td><td><code>/USB-6353/ctr3</code></td><td>CTR0/CTR1 réservés au VI principal</td></tr>
+      <tr><td>Timebase</td><td><code>100 MHz interne</code></td><td>Résolution 10 ns</td></tr>
+      <tr><td>Source échantillonnage</td><td><code>/USB-6353/PFI7</code></td><td>Câblé depuis P0.4</td></tr>
+      <tr><td>Rollover 32 bits</td><td><span class="val">42.9 s</span></td><td>Détecté par comparaison ticks &lt; ticks_prev</td></tr>
+      <tr><td>Précision T0</td><td><span class="val">~1 ms</span></td><td>Horloge système Windows</td></tr>
+    </table>
+  </section>
+
+  <!-- 3. ARCHITECTURE -->
+  <section>
+    <h2><span class="num">03</span> Architecture — State Machine</h2>
+    <div class="flow">
+      <span class="state s-idle">IDLE</span><span class="arrow">→</span>
+      <span class="state s-init">INIT</span><span class="arrow">→</span>
+      <span class="state s-start">START</span><span class="arrow">→</span>
+      <span class="state s-running">RUNNING</span><span class="arrow-bi">⇄</span>
+      <span class="state s-write">WRITE</span><span class="arrow">→</span>
+      <span class="state s-stop">STOP</span><span class="arrow">→</span>
+      <span class="state s-idle">IDLE</span>
+    </div>
+
+    <h3>IDLE</h3>
+    <p>Attente du bouton Start. Event Structure sur la valeur du bouton → lit N (nombre de frames) → état <code>INIT</code>.</p>
+
+    <h3>INIT</h3>
+    <p>Création tâche CTR3, configuration timing, ouverture CSV, enregistrement T0.</p>
+    <ul>
+      <li><strong>DAQmx Create Channel</strong> — CI Comptage de fronts, <code>/USB-6353/ctr3</code>, edge Montant</li>
+      <li><strong>Nœud propriété</strong> <code>CI.ComptFronts.Term = /USB-6353/100MHzTimebase</code></li>
+      <li><strong>DAQmx Timing</strong> — source <code>/USB-6353/PFI7</code>, Échantillons finis, N samples, rate 10 Hz</li>
+      <li><strong>Get Date/Time In Seconds</strong> → SR <code>T0</code></li>
+      <li><strong>Open/Create/Replace File</strong> (mode Replace) → SR <code>file ref</code></li>
+      <li>Écriture header : <code>frame_index,timestamp_iso,timestamp_unix\n</code></li>
+    </ul>
+
+    <h3>START</h3>
+    <div class="warnbox">
+      <div class="title">⚠ Ordre critique</div>
+      DAQmx Start Task CTR3 (ce VI) doit être exécuté <strong>avant</strong> le démarrage des tâches DO/AO du VI principal. Sinon le premier trigger caméra n'est pas capturé.
+    </div>
+    <ul>
+      <li>DAQmx Start Task (CTR3)</li>
+      <li>frame_i → 0</li>
+      <li>→ état RUNNING</li>
+    </ul>
+
+    <h3>RUNNING</h3>
+    <p>Lecture non-bloquante d'un sample. Boucle sur lui-même jusqu'à réception ou Stop.</p>
+    <ul>
+      <li><strong>DAQmx Read</strong> — Compteur DBL, 1 voie, 1 échantillon, timeout 0.01 s</li>
+      <li>Case sur l'erreur : <strong>True</strong> (timeout) → effacer erreur → RUNNING</li>
+      <li>Case sur l'erreur : <strong>False</strong> (No Error) → ticks → SR → état WRITE</li>
+      <li>Bouton Stop → forcer état STOP</li>
+    </ul>
+
+    <h3>WRITE</h3>
+    <p>Calcul timestamp, gestion rollover, écriture ligne CSV.</p>
+    <ul>
+      <li>Si <code>ticks &lt; ticks_prev</code> → rollover → <code>offset += 4 294 967 296</code></li>
+      <li><code>ticks_prev ← ticks</code> (valeur brute, sans offset)</li>
+      <li><code>dt = (ticks + offset) / 100 000 000.0</code></li>
+      <li><code>T_absolu = T0 + dt</code></li>
+      <li>Format Date/Time String <code>%Y-%m-%dT%H:%M:%S.%3u</code> → timestamp_iso</li>
+      <li>Conversion DBL(T_absolu) → timestamp_unix</li>
+      <li>Write to Text File : <code>"%d,%s,%.3f\n"</code></li>
+      <li>frame_i + 1 — si frame_i ≥ N → STOP, sinon → RUNNING</li>
+    </ul>
+
+    <h3>STOP</h3>
+    <ol>
+      <li>DAQmx Stop Task</li>
+      <li>DAQmx Clear Task</li>
+      <li>Close File</li>
+      <li>Reset SR : ticks_prev, offset → 0</li>
+      <li>→ état IDLE</li>
+    </ol>
+  </section>
+
+  <!-- 4. SHIFT REGISTERS -->
+  <section>
+    <h2><span class="num">04</span> Shift Registers</h2>
+    <div class="sr-grid">
+      <div class="sr-item"><div class="sr-name">état</div><div class="sr-type">Enum</div><div class="sr-desc">État courant</div></div>
+      <div class="sr-item"><div class="sr-name">task ref</div><div class="sr-type">DAQmx Task</div><div class="sr-desc">Référence CTR3</div></div>
+      <div class="sr-item"><div class="sr-name">file ref</div><div class="sr-type">File Refnum</div><div class="sr-desc">Fichier CSV ouvert</div></div>
+      <div class="sr-item"><div class="sr-name">T0</div><div class="sr-type">Timestamp</div><div class="sr-desc">Heure au Start</div></div>
+      <div class="sr-item"><div class="sr-name">ticks</div><div class="sr-type">DBL</div><div class="sr-desc">Valeur DAQmx Read</div></div>
+      <div class="sr-item"><div class="sr-name">ticks_prev</div><div class="sr-type">DBL — init 0</div><div class="sr-desc">Frame précédente</div></div>
+      <div class="sr-item"><div class="sr-name">offset</div><div class="sr-type">DBL — init 0</div><div class="sr-desc">Cumul rollovers × 2³²</div></div>
+      <div class="sr-item"><div class="sr-name">frame_i</div><div class="sr-type">I32 — init 0</div><div class="sr-desc">Index frame courante</div></div>
+    </div>
+  </section>
+
+  <!-- 5. FORMAT CSV -->
+  <section>
+    <h2><span class="num">05</span> Format CSV</h2>
+    <p>Fichier écrasé à chaque Start. Chemin défini par constante dans INIT.</p>
+    <table>
+      <tr><th>Colonne</th><th>Type</th><th>Exemple</th><th>Description</th></tr>
+      <tr><td><code>frame_index</code></td><td>I32</td><td class="val">0, 1, 2…</td><td>Numéro de frame (0-indexé)</td></tr>
+      <tr><td><code>timestamp_iso</code></td><td>String</td><td class="val">2026-03-09T11:13:54.223</td><td>ISO 8601, précision ms</td></tr>
+      <tr><td><code>timestamp_unix</code></td><td>DBL</td><td class="val">3855896034.224</td><td>Secondes depuis 01/01/1904 (epoch LV)</td></tr>
+    </table>
+    <h3>Conversion Python</h3>
+    <pre><span class="kw">import</span> pandas <span class="kw">as</span> pd
+df = pd.read_csv(<span class="str">'Timestamp.csv'</span>)
+<span class="cm"># offset LV 1904 → Unix 1970 = 2 082 844 800 s</span>
+df[<span class="str">'datetime'</span>] = pd.to_datetime(df[<span class="str">'timestamp_unix'</span>] - 2082844800, unit=<span class="str">'s'</span>)</pre>
+  </section>
+
+  <!-- 6. VALIDATION -->
+  <section>
+    <h2><span class="num">06</span> Résultats de validation</h2>
+    <table>
+      <tr><th>Test</th><th>Résultat</th><th>Statut</th></tr>
+      <tr><td>Précision à 20.9 Hz</td><td>Jitter 358 µs (générateur NI-MAX)</td><td><span class="ok">✓</span></td></tr>
+      <tr><td>Régularité à 2.5 Hz</td><td>Std = 0 µs</td><td><span class="ok">✓</span></td></tr>
+      <tr><td>Rollover à 0.1 Hz</td><td>2 rollovers détectés et compensés</td><td><span class="ok">✓</span></td></tr>
+      <tr><td>Monotonie timestamps</td><td>Strictement croissants sur 10 frames</td><td><span class="ok">✓</span></td></tr>
+      <tr><td>Format timestamp_iso</td><td>ISO 8601 propre, pas de double séparateur</td><td><span class="ok">✓</span></td></tr>
+    </table>
+  </section>
+
+</div>
+
+<footer>
+  <span>VI Timestamp — Institut Fresnel</span>
+  <span>USB-6353 · CTR3 · 100 MHz · LabVIEW 2018</span>
+</footer>
+
+</body>
+</html>
