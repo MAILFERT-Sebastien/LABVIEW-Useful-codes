@@ -1,0 +1,19 @@
+<Configuration>
+  <Target name="Poste de travail">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="Read_Data.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="1522"/>
+          <SignalUID value="1460"/>
+        </Generic>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>

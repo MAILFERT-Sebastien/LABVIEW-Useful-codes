@@ -1,0 +1,106 @@
+{
+  "script": "generate_daq_sequence.py",
+  "version": "v2.0",
+  "generated": "2026-03-17T15:09:15",
+  "sample_rate_hz": 100000,
+  "total_samples": 89001,
+  "duration_s": 0.89001,
+  "files": {
+    "ao_master": {
+      "filename": "ao_master.bin",
+      "dtype": "float64",
+      "shape": [
+        89001,
+        4
+      ],
+      "columns": [
+        "col0: AO0#1 laser_405nm (V)",
+        "col1: AO1#1 XY_X (reserve 0V)",
+        "col2: AO2#1 Pockels (V)",
+        "col3: AO3#1 Z_piezo (V)"
+      ]
+    },
+    "ao_slave": {
+      "filename": "ao_slave.bin",
+      "dtype": "float64",
+      "shape": [
+        89001,
+        3
+      ],
+      "columns": [
+        "col0: AO0#2 laser_488nm (V)",
+        "col1: AO1#2 laser_561nm (V)",
+        "col2: AO2#2 laser_640nm (V)"
+      ]
+    },
+    "do_master": {
+      "filename": "do_master.bin",
+      "dtype": "uint8",
+      "shape": [
+        89001,
+        8
+      ],
+      "columns": [
+        "col0: P0.0 pulse_filtre",
+        "col1: P0.1 laser_405_DO (reserve 0)",
+        "col2: P0.2 laser_455_DO (reserve 0)",
+        "col3: P0.3 blanking (1=lasers OFF)",
+        "col4: P0.4 trigger_camera",
+        "col5: P0.5 laser_488_DO (reserve 0)",
+        "col6: P0.6 laser_561_DO",
+        "col7: P0.7 laser_640_DO (reserve 0)"
+      ]
+    }
+  },
+  "labview_read": {
+    "ao_master": "Read Binary File DBL, count=356004, then Reshape Array [89001, 4]",
+    "ao_slave": "Read Binary File DBL, count=267003, then Reshape Array [89001, 3]",
+    "do_master": "Read Binary File U8, count=712008, then Reshape Array [89001, 8]"
+  },
+  "acquisition": {
+    "NPOS": 1,
+    "NZ": 1,
+    "channels_active": [
+      {
+        "channel_id": 1,
+        "laser_nm": 488,
+        "laser_idx": 2,
+        "power_v": 4.0,
+        "t_expo_s": 0.09000000000000001,
+        "polar_on": false,
+        "filter_number": 1,
+        "pulse_ms": 11,
+        "npol": 1,
+        "pockels_v": [
+          0.0
+        ]
+      },
+      {
+        "channel_id": 3,
+        "laser_nm": 640,
+        "laser_idx": 4,
+        "power_v": 4.25,
+        "t_expo_s": 0.3,
+        "polar_on": false,
+        "filter_number": 1,
+        "pulse_ms": 31,
+        "npol": 1,
+        "pockels_v": [
+          0.0
+        ]
+      }
+    ],
+    "single_channel_mode": false,
+    "t_readout_s": 0.05,
+    "extratime_s": 0.2,
+    "z_array_v": [
+      5.0
+    ],
+    "xy_array_v": [
+      [
+        0.0,
+        0.0
+      ]
+    ]
+  }
+}

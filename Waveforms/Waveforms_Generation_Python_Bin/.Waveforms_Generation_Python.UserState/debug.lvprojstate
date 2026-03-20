@@ -1,0 +1,19 @@
+<Configuration>
+  <Target name="Poste de travail">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="Write_JSON.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="1312"/>
+          <SignalUID value="1324"/>
+        </Generic>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>

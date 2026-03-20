@@ -2,4 +2,8 @@
 My Computer = "10.48.0.169"
 
 [Poste de travail]
+<<<<<<< Updated upstream
 Poste de travail = "169.254.37.70"
+=======
+Poste de travail = "10.48.0.169"
+>>>>>>> Stashed changes

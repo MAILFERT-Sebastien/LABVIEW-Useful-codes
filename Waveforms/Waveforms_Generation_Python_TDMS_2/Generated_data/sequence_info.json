@@ -1,0 +1,108 @@
+{
+  "script": "generate_daq_sequence.py",
+  "version": "v2.0",
+  "generated": "2026-03-19T12:20:05",
+  "sample_rate_hz": 100000,
+  "total_samples": 250000,
+  "duration_s": 2.5,
+  "tdms_file": "daq_sequence.tdms",
+  "tdms_groups": {
+    "AO_Master": {
+      "channels": [
+        "laser_405nm",
+        "XY_X",
+        "Pockels",
+        "Z_piezo"
+      ],
+      "dtype": "float64",
+      "mapping": [
+        "AO0#1",
+        "AO1#1",
+        "AO2#1",
+        "AO3#1"
+      ]
+    },
+    "AO_Slave": {
+      "channels": [
+        "laser_488nm",
+        "laser_561nm",
+        "laser_640nm"
+      ],
+      "dtype": "float64",
+      "mapping": [
+        "AO0#2",
+        "AO1#2",
+        "AO2#2"
+      ]
+    },
+    "DO_Master": {
+      "channels": [
+        "filtre",
+        "L405",
+        "L455",
+        "blanking",
+        "trigger",
+        "L488",
+        "L561",
+        "L640"
+      ],
+      "dtype": "float64",
+      "mapping": [
+        "P0.0",
+        "P0.1",
+        "P0.2",
+        "P0.3",
+        "P0.4",
+        "P0.5",
+        "P0.6",
+        "P0.7"
+      ]
+    }
+  },
+  "acquisition": {
+    "NPOS": 1,
+    "NZ": 1,
+    "channels_active": [
+      {
+        "channel_id": 1,
+        "laser_nm": 488,
+        "laser_idx": 2,
+        "power_v": 0.0,
+        "t_expo_s": 1.0,
+        "polar_on": false,
+        "filter_number": 1,
+        "pulse_ms": 11,
+        "npol": 1,
+        "pockels_v": [
+          0.0
+        ]
+      },
+      {
+        "channel_id": 3,
+        "laser_nm": 488,
+        "laser_idx": 2,
+        "power_v": 0.0,
+        "t_expo_s": 1.0,
+        "polar_on": false,
+        "filter_number": 1,
+        "pulse_ms": 31,
+        "npol": 1,
+        "pockels_v": [
+          0.0
+        ]
+      }
+    ],
+    "single_channel_mode": false,
+    "t_readout_s": 0.05,
+    "extratime_s": 0.2,
+    "z_array_v": [
+      5.0
+    ],
+    "xy_array_v": [
+      [
+        0.0,
+        0.0
+      ]
+    ]
+  }
+}
