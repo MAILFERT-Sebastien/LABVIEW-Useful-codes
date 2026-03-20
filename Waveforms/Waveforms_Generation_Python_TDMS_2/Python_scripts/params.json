@@ -1,0 +1,100 @@
+{
+    "Sample rate OUT":100000,
+    "Start/Live (0/1) OUT":true,
+    "Channel_Cluster_Array OUT":[
+        {
+            "Laser":2,
+            "Power (%)":0,
+            "Exposure time (s)":1,
+            "Channel ON-OFF":true,
+            "Polar ON-OFF":false,
+            "Filter":0
+        },
+        {
+            "Laser":2,
+            "Power (%)":0,
+            "Exposure time (s)":1,
+            "Channel ON-OFF":false,
+            "Polar ON-OFF":false,
+            "Filter":0
+        },
+        {
+            "Laser":2,
+            "Power (%)":0,
+            "Exposure time (s)":1,
+            "Channel ON-OFF":true,
+            "Polar ON-OFF":false,
+            "Filter":0
+        }
+    ],
+    "Readout time (s) OUT":0.0500000000000000028,
+    "Extra time for FW (s) OUT":0.200000000000000011,
+    "Polar_Array OUT":[
+        [
+            0,
+            1,
+            -1,
+            0,
+            0.5
+        ],
+        [
+            1,
+            -1,
+            0,
+            0.200000000000000011,
+            0.800000000000000044
+        ],
+        [
+            -1,
+            0,
+            1,
+            0.299999999999999989,
+            0.200000000000000011
+        ],
+        [
+            0,
+            1,
+            0.200000000000000011,
+            0.400000000000000022,
+            -0.5
+        ],
+        [
+            1,
+            -0.5,
+            0,
+            0.5,
+            -0.299999999999999989
+        ],
+        [
+            -0.5,
+            1,
+            0,
+            -0.599999999999999978,
+            -1
+        ],
+        [
+            0,
+            1,
+            0.900000000000000022,
+            -1,
+            1
+        ],
+        [
+            1,
+            0.5,
+            0,
+            1,
+            0.699999999999999955
+        ]
+    ],
+    "Z_Array OUT":[
+        5
+    ],
+    "Multipositions current OUT":[
+        0,
+        0
+    ],
+    "Multipositions array OUT":[
+        []
+    ]
+}
