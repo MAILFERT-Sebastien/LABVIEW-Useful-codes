@@ -1,0 +1,19 @@
+<Configuration>
+  <Target name="My Computer">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="PI-C867-Joystick.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="420"/>
+          <SignalUID value="251"/>
+        </Generic>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>
