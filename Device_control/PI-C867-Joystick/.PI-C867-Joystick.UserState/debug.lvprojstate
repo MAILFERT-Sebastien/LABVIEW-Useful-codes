@@ -1,7 +1,7 @@
 <Configuration>
-  <Target name="Poste de travail">
+  <Target name="My Computer">
     <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
-    <VI name="Main.vi">
+    <VI name="PI-C867-Joystick.vi">
       <Breakpoints>
         <NodeIndexes>
         </NodeIndexes>
@@ -10,8 +10,8 @@
       </Breakpoints>
       <Probes>
         <Generic>
-          <SignalUID value="495"/>
-          <SignalUID value="1071"/>
+          <SignalUID value="420"/>
+          <SignalUID value="251"/>
         </Generic>
       </Probes>
     </VI>

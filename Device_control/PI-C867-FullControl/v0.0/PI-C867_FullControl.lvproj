@@ -12,10 +12,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="CheckMove.vi" Type="VI" URL="../SubVIs/CheckMove.vi"/>
-		<Item Name="FGV_Current_Positions.vi" Type="VI" URL="../FGV_Controls/FGV_Current_Positions.vi"/>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="State.ctl" Type="VI" URL="../FGV_Controls/State.ctl"/>
+		<Item Name="v0.0" Type="Folder" URL="..">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Dépendances" Type="Dependencies"/>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
