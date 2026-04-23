@@ -1,34 +1,5 @@
 <Configuration>
   <Target name="Poste de travail">
     <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
-    <VI name="C867_Macro_çTest.vi">
-      <Breakpoints>
-        <NodeIndexes>
-        </NodeIndexes>
-        <SignalIndexes>
-        </SignalIndexes>
-      </Breakpoints>
-      <Probes>
-        <Generic>
-          <SignalUID value="43"/>
-          <SignalUID value="80"/>
-        </Generic>
-      </Probes>
-    </VI>
-    <VI name="Main.vi">
-      <Breakpoints>
-        <NodeIndexes>
-        </NodeIndexes>
-        <SignalIndexes>
-        </SignalIndexes>
-      </Breakpoints>
-      <Probes>
-        <Generic>
-          <SignalUID value="1163"/>
-          <SignalUID value="1656"/>
-          <SignalUID value="2322"/>
-        </Generic>
-      </Probes>
-    </VI>
   </Target>
 </Configuration>
