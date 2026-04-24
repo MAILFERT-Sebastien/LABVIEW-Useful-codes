@@ -1,0 +1,626 @@
+
+CONTROL application release notes
+   1.3.10   Added command line, connect parameters.
+    1.3.9   Touch-up on selection propagation.
+    1.3.8   Added Harmonik Gateway plugin with support of Red and Green SHG modules.
+    1.3.7   Changed to fit the new Startup/Shutdown handling in CoreLib.
+    1.3.6   Added features for uploading of device-log to NKTP cloud.
+    1.3.5   Added layout restore functionality.
+    1.3.4   Added ethernet discovery tool.
+    1.3.3   EULA Updated, Connect menu updated.
+    1.3.2   Minor typos.
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.2   Added busy column to the Device Status.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.7   Added serial speed capability status to the DeviceMonitor.
+    1.0.6   Added Extensions Overview to the tool menu.
+    1.0.5   Added Instruction manual link in the help menu.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+LOGGER library release notes
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+INTERBUS library release notes
+   1.3.44   Fixed log downloader bug when module answers BUSY.
+            Added multiselection capabilities in Port Configuration dialog. 
+            Renamed module type 0xA1 from "Hermes" to "Fiber delivery module".
+   1.3.43   Added support for multiple connect settings.
+            Added new moduletypes.
+   1.3.42   Optimized log downloading.
+   1.3.41   Added minor features related to the FirmwareUploader.
+   1.3.40   Added new index to the devicelog db.
+   1.3.39   Optimized dedicated Read, Write & WriteRead.
+   1.3.38   Fixed read after write not being flagged.
+   1.3.37   Fixed indexed read after write.
+   1.3.36   Added new moduletypes.
+   1.3.35   Added shutdown without clean-up functionality.
+   1.3.34   Extended the upload wait ready after uploading to 5 seconds.
+   1.3.33   Fixed a bug in the upload functionality, not retrying correctly.
+   1.3.32   Fixed some uploader scanning issues.
+   1.3.31   Fixed a bug not removing network port settings.
+            Added Advanced settings checkbox and handling.
+   1.3.30   Added new moduletypes.
+   1.3.29   Added custom cloud index generation for circular logs.
+   1.3.28   Added support for cloud log transfer.
+            Added support for portable version, storing settings locally.
+   1.3.27   Minor fixes related to the NKTPDLL.
+   1.3.26   Added index register handling.
+   1.3.25   Added new moduletypes.
+   1.3.24   Added new moduletypes.
+   1.3.23   Updated Upload functionality - Related to module type 0x20-0x2F.
+   1.3.22   Added device discovery tool to the portconfig menu.
+   1.3.21   Updated Upload functionality.
+   1.3.20   Updated Upload functionality.
+   1.3.19   Removed partnumber register.
+   1.3.18   Minor change in devicelog database creation.
+   1.3.17   Minor change in fetching controllers, now checked for not in closing state.
+   1.3.16   Moved the option for limited scanning range, to public access via the
+            Connect->Config Menu.
+   1.3.15   Modified the socket startup, to allow for setting host port to 0.
+            - This will skip binding to a specific port on the ethernet interface.
+            Added internal option for setting limited address scanning range.
+   1.3.14   Corrected a bug where a nack'ed write was not doing the following read.
+   1.3.13   Corrected bug related to detection of old moduletypes 0x20-0x2F
+   1.3.12   Added new moduletypes.
+   1.3.11   Added support for Fast/Slow log size parameter register.
+   1.3.10   Turned off Nagle's algorithm on network communication.
+    1.3.9   Added new moduletypes.
+    1.3.8   Added special log hack for MiTo.
+    1.3.7   Added support for new moduletypes.
+    1.3.6   Corrected a bug resulting in log download not working.
+    1.3.5   Added new messages to the GetStatusMessage functions.
+    1.3.4   Added support for module type 0x8F
+    1.3.3   Added support for bootloader upgrade.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Added reliability to the Register Read, Write & WriteRead functions.
+    1.3.0   Project restructured for new CI/CD pipeline.
+   1.2.17   Added new moduletypes.
+   1.2.16   Corrected a bug resulting in communication lockup.
+   1.2.15   Optimized logfile downloading.
+   1.2.14   Simplified the networking communication.
+   1.2.13   Added new moduletypes.
+   1.2.12   Corrected a bug in the index register type resulting in duplicate entries on timeout.
+            Corrected a bug in the automatic speed change functionality.
+   1.2.11   Removed some debugging leftovers.
+   1.2.10   Corrected a bug in the log downloading being slow.
+            Updated the FW upload functionality.
+    1.2.9   Added new moduletypes.
+    1.2.8   Corrected a bug in network port shutdown.
+    1.2.7   Corrected long timeout detection issue.
+    1.2.6   Corrected a bug related to the system type register.
+    1.2.5   Optimized logfile error handling.
+    1.2.4   Moved the devicelog.db location to ProgramData folder.
+    1.2.3   Moved settings to system scope.
+    1.2.2   Temporary disable index check in mainlog download.
+    1.2.1   Added support for index based registers.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.1.6   Corrected a bug in log downloading on main logs being limited to 262144 entrys.
+    1.1.5   Corrected a bug in the busy retry handling.
+    1.1.4   Added support functions for DateTime handling.
+    1.1.3   Added support for background log downloading on new systems.
+    1.1.2   Decreased devicelog database stability (PRAGMA synchronous=0)
+    1.1.1   Implemented high speed serial functionality.
+    1.1.0   Optimized log handling on AdjustiK and AcoustiK
+    1.0.9   Removed auto start log download on (serial->USB devices), SuperK Extreme among others.
+    1.0.8   Corrected database issue in the devicelog, not being able to restart.
+    1.0.7   Included new SuperK in log handling
+            Increased devicelog database stability (PRAGMA synchronous=2)
+    1.0.6   Restructured to meet DLL requirements
+    1.0.5   Removed a few minor bugs
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+CTRLLIB library release notes
+   1.3.21   Added new function for adding main & child user controls.
+   1.3.20   Added AlignmentMode widget.
+   1.3.19   Added Ctrl+Shift+E shortcut to emission buttons.
+            Added shortcut tooltip to emission buttons.
+   1.3.18   WavelengthChart updated with CSV export.
+            Disabled spacebar activation on emission buttons.
+   1.3.17   Minor touch-up on combobox.
+   1.3.16   WavelengthChart updated with Zoom, Autoscaling & Save.
+   1.3.15   Added support for popup sliders.
+   1.3.14   Fixed sporious crash in ScaleSlider.
+   1.3.13   Updated WavelengthChart to fit Chromatune.
+   1.3.12   Added warning dialog to AeroPulse G3 remotecontrol.
+   1.3.11   Added AeroPulseFS10 remotecontrol.
+   1.3.10   Added fluorophoreview to wavelengthchart.
+    1.3.9   Added AeroPulse G3 remotecontrol with DWLS support.
+            Updated OrigamiRemoteControl to support DWLS.
+    1.3.8   Fixed a parent/child issue in the selector & combobox.
+    1.3.7   Extended the OrigamiRemoteControl to support DWLS.
+    1.3.6   Added new wavelength chart.
+    1.3.5   Added support for THGi in the OrigamiRemoteControl.
+    1.3.4   Corrected the lineedit duplicate change signalling
+    1.3.3   Included special Origami user controls.
+    1.3.2   Extended the remotecontrol widget with new functionality.
+    1.3.1   Added new functionality to the sliders.
+            Removed mouse scroll functionality from the sliders.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.3   Corrected a bug in wavelength spectrum, being able to move a disabled channel.
+    1.2.2   Added Overlay Image user control.
+    1.2.1   Corrected the comboslider to fit the new sweep functionality in Select.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.8   Corrected slider control, being clipped on increased font size.
+    1.0.7   Corrected slider control issue, sometimes being wrong size.
+    1.0.6   Corrected slider control to avoid bouncing response.
+    1.0.5   Corrected dropdown control to respect enabled state.
+            Corrected slider control to reflect changes due to min/max changes.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+CORELIB library release notes
+   1.3.12   Minor changes related to new log download functionality.
+   1.3.11   Fixed log naming to fit 16bit moduletypes.
+   1.3.10   Renamed logs.
+    1.3.9   Restructured startup/Shutdown handling.
+    1.3.8   Fixed hexfile handling.
+    1.3.7   Fixed hexfile handling.
+    1.3.6   Added cloud support.
+    1.3.5   Updated dock widget handler.
+    1.3.4   Added support for uploading delegate.
+    1.3.3   Removed the partnumber functionality.
+    1.3.2   Extended the device startup information.
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.5   Modified column data related to the Seed 10W.
+    1.2.4   Added busy column.
+    1.2.3   Added new column data types for the Seed 10W.
+    1.2.2   Updated the extension overview to show full path to the located extensions.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.9   Corrected application log functionality to match new Qt version 5.7
+    1.0.8   Added serial speed capability status to the DeviceMonitor.
+    1.0.7   Changed Extension icon states in the DeviceMonitor.
+    1.0.6   Added column data types for the register logger.
+    1.0.5   Removed a few minor bugs.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+SHAREDLIB library release notes
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+ACOUSTIK/ADJUSTIK plugin release notes
+   1.3.17   Added configuration of system Ethernet Subnet Mask and Default Gateway.
+   1.3.16   Added Wavelength locking to Adjustik with a Basik module.
+   1.3.15   Fixed missing power readout in some configurations.
+   1.3.14   Added special config functionality.
+   1.3.13   Added support for Alignment mode in Adjustik.
+   1.3.12   Added support for a new Frontpanel setting.
+   1.3.11   Fixed a minor issue in Adjustik HP, not handling current mode correctly.
+   1.3.10   Added system serial for mixed systems.
+    1.3.9   Fixed a single typo.
+    1.3.8   Fixed a few typos.
+    1.3.7   Added support for BOOSTIK HP Amplifier.
+    1.3.6   Modified to suit the new emission functionality in CONTROL.
+    1.3.5   Concealed the power/current mode page on Adjustik HP.
+    1.3.4   Concealed the power control on Adjustik HP, not supporting this.
+    1.3.3   Added support for Adjustik HP.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.5   Added clock settings page.
+    1.2.4   Amplitude modulation features now only visible for systems supporting this.
+    1.2.3   Corrected a bug resulting in gui not always initiated correctly.
+    1.2.2   Modified to meet new index based registers in the communication kernel.
+    1.2.1   Corrected Amplitude & Wavelength modulation settings capability.
+            Minimum sawtooth frequency now 0.001Hz
+            Corrected startup issue not always showing current system status.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.1.3   Added power/current selection on systems supporting this.
+    1.1.2   Removed unused gain slider from amplitude modulation settings.
+    1.1.1   Corrected Amplitude & Wavelength modulation settings capability.
+    1.1.0   Corrected slider control calculations.
+    1.0.9   Removed modulation features for unsupported PCB versions.
+    1.0.8   Corrected some minor bugs related to External/Internal modulation control.
+    1.0.7   Corrected some minor bugs related to the previous version changes.
+    1.0.6   Internal Basik in Adjustik is now accessible on Adjustik FW prior 1.09
+    1.0.5   Corrected bug regarding sliders sometimes being to short.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+AEROPULSE FS-10 plugin release notes
+    1.1.0   Support added for advanced timing control, Harmonic generation and fiber delivery modules
+    1.0.0   Initial release, port from FS50.
+-------------------------------------------------------------------------------
+
+AEROPULSE FS-20 Alpha plugin release notes
+   1.3.13   Fixed vertical slider unit visibility.
+   1.3.12   Modified to suit the new emission functionality in CONTROL.
+   1.3.11   Added timeout feature on ethernet config fields.
+   1.3.10   Changed reprate slider to kHz.
+            Added TPSR Auto Calibration functionality.
+    1.3.9   Added delayed extension startup.
+    1.3.8   Corrected the Enable/Disable handling of the AOM slider.
+    1.3.7   Postponed the stretcher setpoint read 2s at startup.
+    1.3.6   Disabled the AOM output slider in external mode.
+    1.3.5   Corrected a few typos.
+    1.3.4   Added Pulses per trigger and Gate on/off combo.
+    1.3.3   Removed the AGB temperature readout
+            Disable the output power level slider above 50Mhz rep. rate.
+    1.3.2   Corrected a bug related to the output power level setpoint
+    1.3.1   Change systemtype to 2 and removed the FW version constraints.
+    1.3.0   Initial release.
+-------------------------------------------------------------------------------
+
+AEROPULSE FS-50 plugin release notes
+    1.5.0   Support of new Ultra Fast Timing Board (UFTB).
+    1.4.1   Do not disable Ouput power level slider based upon Reptition rate.
+    1.4.0   Support of Firmware version 2.0
+    1.3.7   Fixed vertical slider unit visibility.
+    1.3.6   Modified to suit the new emission functionality in CONTROL.
+    1.3.5   Added timeout feature on ethernet config fields.
+    1.3.4   Changed reprate slider to kHz.
+    1.3.3   Added TPSR Auto Calibration functionality.
+    1.3.2   Added delayed extension startup.
+    1.3.1   Postponed the stretcher setpoint read 2s at startup.
+    1.3.0   Initial release, port from FS20.
+-------------------------------------------------------------------------------
+
+AEROPULSE G3 plugin release notes
+    1.0.9   DWLS setpoints for the Harmonic modules, was not saved correctly.
+    1.0.8   Minor fixes related to Harmonic modules.
+    1.0.7   Minor touch-up on readouts.
+    1.0.6   Minor touch-up on readouts.
+    1.0.5   Added estimated power readout.
+    1.0.4   Minor fixes related to Harmonic modules.
+    1.0.3   Corrected Input Power and Reflection power sources.
+    1.0.2   Corrected Ethernet settings page not being visible.
+    1.0.1   Removed repetition rate slider on systems without PulsePicker.
+            Mikro modules no longer being shown in the the Device Selector.
+    1.0.0   Initial release, stripped down port from SuperK Fianium.
+-------------------------------------------------------------------------------
+
+AEROPULSE plugin release notes
+    1.3.5   Modified to suit the new emission functionality in CONTROL.
+    1.3.4   Removed unavailable external settings.
+    1.3.3   Moved the SHG extension to the Harmonic Library.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.7   Added wavelength control to the SHG module.
+    1.2.6   Added humidity readout to the SHG module.
+    1.2.5   Added new stretcher functionality.
+    1.2.4   Added support for the SHG module.
+    1.2.3   Minor tweaks on the Pulse Stretcher.
+    1.2.2   Corrected runtime source from mainboard to booster.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.8   Added support for new aeroPulse platform.
+            Added pulse picker (stretcher)
+    1.0.7   Corrected operating modes dropdown.
+    1.0.6   Corrected power readout doing repetition rate changes(2).
+    1.0.5   Corrected power readout doing repetition rate changes.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+ATLANTIS plugin release notes
+    1.3.4   Added NLF & Service runtime readout.
+    1.3.3   Modified to suit the new emission functionality in CONTROL.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.3   Removed all frontpanel relationships.
+    1.0.2   Updated and corrected interbus communication
+    1.0.1   Initial release.
+-------------------------------------------------------------------------------
+
+BASIK plugin release notes
+    1.3.3   Added support for wavelength lock control.
+    1.3.2   Modified to suit the new emission functionality in CONTROL.
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.2   Amplitude modulation features now only visible for modules supporting this.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.1.3   Corrected wide/narrow gain slider rounding.
+    1.1.2   Corrected integrating control slider visiblity issue.
+    1.1.1   Corrected slider control calculations.
+    1.1.0   Corrected some minor bugs related to phase shift compensation.
+    1.0.9   Corrected bug regarding sliders sometimes being to short.
+    1.0.8   Corrected a wavelength slider enable issue in Basik-mikro.
+    1.0.7   Implemented support for new functions in Basik PCB version 2.
+    1.0.6   Corrected some features, in Basik-mikro.
+    1.0.5   Added new features and Basik-mikro support.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+BOOSTIK Benchtop Amplifier plugin release notes
+    1.0.4   Added support input power source config.
+    1.0.3   Added support for system type 1.
+    1.0.2   Added support for Alignment mode.
+    1.0.1   Fixed Interlock indicator wrong status issue.
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+BOOSTIK Linecard plugin release notes
+   1.0.17   Added configuration of Reflection Shoutdown Threshold for System Type 1.
+   1.0.16   Updated scaling of Stage 1 Input Monitor.
+   1.0.15   Added support input power source config.
+   1.0.14   Added support for Alignment mode.
+   1.0.13   Changed name for SystemType 1.
+   1.0.12   Added support for SystemType 1 - Enabling St1 & St2 current sliders.
+   1.0.11   Modified to suit the new emission functionality in CONTROL.
+   1.0.10   Added new error messages.
+    1.0.9   Disabled the current slider and readout.
+    1.0.8   Allowed access to the power/current selector for FW versions above 1.00
+    1.0.7   Removed access to the power/current selector.
+    1.0.6   Adjusted input readout calculation.
+    1.0.5   Removed the register for FiberConfig.
+    1.0.4   Added readout of input power.
+    1.0.3   Corrected mW readings and setpoints from 1/1 to 1/10.
+    1.0.2   Removed the emission constrain from power/current selector.
+    1.0.1   Removed the current setpoint slider.
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+CHROMATUNE plugin release notes
+   1.0.17   Fixed accessory handling & Ready state.
+   1.0.16   Fixed external feedback visibility.
+   1.0.15   Simplified fluorophore selection.
+            Added support for multiple csv file imports.
+            Updated fluorophore renaming functionality.
+            Minor fixes related to sequence overwrite warnings.
+            Updated script print functionality.
+   1.0.14   Fixed a script decode error on IF statements.
+   1.0.13   Added support for combined Chromatune.
+   1.0.12   Added diagnostics for FW 1.05 and above.
+   1.0.11   Enabled script dialog command.
+   1.0.10   Added Script selector.
+    1.0.9   Fixed a few scripteditor issues, updated WavelengthChart.
+    1.0.8   Major upgrade with sequencing.
+    1.0.7   Fixed sequence power range not always being updated.
+    1.0.6   Added sequence functionality.
+    1.0.5   Changed to auto scaling on the spectrometer view
+    1.0.4   Major update with fluorophore manager and updated scripteditor
+    1.0.3   Added Alpha version scripteditor
+    1.0.2   Changed bandwidth slider from Stop/Start to Lower/Upper
+            Removed the "Main shutter indicator"
+    1.0.1   Corrected transmission factor
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+COMPACT plugin release notes
+    1.3.3   Modified to suit the new emission functionality in CONTROL.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.2   Modified to meet new index based registers in the communication kernel.
+    1.2.1   Corrected a bug resulting in slow updating of the user controls.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.5   Corrected slider control calculations.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+EOMIK plugin release notes
+    1.0.5   Added support for HARMONikII.
+    1.0.4   Added support for fEOMik.
+    1.0.3   Mainly rename & visibility state changes.
+    1.0.2   Mainly visibility state changes.
+            RF Gain changed to percentage.
+    1.0.1   Major upgrade to support GATEik & VOAik
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+SuperK EVO alfa plugin release notes
+    1.3.3   Modified to suit the new emission functionality in CONTROL.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.1   Corrected the current slider range and setpoint to mA from mA/10
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+SuperK EVO plugin release notes
+    1.3.10  Added NIM Trigger Delay slider for EVO pro.
+    1.3.9   Fixed external feedback for EVO pro.
+    1.3.8   Fixed a bug related to the new emission functionality in CONTROL.
+    1.3.7   Modified to suit the new emission functionality in CONTROL.
+    1.3.6   Added timeout on ethernet config fields.
+    1.3.5   Added support for external feedback for EVO Pro extension
+    1.3.4   Added EVO Pro extension.
+    1.3.3   Added support for 16bit moduletypes.
+    1.3.2   Added support for firmware version >= 1.03
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.5   Added functionality related to the current PCB revision.
+    1.2.4   Corrected bug related to operating mode selector.
+    1.2.3   Added support for ethernet settings.
+    1.2.2   Changed current slider from mA to percent.
+    1.2.1   Initial release.
+-------------------------------------------------------------------------------
+
+EXTENDUV plugin release notes
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+EXTREME plugin release notes
+    1.3.3   Modified to suit the new emission functionality in CONTROL.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.4   Removed a bug related to repetition rate controls. (Introduced in version 1.2.3)
+    1.2.3   Added support for SuperK Fianium & SuperK Fianium 20W
+    1.2.2   Added support for systems with NKTP booster module.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.5   Operation mode combobox now reflects the systems capabilities.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+FIANIUM plugin release notes
+   1.3.14   Minor touch-up on Interlock handling.
+   1.3.13   Fixed emission on/off button state at startup.
+   1.3.12   Removed repetition rate slider on systems without PulsePicker.
+   1.3.11   Fixed a few typos.
+   1.3.10   Fixed an error, not detecting seed module correctly.
+    1.3.9   Modified to suit the new emission functionality in CONTROL.
+    1.3.8   Added timeout feature on ethernet config fields.
+    1.3.7   The max reprate is now being taken from the Seed.
+    1.3.6   Added Ethernet settings page.
+    1.3.5   Added external feedback settings.
+    1.3.4   Corrected a bug in the Operating mode combo box.
+    1.3.3   Added support for FW versions with 16bit moduletype lists.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Initial release.
+-------------------------------------------------------------------------------
+
+Harmonic plugin release notes
+   1.0.27   THGi & SHGg Shutter handling updated.
+   1.0.26   THGi Shutter handling updated.
+   1.0.25   SHGg Shutter handling updated.
+   1.0.24   SHGg Changed to support DWLS in AeroPulseG3 & OrigamiXP.
+   1.0.23   Minor fixes related to AeroPulseG3, OrigamiXP & THG.
+   1.0.22   Minor fixes related to AeroPulseG3 & SHGg
+   1.0.21   Minor fixes related to AeroPulseG3.
+   1.0.20   Added support for AeroPulseG3.
+   1.0.19   Fixed SHGg and THGi wavelength change issue.
+   1.0.18   THGi Changed to support new shutter type.
+   1.0.17   THG Change to support Dynamic Wavelength Switching.
+   1.0.16   Corrected THG/FHG naming.
+   1.0.15   Corrected THG humidity readout scale.
+   1.0.14   Added support for the FHG module.
+   1.0.13   Added support for the THG module.
+   1.0.12   Added support for OrigamiRemoteControl.
+   1.0.11   Made the SHG gamma oven status indicator flash when not ready.
+   1.0.10   Added shutter state information to the details panel.
+    1.0.9   Corrected a bug in the SHG gamma, not fetching emission status at startup.
+    1.0.8   A few typos corrected.
+    1.0.7   Corrected a bug in Emission handling on spot changes.
+    1.0.6   Added emission handling in THGi module.
+    1.0.5   Added support for the THGi module.
+    1.0.4   Increased the SHG-Gamma oven setpoint to having 2 decimals.
+    1.0.3   Fixed a few bugs related to the indicators in the details panel.
+    1.0.2   Added the SHG-Gamma extension.
+    1.0.1   The existing SHG Extension moved from AeropulseLib to HarmonicLib.
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+HarmonikGW plugin release notes
+    1.1.1   Removed "Harmonik Gatewate" to "Koheras HARMONIK" product name.
+            Renamed "Green SHG" to SHG. Renamed "Red SHG" to SHG. Renamed "UV resonant SHG" to rSHG.
+            Renamed product name from "Harmonik" to HARMONIK HP.
+    1.1.0   Support of Harmonik GW SFG
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+Fiber delivery module plugin release notes
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+MiR plugin release notes
+    1.3.3   Modified to suit the new emission functionality in CONTROL.
+    1.3.2   Added support for 16bit moduletypes.
+    1.3.1   Corrected a bug in the Interlock handling.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.2   Updated the Interlock status messages.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.5   Initial release
+-------------------------------------------------------------------------------
+
+OMIK plugin release notes
+    1.0.2   PD Output scale changed to high priority.
+    1.0.1   Added error messages.
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+Origami plugin release notes
+   1.0.16   Fixed some issues with the DWLS support for THG.
+   1.0.15   Fixed some issues with the linear stage control.
+   1.0.14   Added support for linear stage control.
+   1.0.13   Added support for OrigamiRemoteControl to support DWLS in THG & THGi
+   1.0.12   Added timeout feature to ethernet config fields.
+   1.0.11   Updated with new OrigamiRemoteControl.
+   1.0.10   Fixed some clock setting issues.
+    1.0.9   Added CLI warning window.
+    1.0.8   Added error messages.
+    1.0.7   Added CLI enable/disable button in System Settings.
+    1.0.6   Removed the interlock reset button.
+    1.0.5   Removed all energy readouts and settings.
+    1.0.4   Added handling of repetition rate sequence, having null values.
+    1.0.3   Delayed the repetition rate, range reading.
+    1.0.2   Corrected a circular emit bug.
+    1.0.1   Corrected temperature readout precision.
+    1.0.0   Initial release
+-------------------------------------------------------------------------------
+
+OrQa plugin release notes
+    1.0.10  Fixed PID range issue.
+    1.0.9   PID settings range checks. Updated texts.
+    1.0.8   Changes to product name. Changes to Settings page.
+    1.0.7   Auto scale for all graphs per axis when there are multiple graphs per axis.
+    1.0.6   Added support for multiple axis in live data chart.
+    1.0.5   First release with live data chart.
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+SELECT plugin release notes
+    1.3.4   Fixed crash on wavelength sweep.
+    1.3.3   Fixed a startup issue, not always correctly pairing Select and RF-Driver.
+    1.3.2   Added support for SuperK Fianium (G3).
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.9   Removed all but one channel from wavelength sweep mode.
+            (Basically rolling back to version 1.2.7)
+    1.2.8   Included all channels in wavelength sweep mode.
+    1.2.7   Corrected a bug in wavelength spectrum, being able to move a disabled channel.
+    1.2.6   Added wavelength sweep functionality.
+            Corrected a bug related to the operating mode not being updated correctly on changes.
+    1.2.5   Added support for SuperK MIR.
+    1.2.4   Corrected a bug in the channel enable/disable logic.
+    1.2.3   Added support for SuperK Fianium.
+    1.2.2   Added support for SuperK EVO.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.7   Corrected startup issue, RF-Driver and Crystal not always connected correctly.
+    1.0.6   Corrected settings not always being loaded in time.
+    1.0.5   Corrected memory alignment issue (No RF-Driver connected)
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+TOOLSLIB plugin release notes
+    1.3.2   Added QR Code functionality.
+    1.3.1   Extended the key updater with support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.4   Added support data packager.
+    1.2.3   Added support for address change.
+    1.2.2   Added support for module type 0x70 in key updater tool.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.9   Memory issue corrected in key updater tool.
+    1.0.8   Corrected AVR/PIC detection function in key updater tool.
+    1.0.7   Extended the key updater with indexable register support.
+    1.0.6   Extended the key updater with multi update functionality.
+    1.0.5   Added key updater functionality.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
+
+UltraFastTimingboard plugin release notes
+    1.0.0   Initial release.
+-------------------------------------------------------------------------------
+
+VARIA plugin release notes
+    1.3.2   Overhauled sweep functionality.
+    1.3.1   Added support for 16bit moduletypes.
+    1.3.0   Project restructured for new CI/CD pipeline.
+    1.2.2   Added sweep functionality.
+    1.2.1   Modified to meet new index based registers in the communication kernel.
+    1.2.0   Stored settings moved from registry to ini files.
+    1.0.4   Initial release.
+-------------------------------------------------------------------------------
