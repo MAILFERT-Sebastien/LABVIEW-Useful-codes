@@ -1,0 +1,30 @@
+
+NKT Photonics Software Development Kit release notes
+    2.1.15  Added register file for module 3B.
+            Updated SDK Manual with section for Koheras HARMONIK.
+    2.1.14  NKTPDLL Updated.
+    2.1.13  Fixed bug in SDK Manual for aeroPULSE G3 FS (P4xx, NP4xx) - Description of register 90h.
+            Aligned SDK version with SDK Manual version (SDK Version 2.1.9 - 2.1.12 does not exist).
+    2.1.8   Updated register file: 8B.
+            Updated manual section for aeroPULSE G3.
+            Added manual sections for Ultrafast SHGi & THGi.
+            Updated examples to Visual Studio 2022.
+            Added aeroPuse G3 auto-tune Python and LabView examples.
+            Fixed Silabs driver install problem om 63 bit version of Windows 10 & 11.
+            Fixed NKTP_SDK_PATH environment variable which to use correct Windows style path.
+    2.1.7   Updated manual to include Koheras BOOSTIK HP.
+            Updated register files: 6A, 99.
+            Added register files: 35, 3A, 71, 81, 8F, 90.
+    2.1.6   Updated Generic User Interface to newest version.
+            Updated the following register files: 33, 34 & 36.
+            Added the register file 9D.
+    2.1.5   Added manual and register file for Chromatune.
+    2.1.4   Fixed bugs in Python examples (PY NKTP_DLL.py)
+            Updated SDK Instruction Manual to latest version
+            Updated 64 bit Silabs driver to version 11.2.0
+            Added register files for modules: 6A, 8A, 8B, 79, 88 & 95
+    2.1.3   NKTPDLL Updated
+    2.1.2   Added log download example in C#
+            Improved the IB_Example_CS
+    2.1.1   Initial release.
+-------------------------------------------------------------------------------
