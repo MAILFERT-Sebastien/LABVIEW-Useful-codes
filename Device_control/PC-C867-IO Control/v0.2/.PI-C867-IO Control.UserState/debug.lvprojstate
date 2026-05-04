@@ -1,5 +1,37 @@
 <Configuration>
   <Target name="Poste de travail">
     <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="C867_Init.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="375"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="Main.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="786"/>
+          <SignalUID value="9146"/>
+          <SignalUID value="3624"/>
+          <SignalUID value="4261"/>
+          <SignalUID value="5743"/>
+          <SignalUID value="3446"/>
+          <SignalUID value="1972"/>
+        </Generic>
+      </Probes>
+    </VI>
   </Target>
 </Configuration>
