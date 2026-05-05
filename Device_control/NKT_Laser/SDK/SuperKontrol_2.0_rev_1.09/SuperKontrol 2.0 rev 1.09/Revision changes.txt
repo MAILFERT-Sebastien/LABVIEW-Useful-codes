@@ -1,0 +1,41 @@
+SuperKontrol 2.0
+
+Revision 1.09 24/09/2014
+Fixed USB driver revision detection failure.
+
+Revision 1.08 26/02/2014
+Fixed compatibility issue with USB driver.
+Fixed connect issue to multiple RF drivers.
+
+Revision 1.07 15/11/2011
+Added support for Nim readout in frontpanel.
+
+Revision 1.06 15/11/2011
+Added support for SuperK Selekt FSK mode.
+Added support for stand-alone mode without mainboard.
+Fixed most lock-up situations. 1 bug exist(fast button press connect/disconnect)
+Fixed bug with regards to multiple selekts and RF-drivers.
+Added support for higher pulsepicker ratios.
+
+Revision 1.05 18/07/2011
+Added support for SuperK Varia
+
+Revision 1.04 14/06/2011
+Added support for SuperK Selekt
+
+Revision 1.03 19/05/2011
+Added support for External feedback and modulation
+Added support for monitor selector in SuperK select
+Added support for 2 Boosters
+Added Booster 2 Pump temperature and current
+
+Revision 1.2 8/02/2011 
+Fixed Windows 7 serial communication compatibility. Firmware upload feature added.
+Fixed keyswitch readout.
+Hangup fixes.
+Log and firmware readout if cancelled.
+Check for Silabs driver version above 6.30
+
+Revision 1.1 20/01/2011 
+Program supports more than 1 Selector and RF driver.
+

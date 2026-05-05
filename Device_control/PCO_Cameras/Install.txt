@@ -1,0 +1,7 @@
+Installer les drivers USB3
+Installer le logiciel Camware pour valider l'installation des drivers et que tout fonctionne correctement
+installer les SDK LabVIEW
+
+Test caméra OK!
+Faire Grab -> sauver les données (n images dans des stacks)
+Faire FFT en live
