@@ -1,0 +1,20 @@
+# #############################################################################
+#  ATTENTION
+# #############################################################################
+#
+#  This software is for guidance only. It is provided "as is".
+#  It only aims at providing coding information to the customer in order for
+#  them to save time. As a result no warranties, whether express, implied or
+#  statutory, including, but not limited to implied warranties of
+#  merchantability and fitness for a particular purpose apply to this software.
+#  A·P·E Angewandte Physik und Elektronik GmbH shall not be held liable for any
+#  direct, indirect or consequential damages with respect to any claims arising
+#  from the content of such sourcecode and/or the use made by customers of the
+#  coding information contained herein in connection with their products.
+#
+#  File Version: 1.0
+#
+#  Changelog:
+#    1.0 - Initial Version
+#
+# #############################################################################
