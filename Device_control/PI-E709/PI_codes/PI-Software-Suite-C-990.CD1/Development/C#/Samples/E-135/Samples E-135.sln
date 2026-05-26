@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveSample", "MoveSample\MoveSample.csproj", "{4377D883-34E5-45D8-A586-A7198FBF487F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Debug|x64.ActiveCfg = Debug|x64
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Debug|x64.Build.0 = Debug|x64
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Debug|x86.ActiveCfg = Debug|x86
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Debug|x86.Build.0 = Debug|x86
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Release|x64.ActiveCfg = Release|x64
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Release|x64.Build.0 = Release|x64
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Release|x86.ActiveCfg = Release|x86
+		{4377D883-34E5-45D8-A586-A7198FBF487F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3B5D7D-E283-434A-8E30-994C08EE2AF5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<EtherCATInfo Version="1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd">
+  <Vendor>
+    <Id>#x0000076D</Id>
+    <Name>Physik Instrumente (PI) GmbH u Co. KG</Name>
+    <ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+  </Vendor>
+  <Descriptions>
+    <Groups>
+      <Group>
+        <Type>E-711.IFB</Type>
+        <Name LcId="1033">E-711.IFB</Name>
+        <ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+      </Group>
+    </Groups>
+    <Devices>
+      <Device Physics="YY">
+        <Type ProductCode="#xE7111165" RevisionNo="#x00020000">NETX 51 RE/ECS for PI E-711.IFB</Type>
+        <Name LcId="1033"><![CDATA[NETX 51 RE/ECS]]></Name>
+        <URL><![CDATA[http://www.physikinstrumente.com/en]]></URL>
+        <GroupType>E-711.IFB</GroupType>
+        <Fmmu>Outputs</Fmmu>
+        <Fmmu>Inputs</Fmmu>
+        <Fmmu>MBoxState</Fmmu>
+        <Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1000" ControlByte="#x36" Enable="1">MBoxOut</Sm>
+        <Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1080" ControlByte="#x32" Enable="1">MBoxIn</Sm>
+        <Sm MinSize="0" MaxSize="1024" DefaultSize="200" StartAddress="#x1100" ControlByte="#x74" Enable="1">Outputs</Sm>
+        <Sm MinSize="0" MaxSize="1024" DefaultSize="200" StartAddress="#x1D00" ControlByte="#x30" Enable="1">Inputs</Sm>
+        <RxPdo Sm="2">
+          <Index>#x1600</Index>
+          <Name>Outputs</Name>
+          <Entry>
+            <Index>#x0001</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 1</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0002</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 2</Name>
+            <DataType>DINT</DataType>
+          </Entry>		  
+          <Entry>
+            <Index>#x0003</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 3</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+		  <Entry>
+            <Index>#x0004</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 4</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0005</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 5</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0006</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sollwert Piezo 6</Name>
+            <DataType>DINT</DataType>
+          </Entry>		  
+          <Entry>
+            <Index>#x0201</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A1</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0202</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A2</Name>
+            <DataType>UDINT</DataType>
+          </Entry>		  
+          <Entry>
+            <Index>#x0203</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A3</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0204</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A4</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+		  <Entry>
+            <Index>#x0205</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A5</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0206</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Reserve A6</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0301</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Command</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Sm="3">
+          <Index>#x1A00</Index>
+          <Name>Inputs</Name>
+          <Entry>
+            <Index>#x0011</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 1</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0021</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 1</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0012</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 2</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0022</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 2</Name>
+            <DataType>DINT</DataType>
+          </Entry>		  
+          <Entry>
+            <Index>#x0013</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 3</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0023</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 3</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+		  <Entry>
+            <Index>#x0014</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 4</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0024</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 4</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0015</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 5</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0025</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 5</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0016</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Sensor Piezo 6</Name>
+            <DataType>DINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x0026</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Stellgroesse Piezo 6</Name>
+            <DataType>DINT</DataType>
+          </Entry>		  
+          <Entry>
+            <Index>#x0101</Index>
+            <SubIndex>0</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>Status</Name>
+            <DataType>DINT</DataType>
+          </Entry>		  	  
+        </TxPdo>
+        <Dc UnknownFRMW="0" Unknown64Bit="1">
+          <OpMode>
+            <Name>DcOff</Name>
+            <Desc>DC unused</Desc>
+            <AssignActivate>#x0000</AssignActivate>
+          </OpMode>
+          <OpMode>
+            <Name>DcSync0</Name>
+            <Desc>DC Sync0 for synchronization</Desc>
+            <AssignActivate>#x0300</AssignActivate>
+            <CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+            <ShiftTimeSync0>0</ShiftTimeSync0>
+          </OpMode>
+        </Dc>
+        <ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+      </Device>
+    </Devices>
+  </Descriptions>
+</EtherCATInfo>

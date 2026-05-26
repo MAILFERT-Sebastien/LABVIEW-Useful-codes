@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>LabWindows/CVI Readme</title>
+
+<style type="text/css">
+<!--
+/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+/* Specifies White Background color */
+body {background-color:#FFFFFF; font-family:Verdana, sans-serif; font-size:8pt; color: #000000;}
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt;}
+BR { font-size:4.00pt; }
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-size:150%; font-weight:bold;  }
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-size:125%; font-weight:bold;  }
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+H5 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+H6 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+/* Use the Body style class for normal paragraphs. */
+P.Body {  }
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { font-size:125%;  }
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+P.Indent1 { margin-left:12.00pt; margin-bottom:3.00pt;  }
+P.Indent2 { margin-left:24.00pt; margin-bottom:3.00pt;  }
+P.Indent3 { margin-left:36.00pt; margin-bottom:3.00pt;  }
+P.Indent4 { margin-left:48.00pt; margin-bottom:3.00pt;  }
+P.Indent5 { margin-left:60.00pt; margin-bottom:3.00pt;  }
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; }
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+OL { margin-left:22.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; list-style-type: decimal; }
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; text-indent:0pt; list-style-type: decimal; }
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+OL.List-abc { margin-left:22.00pt; text-indent:0pt; list-style-type:lower-alpha; }
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+UL { margin-left:22.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; list-style-type: disc; }
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. */
+ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul ul ul ul{list-style-image: none;list-style-type: circle}
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box {list-style-image: none;list-style-type: square}
+Table { font-size:100%; }
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { vertical-align:top; padding:3px; }
+/* Use the Bordered style class for table headings and cells in Bordered or Bordered-Wide tables. */
+.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; }
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; }
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+TH { font-weight:bold; padding:3px; }
+/* Use the Left-Align style class for table headings and cells that you want to left align instead of center align. */
+.Left-Align { text-align:left; }
+/***************************************************/
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+/* The following section defines character formats that every HTML Help project should need. */
+/* Use the Dark-Red format for warnings or cautions. */
+.Dark-Red { color: #800000 }
+/* Use the Monospace format for code or syntax examples. */
+.Monospace { font-family: "Courier New"; font-size: 100%; }
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+.Monospace-Bold { font-family: "Courier New"; font-weight: bold; font-size: 100%; }
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+.Monospace-Italic { font-family: "Courier New"; font-style: italic; font-size: 100%; }
+/* small class */
+.smallFont { font-size:87.5%; }
+/* Bold class */
+.Bold { font-weight: bold; }
+/* Italic class */
+.Italic { font-style: italic; }
+/* Use the Platform format to denote a specific platform. */
+.Platform { color: #0000FF; font-weight: bold; }
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+.Symbol { font-family: Symbol; }
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+.Red-text {color: #FF0000;}
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+.Green-Underline {color: #007700; text-decoration : underline;}
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+.glossButton { font-size:12px; color:black; }
+/* Use for text sections and hyphenated words that should not break at line wraps */
+.nobreak{white-space:nowrap}
+/* Use for template instructions. */
+.instructions{color:red; font-style:italic}
+/*Use for words and text sections that do not need to be localized */
+.DNL { }
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:visited { color: #7F007F }
+a:link:hover { color: #FF0000 }
+a:link:active { color: #FF0000 }
+/**************************************************** Forms */
+form { margin-top:0pt; margin-bottom:3pt; color:black; }
+select { font-size:100%; color:black; }
+/*******************************************************
+* Margins *
+* Use these styles for block-level elements inside tables cells or list items where you do not want extra padding at the top or bottom of a cell. */
+.noTopMargin { margin-top:0pt;}
+.noBottomMargin { margin-bottom:0pt;}
+/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:"Courier New";  }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:"Courier New";  }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:"Courier New";  }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:"Courier New";  }
+-->
+</style>
+</head>
+
+<body>
+
+<h1>LabWindows/CVI for Windows, Version 2012 Service Pack 1</h1>
+
+<h3>Readme File</h3>
+
+<p class="Body">This file contains installation information, programming considerations,
+and changes that are too recent to be included in the <em>LabWindows/CVI Help</em> for LabWindows/CVI 2012 Service Pack 1. Refer to the <em>LabWindows/CVI Release Notes</em> for more information about new features.</p>
+
+<p class="Body"><span class="Dark-Red"><strong>Caution</strong>&nbsp;&nbsp;<!-- National Instruments recommends that you install the beta version of LabWindows/CVI 2012 on a non-development computer.-->Installing LabWindows/CVI 2012 SP1 replaces any previous version of the LabWindows/CVI Run-Time Engine with the LabWindows/CVI 2012 SP1 Run-Time Engine. To restore the previous Run-Time Engine, uninstall LabWindows/CVI 2012 SP1 and any previous versions of LabWindows/CVI on the computer. Then reinstall the LabWindows/CVI version you want to use.</span></p>
+
+<h2>Contents</h2>
+
+<p class="Body"><a href="#SysReqs">System Requirements</a></p>
+<p class="Body"><a href="#Installing">Installing LabWindows/CVI</a></p>
+<p class="Body"><a href="#Activating">Activating LabWindows/CVI</a></p>
+<p class="Body"><a href="#AfterInst">After Installation</a></p>
+<p class="Body"><a href="#Upgrading2010">Upgrading from LabWindows/CVI 2010 or Earlier</a></p>
+<p class="Body"><a href="#Upgrading2009">Upgrading from LabWindows/CVI 2009 or Earlier</a></p>
+<p class="Body"><a href="#Upgrading90">Upgrading from LabWindows/CVI 9.0 or Earlier</a></p>
+<p class="Body"><a href="#Upgrading85">Upgrading from LabWindows/CVI 8.5 or Earlier</a></p>
+<p class="Body"><a href="#KnownIssues">Known Issues</a></p>
+<p class="Body"><a href="#BugFixes">Bug Fixes</a></p>
+
+<a name="SysReqs"></a><h2>System Requirements</h2>
+
+<p class="Body">To run LabWindows/CVI 2012 SP1, you must have the following:</p>
+
+<ul>
+<li>Personal computer using a Pentium 4/M or equivalent microprocessor</li>
+<li>Microsoft operating systems:<br>
+<ul>
+<li>Windows 8 (32-bit and 64-bit)</li>
+<li>Windows 7 (32-bit and 64-bit), including Starter Edition </li>
+<li>Windows Vista Service Pack 1 (32-bit and 64-bit)</li>
+<li>Windows XP Service Pack 3</li>
+<li>Windows Server 2008 R2 Service Pack 1 (64-bit)</li>
+<li>Windows Server 2003 R2 Service Pack 2 (32-bit)</li></ul>
+<strong>Note</strong>  LabWindows/CVI supports only R2 editions of Windows Server</li>
+<li>1024 &times; 768 resolution (or higher) video adapter</li>
+<li>Minimum of 256 MB of RAM, 1 GB recommended</li>
+<li>1.4 GB free hard disk space for full installation, which includes the Interface to Win32 Application Programmatic Interface (API); additional space needed for National Instruments Device Drivers and for the Microsoft .NET Framework 4.0</li>
+<li>Microsoft-compatible mouse</li>
+</ul>
+
+<a name="Installing"></a><h2>Installing LabWindows/CVI</h2>
+
+<p class="Body">National Instruments recommends that you install the complete
+LabWindows/CVI program to take full advantage of all LabWindows/CVI 2012 SP1 functionality. If you choose to install with options, select the options you want and follow the on-screen directions. If necessary, you can run the setup program again to install or remove additional files.</p>
+
+<!-- Releases -->
+<p class="Body">The LabWindows/CVI Platform DVD includes LabWindows/CVI and the following modules and toolkits.</p>
+
+<p class="Body"><strong>Modules</strong></p>
+<ul>
+<li>Real-Time Module</li>
+<li>Vision Development Module</li>
+</ul>
+
+<p class="Body"><strong>Toolkits</strong></p>
+<ul>
+<li>Real-Time Execution Trace Toolkit</li>
+<li>SQL Toolkit</li>
+<li>Signal Processing Toolkit</li>
+<li>PID Toolkit</li>
+<li>Execution Profiler Toolkit</li>
+<li>ECU Measurement and Calibration Toolkit</li>
+<li>Automotive Diagnostic Command Set</li>
+</ul>
+
+<p class="Body">If you purchased any of these modules or toolkits, you can install them using the LabWindows/CVI Platform DVD. If you want to evaluate any of these modules or toolkits before purchasing them, you can install these add-ons from the LabWindows/CVI Platform DVD and try them for 45 days. After an initial 7 day period, you can register on <span class="Monospace">ni.com</span> for access to the remainder of the evaluation period.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><strong>Note</strong></td>
+<td><a name="ProfilerAct"></a>The Execution Profiler Toolkit does not require a separate license if you have a LabWindows/CVI Full Development System license. If you have the LabWindows/CVI Base Package, you can install the Execution Profiler Toolkit for evaluation.</td>
+</tr>
+</table>
+
+<h3>Installation Considerations</h3>
+
+<ul>
+
+<li>When installing LabWindows/CVI, the LabWindows/CVI Real-Time Module, and NI Device Drivers, install device drivers after the LabWindows/CVI Real-Time Module. If you install all of these products at the same time using the LabWindows/CVI Platform DVD, the products are installed in the correct order. If you install the LabWindows/CVI Real-Time Module on a computer that already has device drivers installed, reinstall the device driver software to ensure that real-time support is installed for the device drivers you selected.</li>
+
+<li>The complete Interface to Win32 API is available with the LabWindows/CVI Full Development System. Some Win32 API header and import library files are included when you install the LabWindows/CVI Base Package.</li>
+	
+	<li>The LabWindows/CVI installation includes the LabWindows/CVI 2012 SP1 Run-Time Engine. This version replaces any previous version of the LabWindows/CVI Run-Time Engine. After you install LabWindows/CVI 2012 SP1, executables and DLLs created with previous versions of LabWindows/CVI automatically use the new LabWindows/CVI 2012 SP1 Run-Time Engine.<br><br>
+
+To restore the previous Run-Time Engine, uninstall LabWindows/CVI 2012 SP1 and any previous versions of LabWindows/CVI on the computer. Then reinstall the LabWindows/CVI version you want to use.</li>
+	
+	<li>If you install LabWindows/CVI onto a network drive, you might encounter an error during installation that prevents files that the IVI Instrument Driver Wizard requires from being installed. This issue does not affect other functionality in LabWindows/CVI.</li>
+
+<li>If you have installed Microsoft Security Update 896358, you might not be able to view topics within the <em>LabWindows/CVI Help</em> if the file is on a network drive. To solve this issue, copy the <span class="Monospace">.chm</span> files that LabWindows/CVI installs to your local hard drive and launch them as normal.</li>
+
+<li>The IVI Installer Creator and IVI Specific Driver Test Suite items are selected by default in the installer feature tree only if the IVI Compliance Package is installed. You can select these items if the IVI Compliance Package is not installed, but you must then install the IVI Compliance Package, which you can download from <span class="Monospace">ni.com</span>. The IVI Compliance Package is also available on the NI Device Drivers media.</li>
+
+<li>You can install the Visual Studio Wizards feature only if you have installed the version of Visual Studio corresponding to the Visual Studio Wizard you select.</li>
+</ul>
+
+<h3>Running the Installation</h3>
+
+<p class="Body">Complete the following steps to install LabWindows/CVI:</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><strong>Note</strong></td>
+<td><!-- Major releases only --><!-- If you already have a different version of LabWindows/CVI installed on your computer, be sure to install version 2012 in a different directory.--><!-- end major releases only --> <!-- SP releases only -->If you have LabWindows/CVI 2012 installed on your computer, the LabWindows/CVI installer replaces LabWindows/CVI 2012 with LabWindows/CVI 2012 SP1. <!-- end SP releases only --> If you want to install to an existing directory, uninstall the other version before installing LabWindows/CVI 2012 SP1.<br><br>
+You must have administrator privileges to install LabWindows/CVI.</td>
+</tr>
+</table>
+
+<ol>
+<li>Insert the LabWindows/CVI media into the disk drive. If the media does not run automatically, open Windows Explorer, right-click the disk drive icon, and select <strong>AutoPlay</strong>.</li>
+<li>On installation startup, the National Instruments LabWindows/CVI 2012 screen appears. Click <strong>Install LabWindows/CVI, Modules, and Toolkits</strong>.</li>
+<li>Continue to follow the instructions on the screen.<br><br>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><strong>Note</strong></td>
+<td>If you have a serial number for the product you want to install, enter the number during installation when you are prompted. You also can activate the product after installation. For more information about finding serial numbers, refer to ni.com/info and enter SerialNumbers_en as the Info Code.<br><br>
+
+Each product on the LabWindows/CVI Platform DVD has a different serial number, with the possible exception of the <a href="#ProfilerAct">LabWindows/CVI Execution Profiler Toolkit</a>.</td></tr></table>
+
+</li>
+<li>If you selected <strong>Device Drivers</strong> in the <strong>Product List</strong>, the LabWindows/CVI installer prompts you to insert the National Instruments Device Drivers DVD after you install LabWindows/CVI and any selected modules and toolkits. Follow the instructions on the screen to install the device drivers.</li>
+<li>To activate a National Instruments product, refer to the <a href="#Activating">Activating LabWindows/CVI section</a>.</li>
+</ol>
+
+<!-- Beta -->
+<!-- <p class="Body"><strong>Note</strong>&nbsp;&nbsp;If you already have LabWindows/CVI 9.<em>x</em>.<em>x</em> or earlier installed on your computer, be sure to install version 2010 in a different directory. If you have LabWindows/CVI 2009 installed on your computer, the LabWindows/CVI installer replaces LabWindows/CVI 2009 with LabWindows/CVI 2009 SP1. If you want to install to an existing directory, uninstall the other version before installing LabWindows/CVI 2009 SP1.</p>
+<ol>
+<li>Click the <strong>LabWindows/CVI 2012 Beta</strong> link from the LabWindows/CVI beta website to download the beta.</li>
+<li>Double-click the executable you downloaded.</li>
+<li>On installation startup, the National Instruments LabWindows/CVI 2012 screen appears. Click <strong>Install NI LabWindows/CVI 2012</strong>.</li>
+<li>Continue to follow the instructions on the screen.<br><br>
+<strong>Note</strong>&nbsp;&nbsp;In the User Information panel, do not modify the serial number, P12A00290. This number is required for product activation.</li>
+<li>Continue to follow the instructions on the screen.</li>
+<li>If you select <strong>Device Drivers</strong> in the Features panel, the LabWindows/CVI installer prompts you to insert the National Instruments Device Drivers media, which is available on <span class="Monospace">ni.com</span>. The NI Device Drivers media is required only if you want to upgrade existing driver software to the latest version. Otherwise, you can ignore this prompt.</li>
+</ol> -->
+
+<h3>Updates and Notifications</h3>
+
+<p class="Body">National Instruments releases critical software updates after product release using the NI Update Service. Visit <code>ni.com/info</code> and enter <a href="http://digital.ni.com/express.nsf/bycode/updates">updates</a> to view a list of all currently available updates.</p>
+
+ 
+<p class="Body">National Instruments provides notification of certain critical issues at install time. Visit <code>ni.com/info</code> and enter <a href="http://digital.ni.com/express.nsf/bycode/notifications">notifications</a> to view a list of current product notifications.</p>
+
+<a name="Activating"></a><h2>Activating LabWindows/CVI</h2>
+
+<p class="Body">You can activate LabWindows/CVI during or after installation. To activate during installation, enter a serial number when you are prompted by the installer. If you do not activate during installation, you can launch the NI Activation Wizard by selecting <strong>Activate Products</strong> in the License Status dialog box, which displays when you launch LabWindows/CVI for the first time.</p>
+
+<p class="Body">For more information about activation, refer to the <em>Activating Your Software</em> topic in the <em>LabWindows/CVI Help</em>.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><strong>Note</strong></td>
+<td>If you are unable to activate LabWindows/CVI, refer to the web page at <a href="http://digital.ni.com/express.nsf/bycode/exgznb">ni.com/activate</a>.</td>
+</tr>
+</table>
+
+<a name="AfterInst"></a><h2>After Installation</h2>
+
+<ul>
+	<li><strong>Installing LabWindows/CVI in a New Directory</strong>&#8212;If you installed driver or toolkit software for LabWindows/CVI 8.1.1 or earlier and you install LabWindows/CVI 2012 SP1 in a new directory, you must uninstall and reinstall the LabWindows/CVI portion of the driver or toolkit software.</li>
+	<li><strong>Using Example Programs</strong>&#8212;You can find example programs in the following location on Windows 8/7/Vista/Server 2008: <span class="Monospace">\Users\Public\Documents\National Instruments\CVI2012\samples</span>. On Windows XP/Server 2003, example programs are located in the following location: <span class="Monospace">\Documents and Settings\All Users\Documents\National Instruments\CVI2012\samples</span>.</li>
+	<li><strong>Working with Project and File Templates</strong>&#8212;Save user-defined project and file templates in the LabWindows/CVI public documents directory (<span class="Monospace">\Users\Public\Documents\National Instruments\CVI</span> on Windows 8/7/Vista/Server 2008 and <span class="Monospace">\Documents and Settings\All Users\Documents\National Instruments\CVI</span> on Windows XP/Server 2003). LabWindows/CVI 8.5 and later does not search previous locations, <span class="Monospace">\Documents and Settings\All Users\Application Data\CVI</span> and <span class="Monospace">\Documents and Settings\&lt;User ID&gt;\Application Data\CVI</span>, for project and file templates.</li>
+<li><strong>Making Backup .uir Files</strong>&mdash;Make backup copies of your <span class="Monospace">.uir</span> files if you have been using previous versions of LabWindows/CVI. Once you save <span class="Monospace">.uir</span> files in LabWindows/CVI 2012, the <span class="Monospace">.uir</span> files are no longer compatible with versions 8.1.1 or earlier. You cannot load <span class="Monospace">.uir</span> files that you have saved in LabWindows/CVI 2012 in LabWindows/CVI 8.1.1 or earlier.<br><br>
+
+You can save <span class="Monospace">.uir</span> files you create or load in LabWindows/CVI 2012 in earlier formats. Select <strong>File&raquo;Save .uir As</strong> and specify the format in the <strong>Save as type</strong> option. If you save a user interface with features that were added in later versions of LabWindows/CVI, those features are removed when you save the file in earlier formats.</li>
+</ul>
+
+<a name="Upgrading2010"></a><h2>Upgrading from LabWindows/CVI 2010 or Earlier</h2>
+
+<ul>
+<li>The Physical Memory Access functions, located in the Utility Library, are deprecated. Refer to <a href="http://digital.ni.com/express.nsf/bycode/SecurityUpdatePhysMemNov11">KB 5QCCQSQW</a> for more information.</li>
+<li>If your program includes any Port IO functions, located in the Utility Library, the program will require administrator privileges to run. Refer to <a href="http://digital.ni.com/express.nsf/bycode/SecurityUpdatePortIONov11">KB 5Q5FO1QW</a> for more information.</li>
+<li>The LabWindows/CVI low-level support driver can be loaded only by applications running with administrator privileges on 32-bit systems. Refer to <a href="http://digital.ni.com/express.nsf/bycode/SecurityUpdateNov11en">KB 5Q5FJ4QW</a> for more information.</li>
+<li>You can no longer create a reduced-size distribution that includes the low-level support driver. If your application uses the low-level support driver, you must include the full LabWindows/CVI Run-Time Engine in your installer. To include the full run-time engine in your installer, complete the following:<br>
+<ul><li>Select the <strong>NI LabWindows/CVI Shared Run-Time Engine</strong> item in the <strong>Drivers &amp; Components</strong> tab of the Edit Installer dialog box.</li><li>Ensure that you deselect the <strong>Install the LabWindows/CVI Shared Run-Time Engine in the application directory</strong> option in the <strong>Advanced</strong> tab of the Edit Installer dialog box.</li></ul>
+Refer to <a href="http://digital.ni.com/express.nsf/bycode/SecurityUpdateMSMNov11">KB 5R6A4SQW</a> for more information.</li>
+<li>The <span class="Monospace">GetFontTypefaceName</span> function, when used on <span class="Monospace">VAL_DIALOG_FONT</span> or <span class="Monospace">VAL_DIALOG_META_FONT</span>, now returns the actual typeface of the dialog font on your system, rather than the substitute for that font that Windows uses.</li>
+<li>LabWindows/CVI 2012 supports the Perforce SCC Plug-in (P4SCC) 2006.1 and later.</li>
+<li>For projects you save in LabWindows/CVI 2012, LabWindows/CVI attempts to resolve paths that were previously saved as absolute paths to be relative to the project. You can override this behavior by specifying the following options in the <span class="Monospace">.prj</span> file:<br><br>
+
+For a target file, specify the following in the <span class="Monospace">[Create Executable]</span> section of the <span class="Monospace">.prj</span> file:<br>
+<span class="Monospace">Executable File<em>_Configuration</em> Force Path Absolute = True</span><br><br>
+where <span class="Monospace-Italic">_Configuration</span> is the configuration of your target, such as <span class="Monospace">Debug</span>, <span class="Monospace">Release</span>, or <span class="Monospace">Debug64</span>.<br><br>
+
+For a file in the project list, specify the following in the <span class="Monospace">[File <em>nnnn</em>]</span> section of the <span class="Monospace">.prj</span> file, where <span class="Monospace-Italic">nnnn</span> is the index of the file in the project list:<br>
+<span class="Monospace">Path Force Path Absolute = True</span></li>
+<li>You can call .NET Library functions from multiple threads simultaneously without getting blocked.</li>
+
+<li>Previous versions of LabWindows/CVI did not recognize numbers entered in scientific notation for numeric controls of type int64 or unsigned int64. Starting with LabWindows/CVI 2010 SP1, you can enter numbers in scientific notation. When you enter a number in scientific notation into numeric controls of type int64 or unsigned int64, LabWindows/CVI converts the number to a double and then to a 64-bit integer. This conversion may cause a loss of precision after 15 decimal digits.</li>
+<li>LabWindows/CVI 2010 SP1 includes the <span class="Monospace">GaussHypergeometric</span> function, which you should use instead of the <span class="Monospace">GaussHG</span> function.</li>
+</ul>
+
+<a name="Upgrading2009"></a><h2>Upgrading from LabWindows/CVI 2009 or Earlier</h2>
+
+<ul>
+<li>Build Options and Target Settings dialog box options apply per configuration. The options on these dialog boxes are no longer global as in previous releases.</li>
+<li>National Instruments no longer supports Windows 2000.</li>
+<li>The minimum operating system version for distributions is Windows XP. If you open an existing distribution that specifies Windows 2000 as the minimum operating system, LabWindows/CVI updates the minimum operating system to Windows XP.</li>
+<li>If you install the Full Development System, the Interface to Win32 Application Programmatic Interface (API) is installed by default.</li>
+<li>The <span class="Monospace">glaux.lib</span> import library is deprecated and is no longer included with LabWindows/CVI. The <span class="Monospace">glaux.prj</span> sample program is no longer installed.</li>
+<li>The <strong>Save changes before debugging</strong> option in the Environment dialog box is now a global option. In previous releases, this option was workspace-specific.</li>
+<li>The <strong>Save changes before compiling</strong> option in the Environment dialog box is enabled by default. This global option allows LabWindows/CVI to save all modified files before compiling and debugging.</li>
+<li>LabWindows/CVI no longer installs the <em>Documentation from MSDN Library</em>. National Instruments recommends that you view the latest version of this documentation at <span class="Monospace">www.msdn.com</span>. For more information, visit <a href="http://digital.ni.com/express.nsf/bycode/msdn">ni.com</a>.</li>
+<li>The <em>LabWindows/CVI Help</em> includes a <strong>Font</strong> button that you can use to increase or decrease the font size in the help file. The <strong>Font</strong> button might not update the font size in help files that merge into the <em>LabWindows/CVI Help</em>.<br><br>
+
+In addition, the smallest font size setting of the <strong>Font</strong> button is the standard font size for National Instruments help files. The text size settings in Internet Explorer might cause the font to appear larger than typical National Instruments help files. If you resize the font, the help file retains the font size the next time you open the product help.</li>
+</ul>
+
+<a name="Upgrading90"></a><h2>Upgrading from LabWindows/CVI 9.0 or Earlier</h2>
+
+<ul>
+<li>Borland is no longer supported as a compatible compiler or as a third-party compiler in LabWindows/CVI.</li>
+<li>Starting with the 2009 version of LabWindows/CVI, major versions align with the year in which they release. For example, this version of LabWindows/CVI is called LabWindows/CVI 2012. You can find installed files in the <span class="Monospace">CVI2012</span> folder in the various locations where LabWindows/CVI installs files. The registry keys corresponding to this version of LabWindows/CVI are located in <span class="Monospace">CVI\12.0</span> in the registry.</li>
+<li>The NI Distributed System Manager replaces the NI Variable Manager. Use the System Manager to create and monitor network variables, processes, and I/O servers. For more information about the System Manager, refer to the <em>NI Distributed System Manager Help</em>, which you can access from the System Manager.</li>
+<li>The <strong>Translate LW DOS Program</strong> option is no longer available.</li>
+<li>The LabWindows/CVI compiler now defines the <span class="Monospace">NDEBUG</span> macro for release configuration builds.</li>
+<li>LabWindows/CVI no longer adds <span class="Monospace">_dbg</span> suffix to the base name of the debug target of a project.</li>
+<li>The data type of the <strong>targetThreadId</strong> parameter of the <span class="Monospace">PostDeferredCallToThread</span> and <span class="Monospace">PostDeferredCallToThreadAndWait</span> functions has been changed from <span class="Monospace">unsigned long</span> to <span class="Monospace">unsigned int</span>.</li>
+</ul>
+
+<a name="Upgrading85"></a><h2>Upgrading from LabWindows/CVI 8.5 or Earlier</h2>
+<ul>
+<li><span class="Monospace">toolbox.h</span> now includes some LabWindows/CVI headers that must be included after including <span class="Monospace">windows.h</span>. Therefore, if your code includes <span class="Monospace">toolbox.h</span> before including <span class="Monospace">windows.h</span>, reverse the order of these includes.</li>
+<li>Network variable processes that begin with <span class="Monospace">NI_</span> are disallowed. The <span class="Monospace">CNVNewProcess</span> function returns an error if the process name you specify begins with <span class="Monospace">NI_</span>.</li>
+<li>The following macros have been renamed:<br><br>
+
+<table class="Bordered">
+<tr>
+<td class="Bordered"><strong>Library</strong></td>
+<td class="Bordered"><strong>Previous Macro Name</strong></td>
+<td class="Bordered"><strong>New Macro Name</strong></td>
+</tr>
+<tr>
+<td class="Bordered">WordReport.fp Instrument Driver</td>
+<td class="Bordered"><span class="Monospace">NONE</span></td>
+<td class="Bordered"><span class="Monospace">WR_NONE</span></td>
+</tr>
+<tr>
+<td class="Bordered">Analysis Library</td>
+<td class="Bordered"><span class="Monospace">SORT_ASCENDING</span></td>
+<td class="Bordered"><span class="Monospace">ANALYSIS_SORT_ASCENDING</span></td>
+</tr>
+<tr>
+<td class="Bordered">Analysis Library</td>
+<td class="Bordered"><span class="Monospace">SORT_DESCENDING</span></td>
+<td class="Bordered"><span class="Monospace">ANALYSIS_SORT_DESCENDING</span></td>
+</tr>
+</table></li>
+<li>Upgrading to LabWindows/CVI 8.5 and later may cause the Advanced Analysis or Analysis Library to produce numerical differences in floating point results and different results for exceptional inputs, such as positive or negative infinity and NaN. These differences may occur because the underlying C Analysis library has been recompiled in LabWindows/CVI 8.5 to take advantage of new processors and operating systems.</li>
+<li>The enum value <span class="Monospace">CVIConst_CVI_FPVERSION_90</span> has been changed to <span class="Monospace">CVIConst_CVI_FPVERSION_85</span> for the <strong>fpVersion</strong> parameter of the <span class="Monospace">FPGenCreateFunctionTree</span> function of the LabWindows/CVI ActiveX Server Interface Library.</li>
+<li>The <span class="Monospace">modini</span> utility and related source code as well as the <span class="Monospace">modreg</span> source code are deprecated and no longer installed with LabWindows/CVI.</li>
+<li>The <em>LabWindows/CVI Quick Reference</em> card is no longer published and is not installed with LabWindows/CVI.</li>
+<li>The option to create Microsoft Windows WinHelp files (<span class="Monospace">.hlp</span>) from LabWindows/CVI, <strong>Generate&raquo;Documentation&raquo;Windows Help</strong>, is no longer available.</li>
+<li>The Network Variable Library flushes all internal buffers in a write operation, which improves network variable performance.<br><br>
+
+Flushing on write may cause lower throughput in some high bandwidth conditions, in which case you can set <span class="Monospace">CNVFlushOnWriteAttribute</span> to 0 (FALSE). In high bandwidth conditions, National Instruments recommends using the <span class="Monospace">CNVBufferedWriter</span> connection.<!--71448--></li>
+
+<li>During a read operation, the Network Variable Library flushes all network variable connections in your program, including data in writer connections, for better performance.<!--71448--></li>
+
+<li><strong>Registering ActiveX Servers</strong>&#8212;When you build ActiveX servers in LabWindows/CVI 8.1.1 and later on Windows XP and later, the ActiveX servers are registered in your user profile. This registration is not visible to other users on your system. On versions of Windows prior to Windows XP, ActiveX servers are registered for all users. When you register these servers outside the LabWindows/CVI environment, they are always registered for all users; this option requires administrator privileges on Windows Vista and later.</li>
+
+<li><strong>Analysis Function Behavior Changes</strong>&mdash;The following function behavior has changed from LabWindows/CVI 7.1 to LabWindows/CVI 8.<em>x</em>:
+	<ul>
+		<li><strong>SVD and CxSVD</strong>&mdash;The following formula defines the SVD factorization of an <em>n</em>-by-<em>m</em> matrix <em>A</em>: <em>A</em> = <em>USV</em><sup>T</sup>.<br><br>
+In LabWindows/CVI 7.1 and earlier, <em>U</em> is an orthogonal matrix of dimensions <em>n</em>-by-<em>m</em>. In LabWindows/CVI 8.<em>x</em> and later, <em>U</em> is an orthogonal matrix of dimensions <em>n</em>-by-min(<em>n</em>, <em>m</em>).<br><br>
+In LabWindows/CVI 7.1 and earlier, <em>V</em> is an orthogonal matrix of dimensions <em>m</em>-by-<em>m</em>. In LabWindows/CVI 8.<em>x</em> and later, <em>V</em> is an orthogonal matrix of dimensions <em>m</em>-by-min(<em>n</em>, <em>m</em>).<br><br>
+In LabWindows/CVI 7.1 and earlier, <em>S</em> is a diagonal matrix of dimensions <em>m</em>-by-<em>m</em>. In LabWindows/CVI 8.<em>x</em> and later, <em>S</em> is a diagonal matrix of dimensions min(<em>n</em>, <em>m</em>)-by-min(<em>n</em>, <em>m</em>).<br><br>
+
+In LabWindows/CVI 7.1 and earlier, <span class="Monospace">CxSVD</span> has the following requirement: If <strong>numberOfRows</strong> (<em>n</em>) &lt; <strong>numberOfColumns</strong> (<em>m</em>), you must allocate <em>m</em>&#42;<em>m</em>&#42;sizeof(ComplexNum) bytes of memory to the input matrix and the <em>U</em> orthogonal matrix. LabWindows/CVI 8.<em>x</em> and later no longer has this requirement.
+</li>	
+		<li><strong>Lu and CxLU</strong>&mdash;In LabWindows/CVI 7.1 and earlier, if the input matrix is singular, the functions stop the decomposition and return <strong><span class="Monospace">SingularMatrixErr</span></strong>. In LabWindows/CVI 8.<em>x</em> and later, if the input matrix is singular, the functions complete the decomposition and return <strong><span class="Monospace">SingularMatrixWarn</span></strong>. In this case, there are one or more zero elements along the diagonal of U.</li>
+		<li><strong>CxTrace</strong>&mdash;<span class="Monospace">CxTrace</span> accepts only a square matrix. In LabWindows/CVI 7.1 and earlier, the function requires both the number of rows and the number of columns as input parameters. In LabWindows/CVI 8.<em>x</em> and later, <strong>matrixSize</strong> specifies both the number of rows and the number of columns. The <strong>numberOfColumns</strong> parameter in LabWindows/CVI 7.1 and earlier is a reserved parameter in LabWindows/CVI 8.<em>x</em> and later. This parameter is not referenced in the function.</li>
+		<li><strong>ConditionNumber and CxConditionNumber</strong>&mdash;In LabWindows/CVI 7.1 and earlier, these functions return <span class="Monospace">NaN</span> for singular input matrices. In LabWindows/CVI 8.<em>x</em> and later, these functions return <span class="Monospace">Inf</span> for singular input matrices.</li>
+		<li><strong>GenLSFit</strong>&mdash;In LabWindows/CVI 8.<em>x</em> and later, <span class="Monospace">GenLSFit</span> calculates the mean squared error as the weighted mean square error, which differs from the prior implementation of the function.</li>
+	</ul>
+</li>
+
+</ul>
+
+<a name="KnownIssues"></a><h2>Known Issues</h2>
+
+<p class="Body">This version of LabWindows/CVI has the following known issues. For <a href="http://digital.ni.com/express.nsf/bycode/ex8gcj">additional known issues</a>, refer to <span class="Monospace">ni.com</span>.</p>
+<ul>
+<li><strong>Selecting Values in IviFgen Class Driver</strong>&#8212;In the IviFgen FP file, the <strong>Attribute ID</strong> and <strong>Attribute Value</strong> controls in the Get/Set/CheckAttributeViInt64 functions display an empty field instead of a list of attributes and values. For more information, refer to <a href="http://digital.ni.com/express.nsf/bycode/exz9ai">KnowledgeBase 5WOA752F: Issue Setting IviFgen Attribute ID Using Get/Set/CheckAttributeViInt64 Functions</a>.<!--Added 2012--></li>
+
+<li><strong>Uninstalling LabWindows/CVI</strong>&mdash;If you have multiple versions of LabWindows/CVI installed and you uninstall one of the versions, the remaining installation will be missing its file associations, and its automation capabilities will not function properly. To fix this problem, perform a repair installation of the remaining LabWindows/CVI version.<!--336032--></li>
+
+<li><strong>Error When Building a LabWindows/CVI Project in Visual Studio 2005</strong>&#8212;If you create a project in Visual Studio 2005 that uses LabWindows/CVI libraries, you will see the following error: <span class="Monospace-Bold">fatal error LNK1103: debugging information corrupt; recompile module</span>. To address this issue, <a href="http://digital.ni.com/express.nsf/bycode/ex6mch">install the hotfix available from Microsoft</a>.<!--182423--></li>
+
+<li><strong>Debugging Executables on Windows</strong>&#8212;On Windows Vista and later, executables that contain <span class="Monospace">setup</span>, <span class="Monospace">install</span>, or <span class="Monospace">update</span> as part of their name automatically require administrator privileges. If you run these executables as stand-alone from a user-level account, Windows will prompt you for an administrator password. However, LabWindows/CVI cannot debug these applications from a user-level account. When you try to run them, LabWindows/CVI displays a <strong>Could not run executable</strong> notification. NI recommends that you rename your executable so that it does not contain those words in its name, or that you embed a manifest into the application that marks the application as being Vista-aware. You can embed a manifest using the Target Settings dialog box.</li>
+
+<li><strong>Viewing Help</strong>&#8212;If you open the <em>LabWindows/CVI Help</em> outside of LabWindows/CVI, such as launching it through the <strong>Start</strong> menu, you might not see all driver or toolkit content. Select <strong>Help&raquo;Contents</strong> to open the <em>LabWindows/CVI Help</em> from within LabWindows/CVI to ensure that all driver and toolkit content is available.</li>
+
+<li><strong>Using the LabWindows/CVI Conversion Wizard in Microsoft Visual Studio</strong>&mdash;Microsoft Visual Studio 2005 and later do not support the single-threaded version of the Visual Studio C library. Therefore, you must configure your project's linker settings to ignore directives to use the single-threaded C library. In Visual Studio, select <strong>Project&raquo;Properties</strong> and expand the properties tree to the <strong>Configuration Properties&raquo;Linker&raquo;Input</strong> item. Add <span class="Monospace">libc</span> to the <strong>Ignore Specific Library</strong> option. Refer to the <a href="http://digital.ni.com/express.nsf/bycode/rdlewu">I Receive Linker Errors When Using LabWindows/CVI-Generated Static Libraries and Object Files in Microsoft Visual Studio 2005</a> KnowledgeBase article for more information.</li>
+
+</ul>
+
+<a name="BugFixes"></a><h2>Bug Fixes</h2>
+
+<p class="Body">You can access the software and documentation bug fix list on <span class="Monospace">ni.com</span>. Refer to the <a href="http://digital.ni.com/express.nsf/bycode/exmvwx">LabWindows/CVI Bug Fix Information</a> web page for an up-to-date list of bug fixes in LabWindows/CVI 2012 SP1.</p>
+
+<h2>Automating the Installation of NI Products</h2>
+<p class="Body">You can automate the installation of most NI products using command-line arguments to suppress some or all of the installer user interface and dialog boxes. However, starting with the August 2012 releases (products using NI Installers version 3.1 or later), you may need to perform additional steps before or during a silent installation of NI software.</p>
+
+<p class="Body">If the NI product you are installing uses Microsoft .NET 4.0, the .NET installer may run before any NI software installs and may require a reboot before the installation of NI software begins. To avoid a .NET reboot, install .NET 4.0 separately before you install NI software.</p>
+
+<p class="Body">For more information, refer to the following KnowledgeBase articles:</p>
+<ul>
+<li>For more information on silent installations of individual NI products, refer to KB 4CJDP38M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerAutomation">Automating the Installation of a Single Installer</a>.</li>
+<li>For more information on silent installations of suited NI products, such as NI Developer Suite, refer to KB 4GGGDQH0, <a href="http://digital.ni.com/express.nsf/bycode/SuiteInstallerAutomation">Automating the Installation of a Suited Installer</a>.</li>
+<li>To determine what version of NI Installers your product contains, refer to KB 4CJDR18M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerVersion">How Can I Determine the Type and Version of My National Instruments Installer?</a>.</li>
+</ul>
+
+<h2>How to Use NI Software with Microsoft Windows 8</h2>
+
+<p>When you install National Instruments software on Microsoft Windows 8, you will notice a few additional tiles on the Start screen, including shortcuts to NI application software products such as NI LabVIEW, Measurement &amp; Automation Explorer (MAX), and the new NI Launcher.</p>
+
+<h3>Using NI Launcher</h3>
+<p>NI Launcher helps you find and launch installed NI products. It provides you with a method of finding NI products similar to the Start menu in previous versions of Microsoft Windows. To use NI Launcher, click the NI Launcher tile on the Start screen. NI Launcher launches the desktop and opens a menu containing a list of NI products. Click any NI product to launch it.</p>
+
+<table class="Borderless">
+<tr>
+<td><strong>Note</strong>&nbsp;&nbsp;Unlike previous versions of Microsoft Windows, MAX does not appear as a desktop shortcut. You can launch MAX either from the Start screen or from within NI Launcher.
+</td>
+</tr>
+</table>
+<h3>Pinning Frequently Used Applications</h3>
+<p>For convenience, you can pin your most-used NI applications, such as MAX, to either the Start screen or the Taskbar on the desktop, as necessary:</p>
+<table class="Bordered">
+	<tr><td class="Bordered"><strong>Current Application</strong></td><td class="Bordered"><strong>Icon Location</strong></td><td class="Bordered"><strong>Pin to Action</strong></td></tr>
+	<tr><td class="Bordered">Windows 8 Desktop</td><td class="Bordered">Desktop Taskbar</td><td class="Bordered">Right-click application and select Pin to Taskbar</td></tr>
+	<tr><td class="Bordered">Windows 8 Desktop</td>
+<td class="Bordered">Start screen</td><td class="Bordered">Right-click application and select Pin to Start</td></tr>
+	<tr>
+<td class="Bordered">Windows 8 Start screen</td><td class="Bordered">Desktop Taskbar</td><td class="Bordered">Right-click application and select Pin to taskbar from the menu bar on the bottom of the screen</td></tr>
+</table>
+
+<h3>Finding All Programs</h3>
+<p>If you want to find a particular application or related files, such as documentation files, from the Start screen, you can access all installed files by right-clicking anywhere on the Start screen and selecting All apps. A list of all installed software and related files appears, in alphabetical order by creator or type.</p>
+
+<p>For more information about NI support for Windows 8, visit <a href="http://ni.com/windows8">ni.com/windows8</a>.</p>
+
+
+<hr>
+<h2>Important Information</h2>
+<!--Copyright-->
+<p class="Body"><strong>Copyright</strong></p>
+<p class="Body">&#0169; 1993&ndash;2013 National Instruments. All rights reserved. </p>
+
+<p class="Body">Under the copyright laws, this publication may not be reproduced or transmitted in any form, electronic or mechanical, including photocopying, recording, storing in an information retrieval system, or translating, in whole or in part, without the prior written consent of National Instruments Corporation.</p>
+
+<p class="Body">National Instruments respects the intellectual property of others, and we ask our users to do the same.  NI software is protected by copyright and other intellectual property laws.  Where NI software may be used to reproduce software or other materials belonging to others, you may use NI software only to reproduce materials that you may reproduce in accordance with the terms of any applicable license or other legal restriction.</p>
+
+<p class="Body"><strong>End-User License Agreements and Third-Party Legal Notices</strong></p>
+<p>You can find end-user license agreements (EULAs) and third-party legal notices in the following locations after installation:</p>
+<ul>
+<li>Notices are located in the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> and <span class="Monospace">&lt;National Instruments&gt;</span> directories.</li> 
+<li>EULAs are located in the <span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span> directory.</li>
+<li>Review <span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span> for information on including legal information in installers built with NI products.</li>
+</ul>
+
+
+<!--Trademarks-->
+<p class="Body"><strong>Trademarks</strong></p>
+
+<p class="Body">Refer to the <em><span class="DNL">NI Trademarks and Logo Guidelines</span></em> at <a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a> for information on <span class="DNL">National Instruments</span> trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.</p>
+
+<!--Patents-->
+<p class="Body"><strong>Patents</strong></p>
+<p class="Body">For patents covering the National Instruments products/technology, refer to the appropriate location: <strong>Help&#0187;Patents</strong> in your software, the <span class="Monospace">patents.txt</span> file on your media, or the <a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">National Instruments Patent Notice</a> at <span class="Monospace">ni.com/patents</span>.</p>
+
+</body>
+</html>
