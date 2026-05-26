@@ -1,0 +1,90 @@
+// (c)2015-2018 Physik Instrumente (PI) SE & Co. KG
+// Software products that are provided by PI are subject To the General Software License Agreement Of Physik Instrumente (PI) SE & Co. KG And may incorporate And/Or make use Of third-party software components. For more information, please read the General Software License Agreement And the Third Party Software Note linked below.
+// General Software License Agreement
+// http://www.physikinstrumente.com/download/EULA_PhysikInstrumenteGmbH_Co_KG.pdf
+// Third Party Software Note
+// http://www.physikinstrumente.com/download/TPSWNote_PhysikInstrumenteGmbH_Co_KG.pdf
+//## 1 - Hexapod Sender (axes X, Y, Z, ...)
+//## 2 - Hexapod Receiver (axes X, Y, Z, ...)
+//Define variables
+1 VAR XSTEP 0.02
+1 VAR YSTEP 0.02
+1 VAR NRTOTAL 50
+1 VAR NRXSTEPS 1
+1 VAR NRYSTEPS 1
+//Area Scan definition for receiver hexapod
+2 FDR SPIRAL X 2 Y 0.02 L 0.2 A 5 F 1 V 6 MP1 XX MP2 YY TT 2 CM 0 MIIL 10 MAIL 80 ST 3
+//Start area scan on receiver side
+2 FRS SPIRAL
+//Wait until scan is finished 
+2 WAC FRP? SPIRAL  = 0
+//If scan is successful (threshold reached), abort macro
+2 MEX FRR? SPIRAL 1 = 1
+//Start main loop
+1 LOOP ${NRTOTAL}
+//Start loop with given loop number for X axis
+1 LOOP ${NRXSTEPS}
+//Move axis X of sender relative to current position
+1 MVR X ${XSTEP}	
+//Wait until axis is on target position
+1 WAC ONT? X = 1	
+//Start area scan on receiver side
+2 FRS SPIRAL
+//Wait until scan is finished
+2 WAC FRP? SPIRAL  = 0
+//If scan is successful (threshold reached), abort macro
+2 MEX FRR? SPIRAL 1 = 1
+//End this loop
+1 ENDLOOP
+//Increment loop number
+1 ADD NRXSTEPS ${NRXSTEPS} 1
+//Start loop with given loop number for Y axis
+1 LOOP ${NRYSTEPS}
+//Move axis Y of sender relative to current position
+1 MVR Y ${YSTEP}	
+//Wait until axis is on target position
+1 WAC ONT? Y = 1
+//Start area scan on receiver side
+2 FRS SPIRAL
+//Wait until scan is finished
+2 WAC FRP? SPIRAL  = 0
+//If scan is successful (threshold reached), abort macro
+2 MEX FRR? SPIRAL 1 = 1
+//End this loop
+1 ENDLOOP
+//Increment loop number
+1 ADD NRYSTEPS ${NRYSTEPS} 1
+//Start loop with given loop number for X axis
+1 LOOP ${NRXSTEPS}
+//Move axis X of sender relative to current position
+1 MVR X -${XSTEP}
+//Wait until axis is on target position
+1 WAC ONT? X = 1
+//Start area scan on receiver side
+2 FRS SPIRAL
+//Wait until scan is finished
+2 WAC FRP? SPIRAL  = 0
+//If scan is successful (threshold reached), abort macro
+2 MEX FRR? SPIRAL 1 = 1
+//End this loop
+1 ENDLOOP
+//Increment loop number
+1 ADD NRXSTEPS ${NRXSTEPS} 1
+//Start loop with given number for Y axis
+1 LOOP ${NRYSTEPS}
+//Move axis Y of sender relative to current position
+1 MVR Y -${YSTEP}
+//Wait until axis is on target position
+1 WAC ONT? Y = 1
+//Start area scan on receiver side
+2 FRS SPIRAL
+//Wait until scan is finished
+2 WAC FRP? SPIRAL  = 0
+//If scan is successful (threshold reached), abort macro
+2 MEX FRR? SPIRAL 1 = 1
+//End this loop
+1 ENDLOOP
+//Increment loop number
+1 ADD NRYSTEPS ${NRYSTEPS} 1
+//End main loop
+1 ENDLOOP

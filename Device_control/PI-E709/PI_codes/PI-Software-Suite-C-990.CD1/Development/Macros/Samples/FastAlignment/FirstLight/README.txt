@@ -1,0 +1,1 @@
+Depending on the system that is used (double sided or single sided), open the desired folder and follow the instructions in the README.txt files.

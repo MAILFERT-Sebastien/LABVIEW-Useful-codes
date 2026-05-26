@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EtherCATInfo Version="1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd">
+	<Vendor>
+		<Id>#x0000076D</Id>
+		<Name>Physik Instrumente (PI) GmbH u Co. KG</Name>
+		<ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+	</Vendor>
+	<Descriptions>
+		<Groups>
+			<Group>
+				<Type>Hexapod</Type>
+				<Name LcId="1033">PI Hexapod-System</Name>
+				<ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+			</Group>
+		</Groups>
+		<Devices>
+			<Device Physics="YY">
+				<Type ProductCode="#x102F0000" RevisionNo="#x00020000" UseLrdLwr="1">C-887</Type>
+				<Name LcId="1033"><![CDATA[C-887 EtherCAT (CoE) Rev:0x00020000]]></Name>
+				<URL>https://www.physikinstrumente.de</URL>
+				<Info>
+					<StateMachine>
+						<Timeout>
+							<PreopTimeout>5000</PreopTimeout>
+							<SafeopOpTimeout>10000</SafeopOpTimeout>
+							<BackToInitTimeout>5000</BackToInitTimeout>
+							<BackToSafeopTimeout>200</BackToSafeopTimeout>
+						</Timeout>
+					</StateMachine>
+				</Info>
+				<GroupType>Hexapod</GroupType>
+				<Profile>
+					<ProfileNo>402</ProfileNo>
+				</Profile>
+				<Fmmu>Outputs</Fmmu>
+				<Fmmu>Inputs</Fmmu>
+				<Fmmu>MBoxState</Fmmu>
+				<Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1000" ControlByte="#x36" Enable="1">MBoxOut</Sm>
+				<Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1080" ControlByte="#x32" Enable="1">MBoxIn</Sm>
+				<Sm MinSize="0" MaxSize="256" StartAddress="#x1100" ControlByte="#x74" Enable="1">Outputs</Sm>
+				<Sm MinSize="0" MaxSize="256" StartAddress="#x1400" ControlByte="#x30" Enable="1">Inputs</Sm>
+				<Mailbox DataLinkLayer="1">
+					<CoE SdoInfo="true" PdoUpload="false" CompleteAccess="false" PdoAssign="true">
+						<InitCmd>
+							<Transition>PS</Transition>
+							<Index>#x60C2</Index>
+							<SubIndex>1</SubIndex>
+							<Data AdaptAutomatically="true">01</Data>
+							<Comment>Interpolation time period value</Comment>
+						</InitCmd>
+					</CoE>
+				</Mailbox>
+				<Dc UnknownFRMW="0" Unknown64Bit="1">
+					<OpMode>
+						<Name>Synchron</Name>
+						<Desc>SM-Synchron</Desc>
+						<AssignActivate>#x0</AssignActivate>
+						<CycleTimeSync0 Factor="0">0</CycleTimeSync0>
+						<ShiftTimeSync0>0</ShiftTimeSync0>
+						<CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+						<ShiftTimeSync1>0</ShiftTimeSync1>
+					</OpMode>
+					<OpMode>
+						<Name>DC</Name>
+						<Desc>DC-Synchron</Desc>
+						<AssignActivate>#x300</AssignActivate>
+						<CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+						<ShiftTimeSync0>0</ShiftTimeSync0>
+						<CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+						<ShiftTimeSync1>0</ShiftTimeSync1>
+					</OpMode>
+				</Dc>
+				<Slots SlotPdoIncrement="16" SlotIndexIncrement="#x800">
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis X</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis Y</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis Z</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis U</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis V</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis W</Name>
+						<ModuleIdent Default="1">1</ModuleIdent>
+					</Slot>
+				</Slots>
+				<Eeprom>
+					<ByteSize>65536</ByteSize>
+					<ConfigData>060000CCE8030000</ConfigData>
+				</Eeprom>
+				<ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+			</Device>
+			<Device Physics="YY">
+				<Type ProductCode="#x00000001" RevisionNo="#x00010002" UseLrdLwr="1">CIFX RE/ECS for PI Hexapod-Systems</Type>
+				<Name LcId="1033"><![CDATA[C-887 EtherCAT (CoE) Rev:0x00010002]]></Name>
+				<URL>https://www.physikinstrumente.de</URL>
+				<Info>
+					<StateMachine><Timeout>
+						<PreopTimeout>5000</PreopTimeout>
+						<SafeopOpTimeout>10000</SafeopOpTimeout>
+						<BackToInitTimeout>5000</BackToInitTimeout>
+						<BackToSafeopTimeout>200</BackToSafeopTimeout>
+					</Timeout></StateMachine>
+				</Info>
+				<GroupType>Hexapod</GroupType>
+				<Fmmu>Outputs</Fmmu>
+				<Fmmu>Inputs</Fmmu>
+				<Fmmu>MBoxState</Fmmu>
+				<Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1000" ControlByte="#x36" Enable="1">MBoxOut</Sm>
+				<Sm MinSize="128" MaxSize="128" DefaultSize="128" StartAddress="#x1080" ControlByte="#x32" Enable="1">MBoxIn</Sm>
+				<Sm MinSize="0" MaxSize="256" DefaultSize="200" StartAddress="#x1100" ControlByte="#x74" Enable="1">Outputs</Sm>
+				<Sm MinSize="0" MaxSize="256" DefaultSize="200" StartAddress="#x1400" ControlByte="#x30" Enable="1">Inputs</Sm>
+				<Mailbox DataLinkLayer="true">
+					<CoE SdoInfo="1" PdoConfig="0" DiagHistory="0" PdoAssign="0" CompleteAccess="0"/>
+				</Mailbox>
+				<Dc>
+					<OpMode>
+						<Name>Synchron</Name>
+						<Desc>SM-Synchron</Desc>
+						<AssignActivate>#x0</AssignActivate>
+						<CycleTimeSync0 Factor="0">0</CycleTimeSync0>
+						<ShiftTimeSync0>0</ShiftTimeSync0>
+						<CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+						<ShiftTimeSync1>0</ShiftTimeSync1>
+					</OpMode>
+					<OpMode>
+						<Name>DC</Name>
+						<Desc>DC-Synchron</Desc>
+						<AssignActivate>#x300</AssignActivate>
+						<CycleTimeSync0 Factor="1">0</CycleTimeSync0>
+						<ShiftTimeSync0>0</ShiftTimeSync0>
+						<CycleTimeSync1 Factor="1">0</CycleTimeSync1>
+						<ShiftTimeSync1>0</ShiftTimeSync1>
+					</OpMode>
+				</Dc>
+				<Slots SlotPdoIncrement="16" SlotIndexIncrement="#x800">
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis X</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis Y</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis Z</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis U</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis V</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+					<Slot MinInstances="1" MaxInstances="1">
+						<Name LcId="1033">Axis W</Name>
+						<ModuleIdent Default="1">#x100</ModuleIdent>
+					</Slot>
+				</Slots>
+				<Eeprom>
+					<ByteSize>65536</ByteSize>
+					<ConfigData>060001CCE8030000</ConfigData>
+				</Eeprom>
+				<ImageData16x14>424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000232E0000232E00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFF1D2CEA15901A15901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFFFFFFFA15901A15901FFFFFFFFFFFFFFFFFFA15901A15901A05901FFFFFFFFFFFFA15901A15901FFFFFFFFFFFFA15901A15901A15901A15901A15901A15901A15901A15901A15B00FFFFFFFFFFFFA15901A15901A15901A15901A15901FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</ImageData16x14>
+			</Device>
+		</Devices>
+		<Modules>
+			<Module>
+				<Type ModuleIdent="#x0001">CSP</Type>
+				<Name>CSP DC-Synchron</Name>
+				<RxPdo Fixed="1" Sm="2">
+					<Index DependOnSlot="true">#x1600</Index>
+					<Name>RxPDO</Name>
+					<Entry>
+						<Index DependOnSlot="true">#x6040</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Controlword</Name>
+						<DataType>UINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="true">#x6060</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Modes of operation</Name>
+						<DataType>BYTE</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="true">#x607A</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Target position</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+				</RxPdo>
+				<TxPdo Fixed="1" Sm="3">
+					<Index DependOnSlot="true">#x1A00</Index>
+					<Name>TxPDO</Name>
+					<Entry>
+						<Index DependOnSlot="true">#x6041</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Statusword</Name>
+						<DataType>UINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="true">#x6061</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Modes of operation display</Name>
+						<DataType>BYTE</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="true">#x6064</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Position actual value</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="true">#x60F4</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Following error actual value</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+				</TxPdo>
+				<Profile>
+					<ProfileNo>402</ProfileNo>
+				</Profile>
+				<DcOpModeName>DC</DcOpModeName>
+			</Module>
+			<Module>
+				<Type ModuleIdent="#x0100">Position Mode</Type>
+				<Name>Cyclic synchronous position mode including Homing; synchronous with process data</Name>
+				<RxPdo Su="0" Sm="2" Fixed="1">
+					<Index DependOnSlot="true">#x1600</Index>
+					<Name>Position Outputs</Name>
+					<Entry>
+						<Index DependOnSlot="1">#x6040</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Controlword</Name>
+						<DataType>UINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x6060</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Modes of operation</Name>
+						<DataType>USINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x607A</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Target position</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+				</RxPdo>
+				<TxPdo Su="0" Sm="3" Fixed="1">
+					<Index DependOnSlot="1">#x1A00</Index>
+					<Name>Position Inputs</Name>
+					<Entry>
+						<Index DependOnSlot="1">#x6041</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Statusword</Name>
+						<DataType>UINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x6061</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>Modes of operation display</Name>
+						<DataType>USINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x603F</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Error code</Name>
+						<DataType>UINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x6064</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Position actual value</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+					<Entry>
+						<Index DependOnSlot="1">#x60F4</Index>
+						<SubIndex>0</SubIndex>
+						<BitLen>32</BitLen>
+						<Name>Following error actual value</Name>
+						<DataType>DINT</DataType>
+					</Entry>
+				</TxPdo>
+				<Profile>
+					<ProfileNo>402</ProfileNo>
+				</Profile>
+				<DcOpModeName>DC</DcOpModeName>
+			</Module>
+		</Modules>
+	</Descriptions>
+</EtherCATInfo>
