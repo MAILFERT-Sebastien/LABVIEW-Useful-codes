@@ -33,6 +33,7 @@
 			<Item Name="ScannerXY.aliases" Type="Document" URL="../ScannerXY.aliases"/>
 			<Item Name="ScannerXY.lvlps" Type="Document" URL="../ScannerXY.lvlps"/>
 		</Item>
+		<Item Name="Create_WF_i(t).vi" Type="VI" URL="../SubVIs/Create_WF_i(t).vi"/>
 		<Item Name="Dépendances" Type="Dependencies"/>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>

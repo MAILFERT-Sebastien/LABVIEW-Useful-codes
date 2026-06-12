@@ -1,6 +1,19 @@
 <Configuration>
   <Target name="Poste de travail">
     <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="DAQ_Configure.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="924"/>
+        </Generic>
+      </Probes>
+    </VI>
     <VI name="Main.vi">
       <Breakpoints>
         <NodeIndexes>
