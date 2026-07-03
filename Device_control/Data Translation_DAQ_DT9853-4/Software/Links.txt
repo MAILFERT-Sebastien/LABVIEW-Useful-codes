@@ -1,0 +1,12 @@
+1 Créer un compte sur le site du fabricant (Digilent.com)
+2 Télécharger LV-link (pour piloter la carte avec LabVIEW)
+3 Les drivers de la carte doivent être installés par ce biais mais chez moi, le driver n'est pas signé et Windows refuse e l'installer
+
+J'ai installé d'autres logiciels et redémarré en mode "non prise en compte des signatures de drivers" et le driver s'est correctement installé.
+Pas très clair comme procédure.
+
+
+https://digilent.com/reference/software/lv-link/start?srsltid=AfmBOoo0O9fMZ6aDrOlg1v-VJU2YNpz8Qw78v4RCgyzbRbLVGDiNMRyu
+
+https://digilent.com/reference/software/start
+https://digilent.com/reference/software/universal-library/labview/start

@@ -9,3 +9,8 @@ Device_control/PI-E709/PI_codes/PI-Software-Suite-C-990.CD1.zip
 Device_control/PI-E709/PI_codes/PI-Software-Suite-C-990.CD1/PISoftwareSuite.exe
 Device_control/PI-E709/PI_codes/PI-Software-Suite-C-990.CD1/ThirdParty/SPiiPlus-Runtime-Kit/setup.exe
 Device_control/PI-E709/PI_codes/PI-Software-Suite-C-990.CD1/ThirdParty/NILWCVIRTE2012SP1/setup.exe
+*.zip
+*.exe
+*.msi
+*.tiff
+*.msi
