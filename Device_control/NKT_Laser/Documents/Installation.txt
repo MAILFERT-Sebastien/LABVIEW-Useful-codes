@@ -1,0 +1,2 @@
+1- Installer le SDK "SDK_Installer_2.1.15.2102.exe"
+2- Copier dans le répertoire "C:\Program Files\National Instruments\LabVIEW 2026\instr.lib\" le dossier NKTP_API contenant les VI de NKT qui se trouve dans "C:\Users\Public\Documents\NKT Photonics\SDK"
