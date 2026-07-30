@@ -1,0 +1,557 @@
+This document lists all files contained in the installation for
+pco.labview 5.7.0
+
+Documentation:
+  Common\CHANGELOG.md: {Date: '2026-07-24', Size: 5270, Time: '10:48:28'}
+  Common\MA_PCOLABVIEW.pdf: {Date: '2026-07-20', Size: 5059494, Time: '08:38:59'}
+  Common\license.rtf: {Date: '2026-07-27', Size: 105792, Time: '14:38:29'}
+  Common\license_3rdParty.pdf: {Date: '2026-07-27', Size: 105021, Time: '14:38:29'}
+Files:
+  Examples:
+    Files\Examples\Avg_Example.vi: {Date: '2026-07-24', Size: 43979, Time: '08:48:00'}
+    Files\Examples\Avg_Example_IMAQ.vi: {Date: '2026-07-24', Size: 70656, Time: '08:48:00'}
+    Files\Examples\FloatingMean_Example.vi: {Date: '2026-07-24', Size: 66920, Time: '08:48:00'}
+    Files\Examples\FloatingMean_Example_IMAQ.vi: {Date: '2026-07-24', Size: 108641, Time: '08:48:00'}
+    Files\Examples\LightSheet_Example.vi: {Date: '2026-07-24', Size: 52094, Time: '08:48:00'}
+    Files\Examples\LightSheet_Example_IMAQ.vi: {Date: '2026-07-24', Size: 78695, Time: '08:48:00'}
+    Files\Examples\Live_ConvertSetting_Examples.vi: {Date: '2026-07-24', Size: 88516, Time: '08:48:00'}
+    Files\Examples\Live_ConvertSettings_Example_IMAQ.vi: {Date: '2026-07-24', Size: 115033, Time: '08:48:00'}
+    Files\Examples\Live_Example.vi: {Date: '2026-07-24', Size: 74424, Time: '08:48:00'}
+    Files\Examples\Live_Example_IMAQ.vi: {Date: '2026-07-24', Size: 101641, Time: '08:48:00'}
+    Files\Examples\Live_Example_XCite.vi: {Date: '2026-07-24', Size: 138458, Time: '08:48:00'}
+    Files\Examples\Live_Example_XCite_IMAQ.vi: {Date: '2026-07-24', Size: 163919, Time: '08:48:00'}
+    Files\Examples\SaveImages_Example.vi: {Date: '2026-07-24', Size: 70278, Time: '08:48:00'}
+    Files\Examples\SaveImages_Example_IMAQ.vi: {Date: '2026-07-24', Size: 96035, Time: '08:48:00'}
+    Files\Examples\SaveMean_Example.vi: {Date: '2026-07-24', Size: 72088, Time: '08:48:00'}
+    Files\Examples\SaveMean_Example_IMAQ.vi: {Date: '2026-07-24', Size: 89209, Time: '08:48:00'}
+    Files\Examples\Simple_Example.vi: {Date: '2026-07-24', Size: 48986, Time: '08:48:00'}
+    Files\Examples\Simple_Example_2Cam.vi: {Date: '2026-07-24', Size: 51023, Time: '08:48:00'}
+    Files\Examples\Simple_Example_2Cam_IMAQ.vi: {Date: '2026-07-24', Size: 79892, Time: '08:48:00'}
+    Files\Examples\Simple_Example_IMAQ.vi: {Date: '2026-07-24', Size: 75579, Time: '08:48:00'}
+    Files\Examples\Simple_Example_Soft_Trigger.vi: {Date: '2026-07-24', Size: 44579, Time: '08:48:00'}
+    Files\Examples\Simple_Example_dicam.vi: {Date: '2026-07-24', Size: 51968, Time: '08:48:00'}
+    Files\Examples\XCite_Only_Example.vi: {Date: '2026-07-24', Size: 43358, Time: '08:48:00'}
+    camram:
+      Files\Examples\camram\Live_Camram_Example.vi: {Date: '2026-07-24', Size: 76019, Time: '08:48:00'}
+      Files\Examples\camram\Live_Camram_Example_IMAQ.vi: {Date: '2026-07-24', Size: 103208, Time: '08:48:00'}
+      Files\Examples\camram\Read_Camram_Example.vi: {Date: '2026-07-24', Size: 46263, Time: '08:48:00'}
+      Files\Examples\camram\Read_Camram_Example_IMAQ.vi: {Date: '2026-07-24', Size: 72820, Time: '08:48:00'}
+      Files\Examples\camram\Simple_Camram_Example.vi: {Date: '2026-07-24', Size: 52553, Time: '08:48:00'}
+      Files\Examples\camram\Simple_Camram_Example_IMAQ.vi: {Date: '2026-07-24', Size: 79186, Time: '08:48:00'}
+    deprecated:
+      Files\Examples\deprecated\pco.labview_Example.vi: {Date: '2026-07-24', Size: 185667, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_LightSheet_Example.vi: {Date: '2026-07-24', Size: 52370, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Live_CamRam_Example.vi: {Date: '2026-07-24', Size: 67779, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Live_Example.vi: {Date: '2026-07-24', Size: 66436, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Live_Example_COL.vi: {Date: '2026-07-24', Size: 84100, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Live_Example_PSEUDO_COL.vi: {Date: '2026-07-24', Size: 80399, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Live_SoftTrigger_Example.vi: {Date: '2026-07-24', Size: 70348, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Simple_CamRam_Example.vi: {Date: '2026-07-24', Size: 50093, Time: '08:48:00'}
+      Files\Examples\deprecated\pco.labview_Simple_Example.vi: {Date: '2026-07-24', Size: 47078, Time: '08:48:00'}
+  Files\GetDLLPaths.vi: {Date: '2026-07-10', Size: 12259, Time: '20:28:00'}
+  Files\pco.labview.lvproj: {Date: '2026-07-24', Size: 6998, Time: '08:48:00'}
+  camera:
+    Controls:
+      Files\camera\Controls\auto_exposure.ctl: {Date: '2026-07-10', Size: 13858, Time: '20:28:02'}
+      Files\camera\Controls\binning.ctl: {Date: '2026-07-10', Size: 14040, Time: '20:28:02'}
+      Files\camera\Controls\configuration.ctl: {Date: '2026-07-10', Size: 17726, Time: '20:28:02'}
+      Files\camera\Controls\convert_control.ctl: {Date: '2026-07-10', Size: 16208, Time: '20:28:02'}
+      Files\camera\Controls\description.ctl: {Date: '2026-07-10', Size: 18812, Time: '20:28:02'}
+      Files\camera\Controls\hwio_3_signal_type.ctl: {Date: '2026-07-10', Size: 19971, Time: '20:28:02'}
+      Files\camera\Controls\hwio_4_signal_type.ctl: {Date: '2026-07-10', Size: 19975, Time: '20:28:02'}
+      Files\camera\Controls\hwio_edge_polarity.ctl: {Date: '2026-07-10', Size: 19963, Time: '20:28:02'}
+      Files\camera\Controls\hwio_polarity.ctl: {Date: '2026-07-10', Size: 19870, Time: '20:28:02'}
+      Files\camera\Controls\hwio_status_expos_timing.ctl: {Date: '2026-07-10', Size: 20001, Time: '20:28:02'}
+      Files\camera\Controls\raw_format.ctl: {Date: '2026-07-10', Size: 13359, Time: '20:28:02'}
+      Files\camera\Controls\roi.ctl: {Date: '2026-07-10', Size: 17784, Time: '20:28:02'}
+    Files\camera\Camera.lvclass: {Date: '2026-07-10', Size: 305683, Time: '20:28:00'}
+    VIs:
+      Files\camera\VIs\adaptWhiteBalance.vi: {Date: '2026-07-10', Size: 35345, Time: '20:28:00'}
+      Files\camera\VIs\armCamera.vi: {Date: '2026-07-10', Size: 20129, Time: '20:28:00'}
+      Files\camera\VIs\autoExposureOff.vi: {Date: '2026-07-10', Size: 29811, Time: '20:28:00'}
+      Files\camera\VIs\autoExposureOn.vi: {Date: '2026-07-10', Size: 29814, Time: '20:28:00'}
+      Files\camera\VIs\calcTimeBase.vi: {Date: '2026-07-10', Size: 21860, Time: '20:28:00'}
+      Files\camera\VIs\calculateColorMode.vi: {Date: '2026-07-10', Size: 21706, Time: '20:28:00'}
+      Files\camera\VIs\checkMinMaxScale.vi: {Date: '2026-07-10', Size: 29924, Time: '20:28:00'}
+      Files\camera\VIs\close.vi: {Date: '2026-07-10', Size: 22857, Time: '20:28:00'}
+      Files\camera\VIs\configureAutoExposure.vi: {Date: '2026-07-10', Size: 29917, Time: '20:28:00'}
+      Files\camera\VIs\configureHWIO_1_exposureTrigger.vi: {Date: '2026-07-10', Size: 34967, Time: '20:28:00'}
+      Files\camera\VIs\configureHWIO_2_acquireEnable.vi: {Date: '2026-07-10', Size: 38245, Time: '20:28:00'}
+      Files\camera\VIs\configureHWIO_3_statusBusy.vi: {Date: '2026-07-10', Size: 43158, Time: '20:28:00'}
+      Files\camera\VIs\configureHWIO_4_statusExpos.vi: {Date: '2026-07-10', Size: 45191, Time: '20:28:00'}
+      Files\camera\VIs\conv.vi: {Date: '2026-07-10', Size: 13920, Time: '20:28:00'}
+      Files\camera\VIs\defaultConfiguration.vi: {Date: '2026-07-10', Size: 24124, Time: '20:28:00'}
+      Files\camera\VIs\dynResToPixelFormat.vi: {Date: '2026-07-10', Size: 26483, Time: '20:28:00'}
+      Files\camera\VIs\getCamRamAllocation.vi: {Date: '2026-07-10', Size: 32191, Time: '20:28:00'}
+      Files\camera\VIs\getCamRamMaxImages.vi: {Date: '2026-07-10', Size: 25558, Time: '20:28:00'}
+      Files\camera\VIs\getCamRamNumImages.vi: {Date: '2026-07-10', Size: 26198, Time: '20:28:00'}
+      Files\camera\VIs\getCamRamSegment.vi: {Date: '2026-07-10', Size: 22884, Time: '20:28:00'}
+      Files\camera\VIs\getCompressionParams.vi: {Date: '2026-07-10', Size: 19928, Time: '20:28:00'}
+      Files\camera\VIs\getConfiguration.vi: {Date: '2026-07-10', Size: 57636, Time: '20:28:00'}
+      Files\camera\VIs\getConvertControl.vi: {Date: '2026-07-10', Size: 28577, Time: '20:28:00'}
+      Files\camera\VIs\getDelayTime.vi: {Date: '2026-07-10', Size: 25896, Time: '20:28:00'}
+      Files\camera\VIs\getDescription.vi: {Date: '2026-07-10', Size: 68234, Time: '20:28:00'}
+      Files\camera\VIs\getExposureTime.vi: {Date: '2026-07-10', Size: 23119, Time: '20:28:00'}
+      Files\camera\VIs\getHWIO_1_exposureTrigger.vi: {Date: '2026-07-10', Size: 30761, Time: '20:28:00'}
+      Files\camera\VIs\getHWIO_2_acquireEnable.vi: {Date: '2026-07-10', Size: 33931, Time: '20:28:00'}
+      Files\camera\VIs\getHWIO_3_statusBusy.vi: {Date: '2026-07-10', Size: 39260, Time: '20:28:00'}
+      Files\camera\VIs\getHWIO_4_statusExpos.vi: {Date: '2026-07-10', Size: 36849, Time: '20:28:00'}
+      Files\camera\VIs\getInterface.vi: {Date: '2026-07-10', Size: 19940, Time: '20:28:00'}
+      Files\camera\VIs\getName.vi: {Date: '2026-07-10', Size: 19655, Time: '20:28:00'}
+      Files\camera\VIs\getRawFormat.vi: {Date: '2026-07-10', Size: 25828, Time: '20:28:00'}
+      Files\camera\VIs\getRecordedImageCount.vi: {Date: '2026-07-10', Size: 21001, Time: '20:28:00'}
+      Files\camera\VIs\getSensorInfo.vi: {Date: '2026-07-10', Size: 30693, Time: '20:28:00'}
+      Files\camera\VIs\getSerial.vi: {Date: '2026-07-10', Size: 19793, Time: '20:28:00'}
+      Files\camera\VIs\hasRam.vi: {Date: '2026-07-10', Size: 20266, Time: '20:28:00'}
+      Files\camera\VIs\image.vi: {Date: '2026-07-10', Size: 65505, Time: '20:28:00'}
+      Files\camera\VIs\imageAverage.vi: {Date: '2026-07-10', Size: 56568, Time: '20:28:00'}
+      Files\camera\VIs\images.vi: {Date: '2026-07-10', Size: 56814, Time: '20:28:00'}
+      Files\camera\VIs\init.vi: {Date: '2026-07-10', Size: 47244, Time: '20:28:00'}
+      Files\camera\VIs\isColored.vi: {Date: '2026-07-10', Size: 16937, Time: '20:28:00'}
+      Files\camera\VIs\isRecording.vi: {Date: '2026-07-10', Size: 21467, Time: '20:28:00'}
+      Files\camera\VIs\loadLut.vi: {Date: '2026-07-10', Size: 24507, Time: '20:28:00'}
+      Files\camera\VIs\rec.vi: {Date: '2026-07-10', Size: 13063, Time: '20:28:00'}
+      Files\camera\VIs\recIsCamRam.vi: {Date: '2026-07-10', Size: 21455, Time: '20:28:00'}
+      Files\camera\VIs\record.vi: {Date: '2026-07-10', Size: 78722, Time: '20:28:00'}
+      Files\camera\VIs\sdk.vi: {Date: '2026-07-10', Size: 13055, Time: '20:28:00'}
+      Files\camera\VIs\setAutoMinMax.vi: {Date: '2026-07-10', Size: 19565, Time: '20:28:00'}
+      Files\camera\VIs\setCamRamAllocation.vi: {Date: '2026-07-10', Size: 26259, Time: '20:28:00'}
+      Files\camera\VIs\setCamRamSegment.vi: {Date: '2026-07-10', Size: 22648, Time: '20:28:00'}
+      Files\camera\VIs\setConfiguration.vi: {Date: '2026-07-10', Size: 69528, Time: '20:28:00'}
+      Files\camera\VIs\setConvertControl.vi: {Date: '2026-07-10', Size: 32709, Time: '20:28:00'}
+      Files\camera\VIs\setDelayExposureTime.vi: {Date: '2026-07-10', Size: 18468, Time: '20:28:00'}
+      Files\camera\VIs\setDelayTime.vi: {Date: '2026-07-10', Size: 19728, Time: '20:28:00'}
+      Files\camera\VIs\setExposureTime.vi: {Date: '2026-07-10', Size: 12991, Time: '20:28:00'}
+      Files\camera\VIs\stop.vi: {Date: '2026-07-10', Size: 14684, Time: '20:28:00'}
+      Files\camera\VIs\switchToCamRam.vi: {Date: '2026-07-10', Size: 42054, Time: '20:28:00'}
+      Files\camera\VIs\updateAutoExposure.vi: {Date: '2026-07-10', Size: 32586, Time: '20:28:00'}
+      Files\camera\VIs\updateDisplaySettings.vi: {Date: '2026-07-10', Size: 21337, Time: '20:28:00'}
+      Files\camera\VIs\waitForFirstImage.vi: {Date: '2026-07-10', Size: 19849, Time: '20:28:00'}
+      Files\camera\VIs\waitForNewImage.vi: {Date: '2026-07-10', Size: 30287, Time: '20:28:00'}
+  errorHandling:
+    Files\errorHandling\ErrorManager.vi: {Date: '2026-07-10', Size: 12712, Time: '20:28:00'}
+  etc.xcite:
+    Files\etc.xcite\XCite.lvlib: {Date: '2026-07-10', Size: 3404, Time: '20:28:00'}
+    Files\etc.xcite\build_etc_command_map.vi: {Date: '2026-07-10', Size: 71537, Time: '20:28:00'}
+    Structures:
+      Files\etc.xcite\Structures\XCiteType.ctl: {Date: '2026-07-10', Size: 10598, Time: '20:28:02'}
+      Files\etc.xcite\Structures\XciteCh_structure.vi: {Date: '2026-07-10', Size: 21809, Time: '20:28:00'}
+      Files\etc.xcite\Structures\XciteChannel.ctl: {Date: '2026-07-10', Size: 12253, Time: '20:28:02'}
+      Files\etc.xcite\Structures\XciteStructure.ctl: {Date: '2026-07-10', Size: 13691, Time: '20:28:02'}
+      Files\etc.xcite\Structures\XciteStructure.vi: {Date: '2026-07-10', Size: 59650, Time: '20:28:00'}
+    VIs:
+      Files\etc.xcite\VIs\etc_XCITE_CloseDevice.vi: {Date: '2026-07-10', Size: 26013, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_ExecuteCommand.vi: {Date: '2026-07-10', Size: 26424, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_ExecuteCommandWithValue.vi: {Date: '2026-07-10', Size: 30249, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_GetDeviceInfo.vi: {Date: '2026-07-10', Size: 23895, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_GetLogBits.vi: {Date: '2026-07-10', Size: 22952, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_GetLogMode.vi: {Date: '2026-07-10', Size: 22916, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_GetVersion.vi: {Date: '2026-07-10', Size: 26136, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_GetXCStruct.vi: {Date: '2026-07-10', Size: 34017, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_OpenDevice.vi: {Date: '2026-07-10', Size: 25848, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_OpenDeviceEx.vi: {Date: '2026-07-10', Size: 27134, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_ScanDevices.vi: {Date: '2026-07-10', Size: 19449, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_SetLogBits.vi: {Date: '2026-07-10', Size: 22780, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_SetLogFile.vi: {Date: '2026-07-10', Size: 23120, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_SetLogMode.vi: {Date: '2026-07-10', Size: 22712, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_SetXCStruct.vi: {Date: '2026-07-10', Size: 38021, Time: '20:28:00'}
+      Files\etc.xcite\VIs\etc_XCITE_SwitchXCite.vi: {Date: '2026-07-10', Size: 25129, Time: '20:28:00'}
+  misc:
+    Files\misc\BCDToDecimal.vi: {Date: '2026-07-10', Size: 13228, Time: '20:28:00'}
+    Files\misc\C2LVstring.vi: {Date: '2026-07-10', Size: 15782, Time: '20:28:00'}
+    Files\misc\DecimalToBCD.vi: {Date: '2026-07-10', Size: 13940, Time: '20:28:00'}
+    Files\misc\LVstring2C.vi: {Date: '2026-07-10', Size: 12962, Time: '20:28:00'}
+    Files\misc\bcd_counter.vi: {Date: '2026-07-10', Size: 11819, Time: '20:28:00'}
+  pco.convert:
+    Files\pco.convert\Convert.lvlib: {Date: '2026-07-10', Size: 3412, Time: '20:28:00'}
+    Files\pco.convert\activateAIDenoiser.vi: {Date: '2026-07-10', Size: 11330, Time: '20:28:00'}
+    Files\pco.convert\getColorMode.vi: {Date: '2026-07-10', Size: 9796, Time: '20:28:00'}
+    Files\pco.convert\initConversion.vi: {Date: '2026-07-10', Size: 20106, Time: '20:28:00'}
+    Structures:
+      Files\pco.convert\Structures\PCO_Bayer.vi: {Date: '2026-07-10', Size: 14641, Time: '20:28:00'}
+      Files\pco.convert\Structures\PCO_Convert.vi: {Date: '2026-07-10', Size: 58683, Time: '20:28:00'}
+      Files\pco.convert\Structures\PCO_Display.vi: {Date: '2026-07-10', Size: 25511, Time: '20:28:00'}
+      Files\pco.convert\Structures\PCO_Filter.vi: {Date: '2026-07-10', Size: 14154, Time: '20:28:00'}
+      Files\pco.convert\Structures\PCO_SensorInfo.vi: {Date: '2026-07-10', Size: 23698, Time: '20:28:00'}
+    VIs:
+      Files\pco.convert\VIs\PCO_Convert16TO24.vi: {Date: '2026-07-10', Size: 16905, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_Convert16TO8.vi: {Date: '2026-07-10', Size: 16032, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_Convert16TOCOL.vi: {Date: '2026-07-10', Size: 16930, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_Convert16TOCOL16.vi: {Date: '2026-07-10', Size: 19904, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_Convert16TOPSEUDO.vi: {Date: '2026-07-10', Size: 16969, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertCreate.vi: {Date: '2026-07-10', Size: 14989, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertDelete.vi: {Date: '2026-07-10', Size: 9953, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertGet.vi: {Date: '2026-07-10', Size: 21006, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertGetDisplay.vi: {Date: '2026-07-10', Size: 14421, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertSet.vi: {Date: '2026-07-10', Size: 29382, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertSetBayer.vi: {Date: '2026-07-10', Size: 12127, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertSetDisplay.vi: {Date: '2026-07-10', Size: 14325, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertSetFilter.vi: {Date: '2026-07-10', Size: 12128, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_ConvertSetSensorInfo.vi: {Date: '2026-07-10', Size: 14348, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_GetColorValues.vi: {Date: '2026-07-10', Size: 11746, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_GetMaxLimit.vi: {Date: '2026-07-10', Size: 12727, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_GetVersionInfoPCO_CONV.vi: {Date: '2026-07-10', Size: 22330, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_GetWhiteBalance.vi: {Date: '2026-07-10', Size: 14959, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_LoadPseudoLut.vi: {Date: '2026-07-10', Size: 11261, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_SetPseudoLut.vi: {Date: '2026-07-10', Size: 20688, Time: '20:28:00'}
+      Files\pco.convert\VIs\PCO_WhiteBalanceToDisplayStruct.vi: {Date: '2026-07-10', Size: 18023, Time: '20:28:00'}
+  pco.recorder:
+    Files\pco.recorder\Recorder.lvlib: {Date: '2026-07-10', Size: 3758, Time: '20:28:00'}
+    Structures:
+      Files\pco.recorder\Structures\PCO_Recorder_CompressionParams.ctl: {Date: '2026-07-10', Size: 11203, Time: '20:28:02'}
+    VIs:
+      Files\pco.recorder\VIs\PCO_RecorderCleanup.vi: {Date: '2026-07-10', Size: 11227, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCopyAverageImage.vi: {Date: '2026-07-10', Size: 15052, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCopyAverageImage_8.vi: {Date: '2026-07-10', Size: 15070, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCopyImage.vi: {Date: '2026-07-10', Size: 41745, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCopyImageCompressed.vi: {Date: '2026-07-10', Size: 40779, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCopyImage_8.vi: {Date: '2026-07-10', Size: 48627, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderCreate.vi: {Date: '2026-07-10', Size: 18362, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderDelete.vi: {Date: '2026-07-10', Size: 10514, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderExportImage.vi: {Date: '2026-07-10', Size: 32867, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderGetSettings.vi: {Date: '2026-07-10', Size: 14195, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderGetStatus.vi: {Date: '2026-07-10', Size: 16365, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderGetVersion.vi: {Date: '2026-07-10', Size: 11118, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderInit.vi: {Date: '2026-07-10', Size: 15852, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderResetLib.vi: {Date: '2026-07-10', Size: 10636, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSaveImage_B16.vi: {Date: '2026-07-10', Size: 33013, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSaveImage_B8.vi: {Date: '2026-07-10', Size: 35232, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSaveOverlay_B16.vi: {Date: '2026-07-10', Size: 34151, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSaveOverlay_B8.vi: {Date: '2026-07-10', Size: 34026, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSetAutoExpRegions.vi: {Date: '2026-07-10', Size: 14993, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSetAutoExposure.vi: {Date: '2026-07-10', Size: 12939, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderSetCompressionParams.vi: {Date: '2026-07-10', Size: 12036, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderStartRecord.vi: {Date: '2026-07-10', Size: 10859, Time: '20:28:00'}
+      Files\pco.recorder\VIs\PCO_RecorderStopRecord.vi: {Date: '2026-07-10', Size: 10866, Time: '20:28:00'}
+  pco.sdk:
+    CameraAccess:
+      Files\pco.sdk\CameraAccess\CameraAccess.lvlib: {Date: '2026-07-10', Size: 2653, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\CameraAccess\VIs\PCO_CheckDeviceAvailability.vi: {Date: '2026-07-10', Size: 11303, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_CleanupLib.vi: {Date: '2026-07-10', Size: 16650, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_CloseCamera.vi: {Date: '2026-07-10', Size: 10287, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_GetDeviceStatus.vi: {Date: '2026-07-10', Size: 16491, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_GetVersionInfoSC2_Cam.vi: {Date: '2026-07-10', Size: 25693, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_GetVersion_SDK.vi: {Date: '2026-07-10', Size: 31670, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_InitializeLib.vi: {Date: '2026-07-10', Size: 16657, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_OpenCamera.vi: {Date: '2026-07-10', Size: 11554, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_OpenCameraEx.vi: {Date: '2026-07-10', Size: 15784, Time: '20:28:00'}
+        Files\pco.sdk\CameraAccess\VIs\PCO_ResetLib.vi: {Date: '2026-07-10', Size: 9928, Time: '20:28:00'}
+    CameraDescription:
+      Files\pco.sdk\CameraDescription\CameraDescription.lvlib: {Date: '2026-07-10', Size: 2798, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\CameraDescription\VIs\PCO_GetCameraDescription.vi: {Date: '2026-07-10', Size: 19416, Time: '20:28:00'}
+        Files\pco.sdk\CameraDescription\VIs\PCO_GetCameraDescription2.vi: {Date: '2026-07-10', Size: 15197, Time: '20:28:00'}
+        Files\pco.sdk\CameraDescription\VIs\PCO_GetCameraDescription3.vi: {Date: '2026-07-10', Size: 20849, Time: '20:28:00'}
+    Files\pco.sdk\SDK.lvlib: {Date: '2026-07-10', Size: 2875, Time: '20:28:00'}
+    GeneralCameraControl:
+      Files\pco.sdk\GeneralCameraControl\GeneralCameraControl.lvlib: {Date: '2026-07-10', Size: 2898, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_ArmCamera.vi: {Date: '2026-07-10', Size: 11433, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_ControlCommandCall.vi: {Date: '2026-07-10', Size: 13482, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_GetCameraSetup.vi: {Date: '2026-07-10', Size: 13562, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_GetFanControlParameters.vi: {Date: '2026-07-10', Size: 12335, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_GetShutterMode.vi: {Date: '2026-07-10', Size: 18574, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_RebootCamera.vi: {Date: '2026-07-10', Size: 10996, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_ResetSettingsToDefault.vi: {Date: '2026-07-10', Size: 10782, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_SetCameraSetup.vi: {Date: '2026-07-10', Size: 12386, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_SetFanControlParameters.vi: {Date: '2026-07-10', Size: 11975, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_SetImageParameters.vi: {Date: '2026-07-10', Size: 15166, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_SetShutterMode.vi: {Date: '2026-07-10', Size: 18410, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraControl\VIs\PCO_SetTimeouts.vi: {Date: '2026-07-10', Size: 11847, Time: '20:28:00'}
+    GeneralCameraStatus:
+      Files\pco.sdk\GeneralCameraStatus\GeneralCameraStatus.lvlib: {Date: '2026-07-10', Size: 2697, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetCameraHealthStatus.vi: {Date: '2026-07-10', Size: 13429, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetCameraName.vi: {Date: '2026-07-10', Size: 13229, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetCameraType.vi: {Date: '2026-07-10', Size: 22721, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetColorCorrectionMatrix.vi: {Date: '2026-07-10', Size: 12536, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetFirmwareInfo.vi: {Date: '2026-07-10', Size: 17791, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetGeneral.vi: {Date: '2026-07-10', Size: 23214, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetInfoString.vi: {Date: '2026-07-10', Size: 13765, Time: '20:28:00'}
+        Files\pco.sdk\GeneralCameraStatus\VIs\PCO_GetTemperature.vi: {Date: '2026-07-10', Size: 13078, Time: '20:28:00'}
+    ImageInformation:
+      Files\pco.sdk\ImageInformation\ImageInformation.lvlib: {Date: '2026-07-10', Size: 2702, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetBitAlignment.vi: {Date: '2026-07-10', Size: 11539, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetHotPixelCorrectionMode.vi: {Date: '2026-07-10', Size: 11677, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetImageStruct.vi: {Date: '2026-07-10', Size: 20166, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetNumberOfImagesInSegment.vi: {Date: '2026-07-10', Size: 13126, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetSegmentImageSettings.vi: {Date: '2026-07-10', Size: 15187, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_GetSegmentStruct.vi: {Date: '2026-07-10', Size: 14792, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_SetBitAlignment.vi: {Date: '2026-07-10', Size: 11011, Time: '20:28:00'}
+        Files\pco.sdk\ImageInformation\VIs\PCO_SetHotPixelCorrectionMode.vi: {Date: '2026-07-10', Size: 11009, Time: '20:28:00'}
+    ImageSensor:
+      Files\pco.sdk\ImageSensor\ImageSensor.lvlib: {Date: '2026-07-10', Size: 5039, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetADCOperation.vi: {Date: '2026-07-10', Size: 11431, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetActiveLookupTable.vi: {Date: '2026-07-10', Size: 11912, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetBinning.vi: {Date: '2026-07-10', Size: 11950, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetConversionFactor.vi: {Date: '2026-07-10', Size: 11427, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetCoolingSetpointTemperature.vi: {Date: '2026-07-10', Size: 11449, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetCoolingSetpoints.vi: {Date: '2026-07-10', Size: 13319, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetDSNUAdjustMode.vi: {Date: '2026-07-10', Size: 15213, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetDoubleImageMode.vi: {Date: '2026-07-10', Size: 11430, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetIRSensitivity.vi: {Date: '2026-07-10', Size: 11368, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetLookupTableInfo.vi: {Date: '2026-07-10', Size: 15734, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetNoiseFilterMode.vi: {Date: '2026-07-10', Size: 11458, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetOffsetMode.vi: {Date: '2026-07-10', Size: 11489, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetPixelRate.vi: {Date: '2026-07-10', Size: 11304, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetROI.vi: {Date: '2026-07-10', Size: 13098, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetSensorDarkOffset.vi: {Date: '2026-07-10', Size: 11275, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetSensorFormat.vi: {Date: '2026-07-10', Size: 11579, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetSensorStruct.vi: {Date: '2026-07-10', Size: 44899, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_GetSizes.vi: {Date: '2026-07-10', Size: 13396, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_InitDSNUAdjustment.vi: {Date: '2026-07-10', Size: 21518, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetADCOperation.vi: {Date: '2026-07-10', Size: 11343, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetActiveLookupTable.vi: {Date: '2026-07-10', Size: 11984, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetBinning.vi: {Date: '2026-07-10', Size: 11546, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetConversionFactor.vi: {Date: '2026-07-10', Size: 11211, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetCoolingSetpointTemperature.vi: {Date: '2026-07-10', Size: 11861, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetDSNUAdjustMode.vi: {Date: '2026-07-10', Size: 18193, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetDoubleImageMode.vi: {Date: '2026-07-10', Size: 11666, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetIRSensitivity.vi: {Date: '2026-07-10', Size: 11376, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetNoiseFilterMode.vi: {Date: '2026-07-10', Size: 11250, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetOffsetMode.vi: {Date: '2026-07-10', Size: 11197, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetPixelRate.vi: {Date: '2026-07-10', Size: 11264, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetROI.vi: {Date: '2026-07-10', Size: 12158, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetSensorFormat.vi: {Date: '2026-07-10', Size: 11307, Time: '20:28:00'}
+        Files\pco.sdk\ImageSensor\VIs\PCO_SetSensorStruct.vi: {Date: '2026-07-10', Size: 49859, Time: '20:28:00'}
+    LensControl:
+      Files\pco.sdk\LensControl\LensControl.lvlib: {Date: '2026-07-10', Size: 2591, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\LensControl\VIs\PCO_CleanupLensControl.vi: {Date: '2026-07-10', Size: 10018, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_CloseLensControl.vi: {Date: '2026-07-10', Size: 10312, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_GetAperture.vi: {Date: '2026-07-10', Size: 11927, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_GetApertureF.vi: {Date: '2026-07-10', Size: 12812, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_GetLensFocus.vi: {Date: '2026-07-10', Size: 11860, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_InitLensControl.vi: {Date: '2026-07-10', Size: 12487, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_SendBirgerCommand.vi: {Date: '2026-07-10', Size: 14153, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_SetAperture.vi: {Date: '2026-07-10', Size: 12455, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_SetApertureF.vi: {Date: '2026-07-10', Size: 12936, Time: '20:28:00'}
+        Files\pco.sdk\LensControl\VIs\PCO_SetLensFocus.vi: {Date: '2026-07-10', Size: 12604, Time: '20:28:00'}
+    RecordingControl:
+      Files\pco.sdk\RecordingControl\RecordingControl.lvlib: {Date: '2026-07-10', Size: 4800, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetAcqEnblSignalStatus.vi: {Date: '2026-07-10', Size: 11854, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetAcquireControl.vi: {Date: '2026-07-10', Size: 12165, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetAcquireMode.vi: {Date: '2026-07-10', Size: 11454, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetAcquireModeEx.vi: {Date: '2026-07-10', Size: 12908, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetMetaDataExtern.vi: {Date: '2026-07-10', Size: 32905, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetMetaDataMode.vi: {Date: '2026-07-10', Size: 12815, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetRecordStopEvent.vi: {Date: '2026-07-10', Size: 12242, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetRecorderSubmode.vi: {Date: '2026-07-10', Size: 11642, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetRecordingState.vi: {Date: '2026-07-10', Size: 11329, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetRecordingStruct.vi: {Date: '2026-07-10', Size: 16822, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetStorageMode.vi: {Date: '2026-07-10', Size: 11558, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_GetTimestampMode.vi: {Date: '2026-07-10', Size: 12972, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetAcquireControl.vi: {Date: '2026-07-10', Size: 11857, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetAcquireMode.vi: {Date: '2026-07-10', Size: 11030, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetAcquireModeEx.vi: {Date: '2026-07-10', Size: 12496, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetDateTime.vi: {Date: '2026-07-10', Size: 13223, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetMetaDataMode.vi: {Date: '2026-07-10', Size: 12807, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetRecordStopEvent.vi: {Date: '2026-07-10', Size: 12126, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetRecorderSubmode.vi: {Date: '2026-07-10', Size: 11650, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetRecordingState.vi: {Date: '2026-07-10', Size: 12309, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetRecordingStruct.vi: {Date: '2026-07-10', Size: 15362, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetStorageMode.vi: {Date: '2026-07-10', Size: 12258, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_SetTimestampMode.vi: {Date: '2026-07-10', Size: 11080, Time: '20:28:00'}
+        Files\pco.sdk\RecordingControl\VIs\PCO_StopRecord.vi: {Date: '2026-07-10', Size: 11614, Time: '20:28:00'}
+    SpecialCommandsDicam:
+      Files\pco.sdk\SpecialCommandsDicam\SpecialCommandsDicam.lvlib: {Date: '2026-07-10', Size: 2305, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_GetCameraDescription_Intensified.vi: {Date: '2026-07-10', Size: 15552, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_GetIntensifiedGatingMode.vi: {Date: '2026-07-10', Size: 11472, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_GetIntensifiedLoopCount.vi: {Date: '2026-07-10', Size: 11447, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_GetIntensifiedMCP.vi: {Date: '2026-07-10', Size: 12553, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_SetIntensifiedGatingMode.vi: {Date: '2026-07-10', Size: 11280, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_SetIntensifiedLoopCount.vi: {Date: '2026-07-10', Size: 11227, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDicam\VIs\PCO_SetIntensifiedMCP.vi: {Date: '2026-07-10', Size: 12461, Time: '20:28:00'}
+    SpecialCommandsDimax:
+      Files\pco.sdk\SpecialCommandsDimax\SpecialCommandsDimax.lvlib: {Date: '2026-07-10', Size: 2405, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_GetBatteryStatus.vi: {Date: '2026-07-10', Size: 14876, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_GetCDIMode.vi: {Date: '2026-07-10', Size: 11422, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_GetImageTransferMode.vi: {Date: '2026-07-10', Size: 13852, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_GetPowerSaveMode.vi: {Date: '2026-07-10', Size: 12736, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_SetCDIMode.vi: {Date: '2026-07-10', Size: 11002, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_SetImageTransferMode.vi: {Date: '2026-07-10', Size: 15424, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax\VIs\PCO_SetPowerSaveMode.vi: {Date: '2026-07-10', Size: 11428, Time: '20:28:00'}
+    SpecialCommandsDimax_HDSDI:
+      Files\pco.sdk\SpecialCommandsDimax_HDSDI\SpecialCommandsDimax_HDSDI.lvlib: {Date: '2026-07-10', Size: 2466, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_DoWhiteBalance.vi: {Date: '2026-07-10', Size: 12178, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_GetColorSettings.vi: {Date: '2026-07-10', Size: 13872, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_GetInterfaceOutputFormat.vi: {Date: '2026-07-10', Size: 13764, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_GetPlayPositionHDSDI.vi: {Date: '2026-07-10', Size: 12280, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_PlayImagesFromSegmentHDSDI.vi: {Date: '2026-07-10', Size: 16578, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_SetColorSettings.vi: {Date: '2026-07-10', Size: 13656, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsDimax_HDSDI\VIs\PCO_SetInterfaceOutputFormat.vi: {Date: '2026-07-10', Size: 13000, Time: '20:28:00'}
+    SpecialCommandsEdge:
+      Files\pco.sdk\SpecialCommandsEdge\SpecialCommandsEdge.lvlib: {Date: '2026-07-10', Size: 2681, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_CamLinkSetImageParameters.vi: {Date: '2026-07-10', Size: 18493, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_GetCmosLineExposureDelay.vi: {Date: '2026-07-10', Size: 12720, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_GetCmosLineTiming.vi: {Date: '2026-07-10', Size: 14861, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_GetInterfaceOutputFormat.vi: {Date: '2026-07-10', Size: 13332, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_GetSensorSignalStatus.vi: {Date: '2026-07-10', Size: 14901, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_SetCmosLineExposureDelay.vi: {Date: '2026-07-10', Size: 12256, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_SetCmosLineTiming.vi: {Date: '2026-07-10', Size: 13209, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_SetInterfaceOutputFormat.vi: {Date: '2026-07-10', Size: 12824, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsEdge\VIs\PCO_SetTransferParametersAuto.vi: {Date: '2026-07-10', Size: 12093, Time: '20:28:00'}
+    SpecialCommandsFlim:
+      Files\pco.sdk\SpecialCommandsFlim\SpecialCommandsFlim.lvlib: {Date: '2026-07-10', Size: 2874, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_GetFlimImageProcessingFlow.vi: {Date: '2026-07-10', Size: 15082, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_GetFlimMasterModulationFrequency.vi: {Date: '2026-07-10', Size: 11488, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_GetFlimModulationParameter.vi: {Date: '2026-07-10', Size: 12554, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_GetFlimPhaseSequenceParameter.vi: {Date: '2026-07-10', Size: 14113, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_GetFlimRelativePhase.vi: {Date: '2026-07-10', Size: 11488, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_SetFlimImageProcessingFlow.vi: {Date: '2026-07-10', Size: 13830, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_SetFlimMasterModulationFrequency.vi: {Date: '2026-07-10', Size: 11120, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_SetFlimModulationParameter.vi: {Date: '2026-07-10', Size: 12354, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_SetFlimPhaseSequenceParameter.vi: {Date: '2026-07-10', Size: 13185, Time: '20:28:00'}
+        Files\pco.sdk\SpecialCommandsFlim\VIs\PCO_SetFlimRelativePhase.vi: {Date: '2026-07-10', Size: 11244, Time: '20:28:00'}
+    StorageControl:
+      Files\pco.sdk\StorageControl\StorageControl.lvlib: {Date: '2026-07-10', Size: 4268, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\StorageControl\VIs\PCO_ClearRamSegment.vi: {Date: '2026-07-10', Size: 10667, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetActiveRamSegment.vi: {Date: '2026-07-10', Size: 11335, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetCameraRamSegmentSize.vi: {Date: '2026-07-10', Size: 12135, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetCameraRamSize.vi: {Date: '2026-07-10', Size: 11900, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetCompressionMode.vi: {Date: '2026-07-10', Size: 11914, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetMaxNumberOfImagesInSegment.vi: {Date: '2026-07-10', Size: 11493, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_GetStorageStruct.vi: {Date: '2026-07-10', Size: 13496, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_SetActiveRamSegment.vi: {Date: '2026-07-10', Size: 11203, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_SetCameraRamSegmentSize.vi: {Date: '2026-07-10', Size: 13831, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_SetCompressionMode.vi: {Date: '2026-07-10', Size: 11742, Time: '20:28:00'}
+        Files\pco.sdk\StorageControl\VIs\PCO_SetStorageStruct.vi: {Date: '2026-07-10', Size: 13772, Time: '20:28:00'}
+    Structures:
+      Common:
+        Files\pco.sdk\Structures\Common\PCO_METADATA_STRUCT.vi: {Date: '2026-07-10', Size: 23571, Time: '20:28:00'}
+        Files\pco.sdk\Structures\Common\PCO_TIMESTAMP_STRUCT.vi: {Date: '2026-07-10', Size: 13776, Time: '20:28:00'}
+      Files\pco.sdk\Structures\IMAGE_TRANSFER_MODE_PARAM.vi: {Date: '2026-07-10', Size: 13025, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Camera_Type.vi: {Date: '2026-07-10', Size: 52135, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Description.vi: {Date: '2026-07-10', Size: 32851, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Description2.vi: {Date: '2026-07-10', Size: 18224, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Description3.vi: {Date: '2026-07-10', Size: 23344, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_DescriptionEx.vi: {Date: '2026-07-10', Size: 7857, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Description_Intensified.vi: {Date: '2026-07-10', Size: 17431, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_FW_Vers.vi: {Date: '2026-07-10', Size: 28495, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_General.vi: {Date: '2026-07-10', Size: 54695, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_HW_Vers.vi: {Date: '2026-07-10', Size: 27755, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Image.vi: {Date: '2026-07-10', Size: 61497, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_ImageTiming.vi: {Date: '2026-07-10', Size: 11871, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Image_ColorSet.vi: {Date: '2026-07-10', Size: 19494, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Open_Struct.vi: {Date: '2026-07-10', Size: 23383, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Recording.vi: {Date: '2026-07-10', Size: 18157, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_SC2_Firmware_Struct.vi: {Date: '2026-07-10', Size: 12779, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_SC2_Hardware_Struct.vi: {Date: '2026-07-10', Size: 12627, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Segment.vi: {Date: '2026-07-10', Size: 15747, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Sensor.vi: {Date: '2026-07-10', Size: 204514, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Signal.vi: {Date: '2026-07-10', Size: 13034, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Signal_Desc.vi: {Date: '2026-07-10', Size: 171227, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Single_Signal_Desc.vi: {Date: '2026-07-10', Size: 24378, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Storage.vi: {Date: '2026-07-10', Size: 17179, Time: '20:28:00'}
+      Files\pco.sdk\Structures\PCO_Timing.vi: {Date: '2026-07-10', Size: 72098, Time: '20:28:00'}
+      Files\pco.sdk\Structures\Structures.lvlib: {Date: '2026-07-10', Size: 3874, Time: '20:28:00'}
+      UI_LensControl:
+        Files\pco.sdk\Structures\UI_LensControl\PCO_Birger.vi: {Date: '2026-07-10', Size: 22678, Time: '20:28:00'}
+        Files\pco.sdk\Structures\UI_LensControl\PCO_LensControl.vi: {Date: '2026-07-10', Size: 16495, Time: '20:28:00'}
+        Files\pco.sdk\Structures\UI_LensControl\PCO_LensControlParameters.vi: {Date: '2026-07-10', Size: 27249, Time: '20:28:00'}
+        Files\pco.sdk\Structures\UI_LensControl\PCO_UserInterfaceInfo.vi: {Date: '2026-07-10', Size: 21481, Time: '20:28:00'}
+        Files\pco.sdk\Structures\UI_LensControl\PCO_UserInterfaceSettings.vi: {Date: '2026-07-10', Size: 17493, Time: '20:28:00'}
+    TimingControl:
+      Files\pco.sdk\TimingControl\TimingControl.lvlib: {Date: '2026-07-10', Size: 5910, Time: '20:28:00'}
+      VIs:
+        Files\pco.sdk\TimingControl\VIs\PCO_ForceTrigger.vi: {Date: '2026-07-10', Size: 12160, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetCOCRuntime.vi: {Date: '2026-07-10', Size: 12305, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetCameraBusyStatus.vi: {Date: '2026-07-10', Size: 11847, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetCameraSynchMode.vi: {Date: '2026-07-10', Size: 12214, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetDelayExposureTime.vi: {Date: '2026-07-10', Size: 13292, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetDelayExposureTimeTable.vi: {Date: '2026-07-10', Size: 14493, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetExpTrigSignalStatus.vi: {Date: '2026-07-10', Size: 11730, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetFPSExposureMode.vi: {Date: '2026-07-10', Size: 11986, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetFastTimingMode.vi: {Date: '2026-07-10', Size: 11681, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetFrameRate.vi: {Date: '2026-07-10', Size: 12560, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetHWIOSignal.vi: {Date: '2026-07-10', Size: 13693, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetHWIOSignalCount.vi: {Date: '2026-07-10', Size: 11658, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetHWIOSignalDescriptor.vi: {Date: '2026-07-10', Size: 17067, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetHWIOSignalTiming.vi: {Date: '2026-07-10', Size: 12535, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetImageTiming.vi: {Date: '2026-07-10', Size: 13702, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetModulationMode.vi: {Date: '2026-07-10', Size: 14037, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetPowerDownMode.vi: {Date: '2026-07-10', Size: 11456, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetSoftFPS.vi: {Date: '2026-07-10', Size: 16114, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetTimingStruct.vi: {Date: '2026-07-10', Size: 22003, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetTriggerMode.vi: {Date: '2026-07-10', Size: 11686, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_GetUserPowerDownTime.vi: {Date: '2026-07-10', Size: 11332, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetCameraSynchMode.vi: {Date: '2026-07-10', Size: 11886, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetDelayExposureTime.vi: {Date: '2026-07-10', Size: 12788, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetDelayExposureTimeTable.vi: {Date: '2026-07-10', Size: 16485, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetFPSExposureMode.vi: {Date: '2026-07-10', Size: 12014, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetFastTimingMode.vi: {Date: '2026-07-10', Size: 11249, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetFrameRate.vi: {Date: '2026-07-10', Size: 14728, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetHWIOSignal.vi: {Date: '2026-07-10', Size: 14549, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetHWIOSignalTiming.vi: {Date: '2026-07-10', Size: 15335, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetModulationMode.vi: {Date: '2026-07-10', Size: 12957, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetPowerDownMode.vi: {Date: '2026-07-10', Size: 11420, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetSoftFPS.vi: {Date: '2026-07-10', Size: 16286, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetTimingStruct.vi: {Date: '2026-07-10', Size: 23643, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetTriggerMode.vi: {Date: '2026-07-10', Size: 11470, Time: '20:28:00'}
+        Files\pco.sdk\TimingControl\VIs\PCO_SetUserPowerDownTime.vi: {Date: '2026-07-10', Size: 11292, Time: '20:28:00'}
+  runtime:
+    bin64:
+      Files\runtime\bin64\etc_xcite.dll: {Date: '2026-07-24', Size: 437952, Time: '08:42:22', Version: 1.1.0.1}
+      Files\runtime\bin64\pco_conv.dll: {Date: '2026-07-24', Size: 2174968, Time: '08:42:22', Version: 1.57.0.54}
+      Files\runtime\bin64\pco_fasc.dll: {Date: '2026-07-24', Size: 197624, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fb16.dll: {Date: '2026-07-24', Size: 211448, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fbmp.dll: {Date: '2026-07-24', Size: 194040, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fdcm.dll: {Date: '2026-07-24', Size: 2505728, Time: '08:42:22', Version: 1.31.0.2}
+      Files\runtime\bin64\pco_ffts.dll: {Date: '2026-07-24', Size: 206328, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_file.dll: {Date: '2026-07-24', Size: 6060536, Time: '08:42:22', Version: 1.31.0.6}
+      Files\runtime\bin64\pco_fjp2.dll: {Date: '2026-07-24', Size: 467448, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fjpg.dll: {Date: '2026-07-24', Size: 339448, Time: '08:42:22', Version: 1.31.0.0}
+      Files\runtime\bin64\pco_fpfm.dll: {Date: '2026-07-24', Size: 2489336, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fpgm.dll: {Date: '2026-07-24', Size: 197112, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_fpng.dll: {Date: '2026-07-24', Size: 286712, Time: '08:42:22', Version: 1.31.0.0}
+      Files\runtime\bin64\pco_fppm.dll: {Date: '2026-07-24', Size: 197112, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_ftif.dll: {Date: '2026-07-24', Size: 241656, Time: '08:42:22', Version: 1.31.0.1}
+      Files\runtime\bin64\pco_recorder.dll: {Date: '2026-07-24', Size: 562688, Time: '08:42:22', Version: 3.8.0.0}
+      Files\runtime\bin64\sc2_cam.dll: {Date: '2026-07-24', Size: 1208824, Time: '08:42:22', Version: 1.36.0.106}
+  xcite:
+    Controls:
+      Files\xcite\Controls\XCITE_Configuration.ctl: {Date: '2026-07-10', Size: 15996, Time: '20:28:02'}
+      Files\xcite\Controls\XCITE_Description.ctl: {Date: '2026-07-10', Size: 23546, Time: '20:28:02'}
+    Files\xcite\Xcite.lvclass: {Date: '2026-07-10', Size: 91783, Time: '20:28:00'}
+    VIs:
+      Files\xcite\VIs\close.vi: {Date: '2026-07-10', Size: 26385, Time: '20:28:00'}
+      Files\xcite\VIs\defaultConfiguration.vi: {Date: '2026-07-10', Size: 28520, Time: '20:28:00'}
+      Files\xcite\VIs\executeCommand.vi: {Date: '2026-07-10', Size: 24466, Time: '20:28:00'}
+      Files\xcite\VIs\getComPort.vi: {Date: '2026-07-10', Size: 24042, Time: '20:28:00'}
+      Files\xcite\VIs\getConfiguration.vi: {Date: '2026-07-10', Size: 34396, Time: '20:28:00'}
+      Files\xcite\VIs\getDescription.vi: {Date: '2026-07-10', Size: 38074, Time: '20:28:00'}
+      Files\xcite\VIs\getTriggerSequence.vi: {Date: '2026-07-10', Size: 21262, Time: '20:28:00'}
+      Files\xcite\VIs\getType.vi: {Date: '2026-07-10', Size: 27459, Time: '20:28:00'}
+      Files\xcite\VIs\init.vi: {Date: '2026-07-10', Size: 40576, Time: '20:28:00'}
+      Files\xcite\VIs\setConfiguration.vi: {Date: '2026-07-10', Size: 47620, Time: '20:28:00'}
+      Files\xcite\VIs\setTriggerSequence.vi: {Date: '2026-07-10', Size: 23910, Time: '20:28:00'}
+      Files\xcite\VIs\setupLogging.vi: {Date: '2026-07-10', Size: 34244, Time: '20:28:00'}
+      Files\xcite\VIs\switchDevice.vi: {Date: '2026-07-10', Size: 23860, Time: '20:28:00'}
+      Files\xcite\VIs\switchOff.vi: {Date: '2026-07-10', Size: 22741, Time: '20:28:00'}
+      Files\xcite\VIs\switchOn.vi: {Date: '2026-07-10', Size: 26032, Time: '20:28:00'}
+      Files\xcite\VIs\xcite.vi: {Date: '2026-07-10', Size: 23177, Time: '20:28:00'}
+Interface Libraries:
+  bin64:
+    Interfaces\bin64\gigecalib.exe: {Date: '2026-07-22', Size: 16390440, Time: '14:29:31', Version: 5.4.0.0}
+    Interfaces\bin64\pco_scmos_gl_x64.hap: {Date: '2026-07-24', Size: 2269957, Time: '08:42:22'}
+    Interfaces\bin64\sc2_cl_me4.dll: {Date: '2026-07-24', Size: 423416, Time: '08:42:22', Version: 1.6.0.334}
+    Interfaces\bin64\sc2_clhs.dll: {Date: '2026-07-24', Size: 927736, Time: '08:42:22', Version: 1.18.0.383}
+    Interfaces\bin64\sc2_genicam.dll: {Date: '2026-07-24', Size: 824824, Time: '08:42:22', Version: 1.11.0.0}
+    Interfaces\bin64\sc2_gige.dll: {Date: '2026-07-24', Size: 712184, Time: '08:42:22', Version: 2.4.0.3}
+    genicam:
+      Interfaces\bin64\genicam\GCBase_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 103936, Time: '08:42:22', Version: 3.3.0.0}
+      Interfaces\bin64\genicam\GenApi_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 1044480, Time: '08:42:22', Version: 3.3.0.0}
+      Interfaces\bin64\genicam\Log_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 25600, Time: '08:42:22', Version: 3.3.0.0}
+      Interfaces\bin64\genicam\MathParser_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 46080, Time: '08:42:22', Version: 3.3.0.0}
+      Interfaces\bin64\genicam\NodeMapData_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 116736, Time: '08:42:22', Version: 3.3.0.0}
+      Interfaces\bin64\genicam\XmlParser_MD_VC141_v3_3.dll: {Date: '2026-07-24', Size: 730112, Time: '08:42:22', Version: 3.3.0.0}
