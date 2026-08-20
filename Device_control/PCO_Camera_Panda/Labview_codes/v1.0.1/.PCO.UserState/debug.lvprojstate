@@ -1,0 +1,34 @@
+<Configuration>
+  <Target name="Poste de travail">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="Main_FFT.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="12366"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="PCO_Grab_Save.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="2168"/>
+        </Generic>
+        <Smart>
+          <Probe signalUID="2155" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
+        </Smart>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>
