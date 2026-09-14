@@ -10,15 +10,10 @@
       </Breakpoints>
       <Probes>
         <Generic>
-          <SignalUID value="665"/>
           <SignalUID value="646"/>
           <SignalUID value="12366"/>
+          <SignalUID value="4200"/>
         </Generic>
-        <Smart>
-          <Probe signalUID="10230" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
-          <Probe signalUID="627" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
-          <Probe signalUID="707" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
-        </Smart>
       </Probes>
     </VI>
     <VI name="PCO_Grab_Save.vi">
@@ -30,15 +25,12 @@
       </Breakpoints>
       <Probes>
         <Generic>
-          <SignalUID value="1170"/>
           <SignalUID value="2168"/>
-          <SignalUID value="2096"/>
+          <SignalUID value="2107"/>
+          <SignalUID value="1327"/>
         </Generic>
         <Smart>
-          <Probe signalUID="2133" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
-          <Probe signalUID="1343" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
           <Probe signalUID="2155" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
-          <Probe signalUID="1349" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
         </Smart>
       </Probes>
     </VI>
@@ -54,7 +46,6 @@
           <SignalUID value="1107"/>
         </Generic>
         <Smart>
-          <Probe signalUID="1131" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi"/>
           <Probe signalUID="1134" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
           <Probe signalUID="1113" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\PathProbe.vi"/>
         </Smart>

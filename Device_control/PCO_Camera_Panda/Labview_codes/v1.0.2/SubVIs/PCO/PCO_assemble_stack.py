@@ -52,12 +52,13 @@ Ce que LabVIEW doit ecrire (a faire cote LabVIEW, pas dans ce script) :
        Cles optionnelles :
            "dtype"       : str, defaut "uint16" (voir _DTYPE_MAP pour les
                            valeurs reconnues)
-           "array_order" : "NHW" (defaut, frame = axe le plus lent a
-                           varier) ou "HWN" (frame = axe le plus rapide) —
-                           A VERIFIER cote LabVIEW avant mise en prod (voir
-                           note dans load_raw_stack), l'ordre d'ecriture
-                           d'un array 3D LabVIEW en binaire n'etant pas
-                           forcement le meme que l'ordre C de numpy.
+           "array_order" : "NHW" (defaut FIXE, frame = axe le plus lent a
+                           varier) ou "HWN" (frame = axe le plus rapide).
+                           PAS de detection automatique (essayee puis
+                           abandonnee — voir note dans load_raw_stack) :
+                           NHW est la seule valeur utilisee en prod,
+                           confirmee par test direct sur le .bin. Ne pas
+                           fournir cette cle sauf cas particulier avere.
            "date", "trajectory", "exposure_time_s", "laser_power_mW", etc.
            (n'importe quelle cle supplementaire est simplement recopiee
            dans les metadonnees embarquees / la struct MATLAB)
@@ -215,55 +216,6 @@ _DTYPE_MAP = {
 }
 
 
-def _spatial_coherence_score(stack: np.ndarray, sample_frames: int = 5) -> float:
-    """
-    Mesure a quel point les pixels voisins d'un stack sont correles
-    spatialement (comme dans une vraie image de camera, a cause de
-    l'optique/PSF), sur un petit echantillon de frames pour rester rapide
-    meme sur un gros stack.
-
-    Score bas = coherent (differences pixel-a-pixel petites par rapport a
-    la variance globale de la frame) = vraie image.
-    Score proche de 1 = incoherent (aucune correlation locale) = octets
-    d'un ordre NHW/HWN incorrect, melanges sans rapport spatial.
-    """
-    n = stack.shape[0]
-    idxs = np.unique(np.linspace(0, n - 1, min(sample_frames, n)).astype(int))
-    scores = []
-    for i in idxs:
-        f = stack[i].astype(np.float64)
-        var = f.var()
-        if var < 1e-9:
-            continue  # frame plate (toutes valeurs egales) : pas informatif
-        diff = np.diff(f, axis=1)  # difference entre pixels voisins (largeur)
-        scores.append(diff.var() / var)
-    return float(np.mean(scores)) if scores else 1.0
-
-
-def _detect_array_order(raw: np.ndarray, n: int, h: int, w: int) -> str:
-    """
-    Determine automatiquement si le stack a ete ecrit en ordre 'NHW' ou
-    'HWN' (voir load_raw_stack), en comparant la coherence spatiale des
-    deux interpretations possibles — pas besoin de test manuel prealable
-    cote LabVIEW.
-
-    Les deux vues sont construites sans copie (reshape/transpose sont des
-    vues numpy), seul le petit echantillon de frames utilise pour le score
-    est reellement lu — reste rapide meme sur un stack de plusieurs Go.
-    """
-    stack_nhw = raw.reshape(n, h, w)
-    stack_hwn = raw.reshape(h, w, n).transpose(2, 0, 1)
-
-    score_nhw = _spatial_coherence_score(stack_nhw)
-    score_hwn = _spatial_coherence_score(stack_hwn)
-
-    order = "NHW" if score_nhw <= score_hwn else "HWN"
-    print(f"[INFO] Detection auto de l'ordre du stack : NHW (score="
-          f"{score_nhw:.3f}) vs HWN (score={score_hwn:.3f}) -> retenu : "
-          f"{order} (score le plus bas = image spatialement coherente)")
-    return order
-
-
 def load_raw_stack(bin_path: str, metadata: dict) -> np.ndarray:
     """
     Lit le stack ecrit par LabVIEW en un seul fichier binaire brut
@@ -273,11 +225,16 @@ def load_raw_stack(bin_path: str, metadata: dict) -> np.ndarray:
     Un seul np.fromfile() : lecture sequentielle unique, la plus rapide
     possible, pas de lecture fichier par fichier.
 
-    L'ordre d'aplatissement (NHW ou HWN, voir _detect_array_order) est
-    detecte AUTOMATIQUEMENT par coherence spatiale, sauf si "array_order"
-    est explicitement fourni dans metadata.json (auquel cas il est
-    utilise tel quel, sans detection — utile si la detection auto se
-    trompe sur un type de donnees inhabituel).
+    IMPORTANT — array_order (NHW/HWN) : une detection automatique par
+    coherence spatiale a ete essayee ici, puis RETIREE (bug reproduit et
+    confirme le 2026-09-14) : sur des images a faible signal/fort bruit
+    (dark, courtes expositions...), les scores de coherence des deux
+    interpretations sont quasi identiques, et le choix devient en
+    pratique aleatoire — d'ou une corruption en mosaique intermittente,
+    presente uniquement en 2048x2048 plein capteur (4 quadrants
+    dupliques, cf. incident). NHW est desormais un DEFAUT FIXE,
+    confirme correct par comparaison directe avec le .bin brut. Ne pas
+    reintroduire de detection automatique sur ce champ.
     """
     for key in ("height", "width"):
         if key not in metadata:
@@ -328,12 +285,9 @@ def load_raw_stack(bin_path: str, metadata: dict) -> np.ndarray:
 
     raw = np.fromfile(bin_path, dtype=dtype)
 
-    array_order = metadata.get("array_order")
-    if array_order is None:
-        array_order = _detect_array_order(raw, n, h, w)
-    else:
-        print(f"[INFO] array_order impose par metadata.json : {array_order} "
-              f"(detection automatique desactivee)")
+    array_order = metadata.get("array_order", "NHW")
+    if "array_order" in metadata:
+        print(f"[INFO] array_order impose par metadata.json : {array_order}")
 
     if array_order == "NHW":
         stack = raw.reshape(n, h, w)
